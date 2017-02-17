@@ -7,22 +7,248 @@
 //
 
 #import "HomeViewController.h"
+#import "HHomeViewController.h"
+#import "HProcureViewController.h"
+#import "HHrisViewController.h"
 
-@interface HomeViewController ()
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+#define IS_OS_5_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0)
+#define IS_OS_6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
+#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define IS_OS_8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IS_OS_9_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+
+@interface HomeViewController ()<UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sc;
+@property (weak, nonatomic) IBOutlet UIScrollView *sv;
 
 @end
 
 @implementation HomeViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.title = @"SMI Approval";
+    
+    [_sc addTarget:self action:@selector(scTapped) forControlEvents:UIControlEventValueChanged];
+    
+    CGFloat w = self.view.frame.size.width;
+    CGFloat h = self.view.frame.size.height;
+    
+    _sv.bounces = NO;
+    _sv.pagingEnabled = YES;
+    _sv.contentSize = CGSizeMake(w * 3, 1);
+    _sv.delegate = self;
+    _sv.backgroundColor = [UIColor redColor];
+    
+    [self addHome];
+    [self addProcure];
+    [self addHris];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addHome {
+    NSLog(@"addHome");
+    
+    CGFloat w = self.view.bounds.size.width;
+    CGFloat h = self.view.bounds.size.height;
+    
+    NSLog(@"h: %f",h);
+    
+    if (IS_IPHONE_6) {
+        
+        h = 667; //667 vs 602
+    }
+    else if (IS_IPHONE_6P) {
+        h = 736; //736 vs 671
+    }
+    else {
+        
+    }
+    
+    UIView *v = [[UIView alloc] initWithFrame:(CGRect){0,0,w,h}];
+    v.backgroundColor = [UIColor redColor];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    HHomeViewController *vc = [sb instantiateViewControllerWithIdentifier:@"hhome"];
+    
+    [self addChildViewController:vc];
+    
+    if (IS_IPHONE_6) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else if (IS_IPHONE_6P) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else {
+        // iphone 5
+        
+        //CGFloat w = 210;
+        //CGFloat h = (20*7) + 60;
+        
+    }
+    
+    [v addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
+    
+    [_sv addSubview:v];
 }
+
+- (void)addProcure {
+    NSLog(@"addProcure");
+    
+    CGFloat w = self.view.bounds.size.width;
+    CGFloat h = self.view.bounds.size.height;
+    
+    NSLog(@"h: %f",h);
+    
+    if (IS_IPHONE_6) {
+        
+        h = 667; //667 vs 602
+    }
+    else if (IS_IPHONE_6P) {
+        h = 736; //736 vs 671
+    }
+    else {
+        
+    }
+    
+    UIView *v = [[UIView alloc] initWithFrame:(CGRect){w,0,w,h}];
+    v.backgroundColor = [UIColor redColor];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    HProcureViewController *vc = [sb instantiateViewControllerWithIdentifier:@"hprocure"];
+    
+    [self addChildViewController:vc];
+    
+    if (IS_IPHONE_6) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else if (IS_IPHONE_6P) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else {
+        // iphone 5
+        
+        //CGFloat w = 210;
+        //CGFloat h = (20*7) + 60;
+        
+    }
+    
+    [v addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
+    
+    [_sv addSubview:v];
+}
+
+- (void)addHris {
+    NSLog(@"addHris");
+    
+    CGFloat w = self.view.bounds.size.width;
+    CGFloat h = self.view.bounds.size.height;
+    
+    NSLog(@"h: %f",h);
+    
+    if (IS_IPHONE_6) {
+        
+        h = 667; //667 vs 602
+    }
+    else if (IS_IPHONE_6P) {
+        h = 736; //736 vs 671
+    }
+    else {
+        
+    }
+    
+    UIView *v = [[UIView alloc] initWithFrame:(CGRect){w*2,0,w,h}];
+    v.backgroundColor = [UIColor redColor];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    HHrisViewController *vc = [sb instantiateViewControllerWithIdentifier:@"hhris"];
+    
+    [self addChildViewController:vc];
+    
+    if (IS_IPHONE_6) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else if (IS_IPHONE_6P) {
+        vc.view.frame = (CGRect){0,0,w,h};
+    }
+    else {
+        // iphone 5
+        
+        //CGFloat w = 210;
+        //CGFloat h = (20*7) + 60;
+        
+    }
+    
+    [v addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
+    
+    [_sv addSubview:v];
+}
+
+- (void)scTapped {
+    if (_sc.selectedSegmentIndex==0) {
+        [self showHome];
+    }
+    else if (_sc.selectedSegmentIndex==1) {
+        [self showProcure];
+    }
+    else {
+        [self showHris];
+    }
+}
+
+- (void)showHome {
+    NSLog(@"home");
+    [_sv setContentOffset:CGPointMake(0,0) animated:YES];
+}
+
+- (void)showProcure {
+    NSLog(@"procure");
+    CGFloat w = self.view.bounds.size.width;
+    [_sv setContentOffset:CGPointMake(w,0) animated:YES];
+}
+
+- (void)showHris {
+    NSLog(@"hris");
+    CGFloat w = self.view.bounds.size.width;
+    [_sv setContentOffset:CGPointMake(w*2,0) animated:YES];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self performSelector:@selector(scrollViewDidEndScrollingAnimation:) withObject:scrollView afterDelay:0.4];
+}
+
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    
+    int currPage = round(scrollView.contentOffset.x / scrollView.frame.size.width);
+    
+    NSLog(@"currPage %d",currPage);
+    _sc.selectedSegmentIndex = currPage;
+}
+
 
 /*
 #pragma mark - Navigation

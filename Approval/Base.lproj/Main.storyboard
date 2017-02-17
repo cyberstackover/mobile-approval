@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UZ9-Fg-IWR">
             <objects>
-                <navigationController id="xup-fL-5Sm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="login" id="xup-fL-5Sm" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" misplaced="YES" id="ZGb-v4-MpY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,6 +24,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AI-R6-fiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1188" y="505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqd-Vm-0lH">
+            <objects>
+                <navigationController storyboardIdentifier="home" id="yPd-Kv-fhN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qA4-gf-u2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yGQ-mP-wOc" kind="relationship" relationship="rootViewController" id="b9m-y5-8W0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAg-K7-7tH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="-146"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rHo-0E-R3P">
@@ -89,7 +105,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passicon" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-Sm-m03">
                                                 <rect key="frame" x="10" y="52" width="15" height="15"/>
@@ -133,6 +149,9 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="tintColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="btnLoginTapped:" destination="2Nr-cG-rHX" eventType="touchUpInside" id="e87-wC-NnW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PT. Sinergi Informatika Semen Indonesia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klX-TH-gjQ">
                                         <rect key="frame" x="36" y="401" width="228" height="21"/>
@@ -179,12 +198,116 @@
                     </view>
                     <navigationItem key="navigationItem" id="qbv-7y-MlZ"/>
                     <connections>
+                        <outlet property="tfPassword" destination="bEI-go-EcC" id="aNa-wO-hUy"/>
+                        <outlet property="tfUsername" destination="PU8-6N-38P" id="uvR-Gq-jxz"/>
                         <outlet property="vwTop" destination="rXd-0f-5Yj" id="hPe-hk-O2Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqv-hg-5U2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="418.74062968515744"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="KNG-Mq-2xX">
+            <objects>
+                <viewController storyboardIdentifier="hhome" id="nlg-bq-ZcS" customClass="HHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yju-1K-rXQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Epz-ur-ZKB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZNI-EC-IZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fd-my-Pd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="1388"/>
+        </scene>
+        <!--Procure View Controller-->
+        <scene sceneID="gGV-sc-0V5">
+            <objects>
+                <viewController storyboardIdentifier="hprocure" id="741-Cg-7sU" customClass="HProcureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUc-Xg-EMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="j0N-hu-zaO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qx6-iS-nG3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmT-J5-Sk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="1389"/>
+        </scene>
+        <!--Hris View Controller-->
+        <scene sceneID="PGT-bF-aTE">
+            <objects>
+                <viewController storyboardIdentifier="hhris" id="Vag-4J-MRj" customClass="HHrisViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c7m-Ra-piM"/>
+                        <viewControllerLayoutGuide type="bottom" id="7kn-2O-Qdc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hox-f6-9rK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xil-ZX-9Sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="1388"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="kvF-KO-Qlv">
+            <objects>
+                <viewController id="yGQ-mP-wOc" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wOd-og-xwY"/>
+                        <viewControllerLayoutGuide type="bottom" id="QMc-Mr-oST"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bXn-PV-OOe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jb0-VI-sK8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="vdU-vY-TkF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="HOME"/>
+                                    <segment title="PROCURE"/>
+                                    <segment title="HRIS"/>
+                                </segments>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-2y-XfD">
+                                <rect key="frame" x="16" y="111" width="343" height="536"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leading" secondItem="jb0-VI-sK8" secondAttribute="leading" id="9vP-1e-7KH"/>
+                            <constraint firstItem="wCa-2y-XfD" firstAttribute="leading" secondItem="jb0-VI-sK8" secondAttribute="leading" id="Eh1-rV-Wcs"/>
+                            <constraint firstItem="QMc-Mr-oST" firstAttribute="top" secondItem="wCa-2y-XfD" secondAttribute="bottom" id="Tcp-EC-fzf"/>
+                            <constraint firstItem="wCa-2y-XfD" firstAttribute="trailing" secondItem="jb0-VI-sK8" secondAttribute="trailing" id="aot-VN-xen"/>
+                            <constraint firstItem="jb0-VI-sK8" firstAttribute="top" secondItem="wOd-og-xwY" secondAttribute="bottom" id="g6P-Ig-NI2"/>
+                            <constraint firstItem="wCa-2y-XfD" firstAttribute="top" secondItem="jb0-VI-sK8" secondAttribute="bottom" id="iUh-m0-ePa"/>
+                            <constraint firstAttribute="trailing" secondItem="jb0-VI-sK8" secondAttribute="trailing" id="rkb-oa-dvv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9fP-de-6gL"/>
+                    <connections>
+                        <outlet property="sc" destination="jb0-VI-sK8" id="KsC-3w-oLb"/>
+                        <outlet property="sv" destination="wCa-2y-XfD" id="0gq-zR-na2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0Y-bo-QpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="613"/>
         </scene>
     </scenes>
     <resources>

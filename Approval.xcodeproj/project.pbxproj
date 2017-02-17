@@ -16,6 +16,9 @@
 		C22DB9D61E5422FF00D90DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DB9D41E5422FF00D90DCA /* LaunchScreen.storyboard */; };
 		C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22DB9DE1E54231C00D90DCA /* LoginViewController.m */; };
 		C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22DB9E11E54232900D90DCA /* HomeViewController.m */; };
+		C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F2B1E568FA40044C921 /* HHomeViewController.m */; };
+		C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F2E1E568FB10044C921 /* HProcureViewController.m */; };
+		C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F311E568FC20044C921 /* HHrisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		C22DB9DE1E54231C00D90DCA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C22DB9E01E54232900D90DCA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C22DB9E11E54232900D90DCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C2373F2A1E568FA40044C921 /* HHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHomeViewController.h; sourceTree = "<group>"; };
+		C2373F2B1E568FA40044C921 /* HHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHomeViewController.m; sourceTree = "<group>"; };
+		C2373F2D1E568FB10044C921 /* HProcureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HProcureViewController.h; sourceTree = "<group>"; };
+		C2373F2E1E568FB10044C921 /* HProcureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HProcureViewController.m; sourceTree = "<group>"; };
+		C2373F301E568FC20044C921 /* HHrisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHrisViewController.h; sourceTree = "<group>"; };
+		C2373F311E568FC20044C921 /* HHrisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHrisViewController.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +108,12 @@
 				C22DB9DE1E54231C00D90DCA /* LoginViewController.m */,
 				C22DB9E01E54232900D90DCA /* HomeViewController.h */,
 				C22DB9E11E54232900D90DCA /* HomeViewController.m */,
+				C2373F2A1E568FA40044C921 /* HHomeViewController.h */,
+				C2373F2B1E568FA40044C921 /* HHomeViewController.m */,
+				C2373F2D1E568FB10044C921 /* HProcureViewController.h */,
+				C2373F2E1E568FB10044C921 /* HProcureViewController.m */,
+				C2373F301E568FC20044C921 /* HHrisViewController.h */,
+				C2373F311E568FC20044C921 /* HHrisViewController.m */,
 			);
 			path = Approval;
 			sourceTree = "<group>";
@@ -236,7 +251,10 @@
 			files = (
 				C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
+				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C22DB9D11E5422FF00D90DCA /* Approval.xcdatamodeld in Sources */,
+				C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */,
+				C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */,
 				C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */,
 				C22DB9C51E5422FF00D90DCA /* main.m in Sources */,
 			);
@@ -397,6 +415,7 @@
 				C22DB9DC1E5422FF00D90DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
