@@ -19,6 +19,15 @@
 		C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F2B1E568FA40044C921 /* HHomeViewController.m */; };
 		C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F2E1E568FB10044C921 /* HProcureViewController.m */; };
 		C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F311E568FC20044C921 /* HHrisViewController.m */; };
+		C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F341E56D4260044C921 /* MenuViewCell.m */; };
+		C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D61E5D30D60092BAE7 /* PRViewController.m */; };
+		C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */; };
+		C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59DC1E5D32D60092BAE7 /* POViewController.m */; };
+		C2EB59E01E5D32E90092BAE7 /* TaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */; };
+		C2EB59E31E5D33010092BAE7 /* PMNotifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */; };
+		C2EB59E61E5D330C0092BAE7 /* BOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */; };
+		C2EB59E91E5D33200092BAE7 /* PMContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */; };
+		C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +52,24 @@
 		C2373F2E1E568FB10044C921 /* HProcureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HProcureViewController.m; sourceTree = "<group>"; };
 		C2373F301E568FC20044C921 /* HHrisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHrisViewController.h; sourceTree = "<group>"; };
 		C2373F311E568FC20044C921 /* HHrisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHrisViewController.m; sourceTree = "<group>"; };
+		C2373F331E56D4260044C921 /* MenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewCell.h; sourceTree = "<group>"; };
+		C2373F341E56D4260044C921 /* MenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewCell.m; sourceTree = "<group>"; };
+		C2EB59D51E5D30D60092BAE7 /* PRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewController.h; sourceTree = "<group>"; };
+		C2EB59D61E5D30D60092BAE7 /* PRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewController.m; sourceTree = "<group>"; };
+		C2EB59D81E5D30F20092BAE7 /* PRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewController.h; sourceTree = "<group>"; };
+		C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRDetailViewController.m; sourceTree = "<group>"; };
+		C2EB59DB1E5D32D60092BAE7 /* POViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POViewController.h; sourceTree = "<group>"; };
+		C2EB59DC1E5D32D60092BAE7 /* POViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POViewController.m; sourceTree = "<group>"; };
+		C2EB59DE1E5D32E90092BAE7 /* TaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxViewController.h; sourceTree = "<group>"; };
+		C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxViewController.m; sourceTree = "<group>"; };
+		C2EB59E11E5D33010092BAE7 /* PMNotifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNotifViewController.h; sourceTree = "<group>"; };
+		C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNotifViewController.m; sourceTree = "<group>"; };
+		C2EB59E41E5D330C0092BAE7 /* BOSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOSViewController.h; sourceTree = "<group>"; };
+		C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOSViewController.m; sourceTree = "<group>"; };
+		C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMContractViewController.h; sourceTree = "<group>"; };
+		C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMContractViewController.m; sourceTree = "<group>"; };
+		C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewCell.h; sourceTree = "<group>"; };
+		C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewCell.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +123,8 @@
 		C22DB9C21E5422FF00D90DCA /* Approval */ = {
 			isa = PBXGroup;
 			children = (
+				C2EB59EA1E5D470C0092BAE7 /* cells */,
+				C2EB59D41E5D2FB70092BAE7 /* modules */,
 				C22DB9C61E5422FF00D90DCA /* AppDelegate.h */,
 				C22DB9C71E5422FF00D90DCA /* AppDelegate.m */,
 				C22DB9CC1E5422FF00D90DCA /* Main.storyboard */,
@@ -114,6 +143,8 @@
 				C2373F2E1E568FB10044C921 /* HProcureViewController.m */,
 				C2373F301E568FC20044C921 /* HHrisViewController.h */,
 				C2373F311E568FC20044C921 /* HHrisViewController.m */,
+				C2373F331E56D4260044C921 /* MenuViewCell.h */,
+				C2373F341E56D4260044C921 /* MenuViewCell.m */,
 			);
 			path = Approval;
 			sourceTree = "<group>";
@@ -124,6 +155,36 @@
 				C22DB9C41E5422FF00D90DCA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2EB59D41E5D2FB70092BAE7 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C2EB59D51E5D30D60092BAE7 /* PRViewController.h */,
+				C2EB59D61E5D30D60092BAE7 /* PRViewController.m */,
+				C2EB59D81E5D30F20092BAE7 /* PRDetailViewController.h */,
+				C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */,
+				C2EB59DB1E5D32D60092BAE7 /* POViewController.h */,
+				C2EB59DC1E5D32D60092BAE7 /* POViewController.m */,
+				C2EB59DE1E5D32E90092BAE7 /* TaxViewController.h */,
+				C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */,
+				C2EB59E41E5D330C0092BAE7 /* BOSViewController.h */,
+				C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */,
+				C2EB59E11E5D33010092BAE7 /* PMNotifViewController.h */,
+				C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */,
+				C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */,
+				C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
+		C2EB59EA1E5D470C0092BAE7 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */,
+				C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,14 +310,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */,
 				C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
+				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
+				C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */,
+				C2EB59E01E5D32E90092BAE7 /* TaxViewController.m in Sources */,
 				C22DB9D11E5422FF00D90DCA /* Approval.xcdatamodeld in Sources */,
+				C2EB59E61E5D330C0092BAE7 /* BOSViewController.m in Sources */,
+				C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */,
+				C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */,
 				C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */,
+				C2EB59E31E5D33010092BAE7 /* PMNotifViewController.m in Sources */,
 				C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */,
 				C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */,
 				C22DB9C51E5422FF00D90DCA /* main.m in Sources */,
+				C2EB59E91E5D33200092BAE7 /* PMContractViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4ATVYZ5YA;
 				INFOPLIST_FILE = Approval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4ATVYZ5YA;
 				INFOPLIST_FILE = Approval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";

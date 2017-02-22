@@ -40,11 +40,38 @@
 
 @implementation HomeViewController
 
-
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showPR)
+                                                 name:@"showPR" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showPO)
+                                                 name:@"showPO" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showTax)
+                                                 name:@"showTax" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showBOS)
+                                                 name:@"showBOS" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showPMNotif)
+                                                 name:@"showPMNotif" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showPOContract)
+                                                 name:@"showPOContract" object:nil];
+
+    
     self.title = @"SMI Approval";
     
     [_sc addTarget:self action:@selector(scTapped) forControlEvents:UIControlEventValueChanged];
@@ -231,6 +258,36 @@
     NSLog(@"hris");
     CGFloat w = self.view.bounds.size.width;
     [_sv setContentOffset:CGPointMake(w*2,0) animated:YES];
+}
+
+- (void)showPR {
+    NSLog(@"pr");
+    [self performSegueWithIdentifier:@"pr" sender:nil];
+}
+
+- (void)showPO {
+    NSLog(@"po");
+    [self performSegueWithIdentifier:@"po" sender:nil];
+}
+
+- (void)showTax {
+    NSLog(@"tax");
+    [self performSegueWithIdentifier:@"tax" sender:nil];
+}
+
+- (void)showBOS {
+    NSLog(@"bos");
+    [self performSegueWithIdentifier:@"bos" sender:nil];
+}
+
+- (void)showPMNotif {
+    NSLog(@"pmnotif");
+    [self performSegueWithIdentifier:@"pmnotif" sender:nil];
+}
+
+- (void)showPOContract {
+    NSLog(@"pocontract");
+    [self performSegueWithIdentifier:@"pocontract" sender:nil];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

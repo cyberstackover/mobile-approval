@@ -59,7 +59,6 @@
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    [manager.requestSerializer setValue:@"Basic Z3Nrc3RhZ2luZzY6TGlmZVdvcnRoTGl2aW5nMTc=" forHTTPHeaderField:@"Authorization"];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/c_auth" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
@@ -72,6 +71,10 @@
         
         if ([[result objectForKey:@"loginreturn"] boolValue]) {
             NSLog(@"login sukses");
+            
+            NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
+            [userdefault setObject:_tfUsername.text forKey:@"username"];
+            [userdefault synchronize];
             
             UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
