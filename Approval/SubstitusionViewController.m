@@ -1,28 +1,27 @@
 //
-//  PMContractViewController.m
+//  SubstitusionViewController.m
 //  Approval
 //
 //  Created by Dody Rachmat Wicaksono on 2/22/17.
 //  Copyright © 2017 Semen Indonesia. All rights reserved.
 //
 
-#import "PMContractViewController.h"
+#import "SubstitusionViewController.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
-#import "POContractViewCell.h"
 
-@interface PMContractViewController (){
+@interface SubstitusionViewController (){
     NSArray *list;
 }
 
 @end
 
-@implementation PMContractViewController
+@implementation SubstitusionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"PO Contract";
+    self.title = @"Substitusion";
     
     [self populateData];
     
@@ -39,7 +38,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_po_contract" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/get_substitusi" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -67,27 +66,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return list.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    POContractViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-
-    NSDictionary *item = [list objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.title.text = [NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.detail.text = [item objectForKey:@"vendor"];
-    cell.nominal.text = [item objectForKey:@"harga"];
+    // Configure the cell...
+    
     return cell;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
 }
+*/
 
 /*
 // Override to support editing the table view.

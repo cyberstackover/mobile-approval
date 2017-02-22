@@ -76,19 +76,25 @@
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    /*
-     Goal *item = [items objectAtIndex:indexPath.row];
-     
-     if ([item.add boolValue]) {
-     [self openAdd];
-     }
-     else if (![item.empty boolValue]) {
-     [[NSNotificationCenter defaultCenter] postNotificationName:@"goalDetailParam" object:item];
-     
-     [self openDetail];
-     }
-     */
+    
+    if (indexPath.row==0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showTravel" object:nil];
+    }
+    else if (indexPath.row==1) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showOvertime" object:nil];
+    }
+    else if (indexPath.row==2) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showSubstitusion" object:nil];
+    }
+    else if (indexPath.row==3) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showLeave" object:nil];
+    }
+    else if (indexPath.row==4) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showLSO" object:nil];
+    }
 }
+
+
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
@@ -105,6 +111,7 @@
     
     
 }
+
 
 /*
  - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {

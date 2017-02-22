@@ -71,6 +71,27 @@
                                              selector:@selector(showPOContract)
                                                  name:@"showPOContract" object:nil];
 
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showTravel)
+                                                 name:@"showTravel" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showOvertime)
+                                                 name:@"showOvertime" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showSubstitusion)
+                                                 name:@"showSubstitusion" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showLeave)
+                                                 name:@"showLeave" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showLSO)
+                                                 name:@"showLSO" object:nil];
+
     
     self.title = @"SMI Approval";
     
@@ -288,6 +309,26 @@
 - (void)showPOContract {
     NSLog(@"pocontract");
     [self performSegueWithIdentifier:@"pocontract" sender:nil];
+}
+
+- (void)showTravel {
+    [self performSegueWithIdentifier:@"travel" sender:nil];
+}
+
+- (void)showOvertime {
+    [self performSegueWithIdentifier:@"overtime" sender:nil];
+}
+
+- (void)showSubstitusion {
+    [self performSegueWithIdentifier:@"substitusion" sender:nil];
+}
+
+- (void)showLeave {
+    [self performSegueWithIdentifier:@"leave" sender:nil];
+}
+
+- (void)showLSO {
+    [self performSegueWithIdentifier:@"lso" sender:nil];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

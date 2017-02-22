@@ -30,6 +30,15 @@
 		C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */; };
 		C2EB59F01E5D60D20092BAE7 /* PMNotifViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */; };
 		C2EB59F31E5D60EB0092BAE7 /* POContractViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */; };
+		C2EB59F61E5D691E0092BAE7 /* TravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59F51E5D691E0092BAE7 /* TravelViewController.m */; };
+		C2EB59F91E5D69330092BAE7 /* OvertimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59F81E5D69330092BAE7 /* OvertimeViewController.m */; };
+		C2EB59FC1E5D69470092BAE7 /* SubstitusionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59FB1E5D69470092BAE7 /* SubstitusionViewController.m */; };
+		C2EB59FF1E5D69550092BAE7 /* LeaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */; };
+		C2EB5A021E5D69600092BAE7 /* LSOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A011E5D69600092BAE7 /* LSOViewController.m */; };
+		C2EB5A051E5D69F30092BAE7 /* TravelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */; };
+		C2EB5A081E5D69FD0092BAE7 /* OvertimeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A071E5D69FD0092BAE7 /* OvertimeViewCell.m */; };
+		C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */; };
+		C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +85,24 @@
 		C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNotifViewCell.m; sourceTree = "<group>"; };
 		C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractViewCell.h; sourceTree = "<group>"; };
 		C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractViewCell.m; sourceTree = "<group>"; };
+		C2EB59F41E5D691E0092BAE7 /* TravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewController.h; sourceTree = "<group>"; };
+		C2EB59F51E5D691E0092BAE7 /* TravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewController.m; sourceTree = "<group>"; };
+		C2EB59F71E5D69330092BAE7 /* OvertimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvertimeViewController.h; sourceTree = "<group>"; };
+		C2EB59F81E5D69330092BAE7 /* OvertimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvertimeViewController.m; sourceTree = "<group>"; };
+		C2EB59FA1E5D69470092BAE7 /* SubstitusionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitusionViewController.h; sourceTree = "<group>"; };
+		C2EB59FB1E5D69470092BAE7 /* SubstitusionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitusionViewController.m; sourceTree = "<group>"; };
+		C2EB59FD1E5D69550092BAE7 /* LeaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveViewController.h; sourceTree = "<group>"; };
+		C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewController.m; sourceTree = "<group>"; };
+		C2EB5A001E5D69600092BAE7 /* LSOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOViewController.h; sourceTree = "<group>"; };
+		C2EB5A011E5D69600092BAE7 /* LSOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSOViewController.m; sourceTree = "<group>"; };
+		C2EB5A031E5D69F30092BAE7 /* TravelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewCell.h; sourceTree = "<group>"; };
+		C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewCell.m; sourceTree = "<group>"; };
+		C2EB5A061E5D69FD0092BAE7 /* OvertimeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvertimeViewCell.h; sourceTree = "<group>"; };
+		C2EB5A071E5D69FD0092BAE7 /* OvertimeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvertimeViewCell.m; sourceTree = "<group>"; };
+		C2EB5A091E5D6A080092BAE7 /* LeaveViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveViewCell.h; sourceTree = "<group>"; };
+		C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewCell.m; sourceTree = "<group>"; };
+		C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOViewCell.h; sourceTree = "<group>"; };
+		C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSOViewCell.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +207,16 @@
 				C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */,
 				C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */,
 				C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */,
+				C2EB59F41E5D691E0092BAE7 /* TravelViewController.h */,
+				C2EB59F51E5D691E0092BAE7 /* TravelViewController.m */,
+				C2EB59F71E5D69330092BAE7 /* OvertimeViewController.h */,
+				C2EB59F81E5D69330092BAE7 /* OvertimeViewController.m */,
+				C2EB59FA1E5D69470092BAE7 /* SubstitusionViewController.h */,
+				C2EB59FB1E5D69470092BAE7 /* SubstitusionViewController.m */,
+				C2EB59FD1E5D69550092BAE7 /* LeaveViewController.h */,
+				C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */,
+				C2EB5A001E5D69600092BAE7 /* LSOViewController.h */,
+				C2EB5A011E5D69600092BAE7 /* LSOViewController.m */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -193,6 +230,14 @@
 				C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */,
 				C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */,
 				C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */,
+				C2EB5A031E5D69F30092BAE7 /* TravelViewCell.h */,
+				C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */,
+				C2EB5A061E5D69FD0092BAE7 /* OvertimeViewCell.h */,
+				C2EB5A071E5D69FD0092BAE7 /* OvertimeViewCell.m */,
+				C2EB5A091E5D6A080092BAE7 /* LeaveViewCell.h */,
+				C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */,
+				C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */,
+				C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -320,23 +365,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2EB59F91E5D69330092BAE7 /* OvertimeViewController.m in Sources */,
 				C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */,
 				C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */,
+				C2EB5A021E5D69600092BAE7 /* LSOViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
+				C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */,
+				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
 				C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */,
 				C2EB59E01E5D32E90092BAE7 /* TaxViewController.m in Sources */,
 				C22DB9D11E5422FF00D90DCA /* Approval.xcdatamodeld in Sources */,
 				C2EB59F31E5D60EB0092BAE7 /* POContractViewCell.m in Sources */,
+				C2EB59FC1E5D69470092BAE7 /* SubstitusionViewController.m in Sources */,
 				C2EB59F01E5D60D20092BAE7 /* PMNotifViewCell.m in Sources */,
 				C2EB59E61E5D330C0092BAE7 /* BOSViewController.m in Sources */,
 				C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */,
 				C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */,
 				C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */,
+				C2EB59F61E5D691E0092BAE7 /* TravelViewController.m in Sources */,
 				C2EB59E31E5D33010092BAE7 /* PMNotifViewController.m in Sources */,
+				C2EB5A051E5D69F30092BAE7 /* TravelViewCell.m in Sources */,
+				C2EB59FF1E5D69550092BAE7 /* LeaveViewController.m in Sources */,
 				C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */,
 				C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */,
+				C2EB5A081E5D69FD0092BAE7 /* OvertimeViewCell.m in Sources */,
 				C22DB9C51E5422FF00D90DCA /* main.m in Sources */,
 				C2EB59E91E5D33200092BAE7 /* PMContractViewController.m in Sources */,
 			);

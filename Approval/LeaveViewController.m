@@ -1,28 +1,28 @@
 //
-//  PMContractViewController.m
+//  LeaveViewController.m
 //  Approval
 //
 //  Created by Dody Rachmat Wicaksono on 2/22/17.
 //  Copyright © 2017 Semen Indonesia. All rights reserved.
 //
 
-#import "PMContractViewController.h"
+#import "LeaveViewController.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
-#import "POContractViewCell.h"
+#import "LeaveViewCell.h"
 
-@interface PMContractViewController (){
+@interface LeaveViewController (){
     NSArray *list;
 }
 
 @end
 
-@implementation PMContractViewController
+@implementation LeaveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"PO Contract";
+    self.title = @"Leave";
     
     [self populateData];
     
@@ -39,11 +39,11 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_po_contract" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/get_data_cuti" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
-        list = responseObject;
+        list = [responseObject objectForKey:@"data"];
         
         NSLog(@"list: %lu",(unsigned long)list.count);
         
@@ -75,19 +75,29 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    POContractViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-
+    LeaveViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
     NSDictionary *item = [list objectAtIndex:indexPath.row];
     
-    cell.title.text = [NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.detail.text = [item objectForKey:@"vendor"];
-    cell.nominal.text = [item objectForKey:@"harga"];
+    cell.person.text = [item objectForKey:@"person"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
+    cell.detail.text = [item objectForKey:@"reason"];
+    cell.place.text = [item objectForKey:@"place"];
+    cell.date.text = [item objectForKey:@"times"];
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 100;
 }
+
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
 
 /*
 // Override to support editing the table view.
