@@ -39,6 +39,8 @@
 		C2EB5A081E5D69FD0092BAE7 /* OvertimeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A071E5D69FD0092BAE7 /* OvertimeViewCell.m */; };
 		C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */; };
 		C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */; };
+		C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */; };
+		C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,10 @@
 		C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewCell.m; sourceTree = "<group>"; };
 		C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOViewCell.h; sourceTree = "<group>"; };
 		C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSOViewCell.m; sourceTree = "<group>"; };
+		C2EB5A0F1E5DBA5B0092BAE7 /* POContractDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractDetailViewController.h; sourceTree = "<group>"; };
+		C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractDetailViewController.m; sourceTree = "<group>"; };
+		C2EB5A121E5E36680092BAE7 /* POContractDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractDetailViewCell.h; sourceTree = "<group>"; };
+		C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractDetailViewCell.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +213,8 @@
 				C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */,
 				C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */,
 				C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */,
+				C2EB5A0F1E5DBA5B0092BAE7 /* POContractDetailViewController.h */,
+				C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */,
 				C2EB59F41E5D691E0092BAE7 /* TravelViewController.h */,
 				C2EB59F51E5D691E0092BAE7 /* TravelViewController.m */,
 				C2EB59F71E5D69330092BAE7 /* OvertimeViewController.h */,
@@ -230,6 +238,8 @@
 				C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */,
 				C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */,
 				C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */,
+				C2EB5A121E5E36680092BAE7 /* POContractDetailViewCell.h */,
+				C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */,
 				C2EB5A031E5D69F30092BAE7 /* TravelViewCell.h */,
 				C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */,
 				C2EB5A061E5D69FD0092BAE7 /* OvertimeViewCell.h */,
@@ -371,7 +381,9 @@
 				C2EB5A021E5D69600092BAE7 /* LSOViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
 				C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */,
+				C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */,
 				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
+				C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
 				C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */,
@@ -511,12 +523,15 @@
 			baseConfigurationReference = 267B6C6D9AB7E86F1E198984 /* Pods-Approval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N4ATVYZ5YA;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -525,12 +540,15 @@
 			baseConfigurationReference = E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N4ATVYZ5YA;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

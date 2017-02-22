@@ -10,6 +10,7 @@
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 #import "POContractViewCell.h"
+#import "POContractDetailViewController.h"
 
 @interface PMContractViewController (){
     NSArray *list;
@@ -22,10 +23,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadPOContract)
+                                                 name:@"reloadPOContract" object:nil];
+
     self.title = @"PO Contract";
     
     [self populateData];
     
+}
+
+- (void)reloadPOContract {
+    [self populateData];
 }
 
 - (void)populateData {
@@ -87,6 +96,17 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"detail" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSDictionary *item = [list objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    POContractDetailViewController *vc = segue.destinationViewController;
+    vc.data = item;
 }
 
 /*
