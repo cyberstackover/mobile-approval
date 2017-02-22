@@ -7,8 +7,13 @@
 //
 
 #import "PMNotifViewController.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "PMNotifViewCell.h"
 
-@interface PMNotifViewController ()
+@interface PMNotifViewController (){
+    NSArray *list;
+}
 
 @end
 
@@ -17,13 +22,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.title = @"PM Notif";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self populateData];
+    
 }
 
+- (void)populateData {
+    [SVProgressHUD showWithStatus:@"Please wait.."];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+    
+    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+    [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
+    
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_pmnotif" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        list = [responseObject objectForKey:@"data"];
+        
+        NSLog(@"list: %lu",(unsigned long)list.count);
+        
+        [self.tableView reloadData];
+        
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"error: %@",error);
+        [SVProgressHUD dismiss];
+    }];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -32,24 +67,30 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return list.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    PMNotifViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    NSDictionary *item = [list objectAtIndex:indexPath.row];
+    
+    cell.title.text = [NSString stringWithFormat:@"Notifikasi No. %@",[item objectForKey:@"QMNUM"]];
+    cell.detail.text = [item objectForKey:@"QMTXT"];
+    cell.phone.text = [item objectForKey:@"ZZTELP"];
+    cell.tujuan.text = [item objectForKey:@"TUJUAN_DESC"];
+    cell.type.text = [NSString stringWithFormat:@"Tipe: %@",[item objectForKey:@"QMART"]];
+    
+    
+    
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

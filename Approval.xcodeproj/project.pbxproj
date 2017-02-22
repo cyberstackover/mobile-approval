@@ -28,6 +28,8 @@
 		C2EB59E61E5D330C0092BAE7 /* BOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */; };
 		C2EB59E91E5D33200092BAE7 /* PMContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */; };
 		C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */; };
+		C2EB59F01E5D60D20092BAE7 /* PMNotifViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */; };
+		C2EB59F31E5D60EB0092BAE7 /* POContractViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,10 @@
 		C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMContractViewController.m; sourceTree = "<group>"; };
 		C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewCell.h; sourceTree = "<group>"; };
 		C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewCell.m; sourceTree = "<group>"; };
+		C2EB59EE1E5D60D10092BAE7 /* PMNotifViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNotifViewCell.h; sourceTree = "<group>"; };
+		C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNotifViewCell.m; sourceTree = "<group>"; };
+		C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractViewCell.h; sourceTree = "<group>"; };
+		C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractViewCell.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +189,10 @@
 			children = (
 				C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */,
 				C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */,
+				C2EB59EE1E5D60D10092BAE7 /* PMNotifViewCell.h */,
+				C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */,
+				C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */,
+				C2EB59F21E5D60EB0092BAE7 /* POContractViewCell.m */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -318,6 +328,8 @@
 				C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */,
 				C2EB59E01E5D32E90092BAE7 /* TaxViewController.m in Sources */,
 				C22DB9D11E5422FF00D90DCA /* Approval.xcdatamodeld in Sources */,
+				C2EB59F31E5D60EB0092BAE7 /* POContractViewCell.m in Sources */,
+				C2EB59F01E5D60D20092BAE7 /* PMNotifViewCell.m in Sources */,
 				C2EB59E61E5D330C0092BAE7 /* BOSViewController.m in Sources */,
 				C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */,
 				C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */,

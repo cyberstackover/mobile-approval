@@ -89,7 +89,7 @@
     cell.nominal.text = [item objectForKey:@"amount"];
     cell.date.text = [item objectForKey:@"c_date"];
     
-    NSLog(@"pr: %@",[item objectForKey:@"pr"]);
+    //NSLog(@"pr: %@",[item objectForKey:@"pr"]);
     
     return cell;
 }
