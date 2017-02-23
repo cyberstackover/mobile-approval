@@ -117,23 +117,29 @@
         
         NSLog(@"responseObject: %@",responseObject);
         
-        UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:@"SIM Approval"
-                                     message:@"Anda sukses menyetujui item tersebut"
-                                     preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* okButton = [UIAlertAction
-                                    actionWithTitle:@"OK"
-                                    style:UIAlertActionStyleDefault
-                                    handler:^(UIAlertAction * action) {
-                                        [self doBack];
-                                    }];
-        
-        [alert addAction:okButton];
-        
-        [self presentViewController:alert animated:YES completion:nil];
+        if ([[responseObject objectForKey:@"success"] boolValue]) {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:@"Anda sukses menyetujui item tersebut"
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self doBack];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
+        }
+        else {
+            
+        }
 
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
         
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -145,6 +151,7 @@
 }
 
 - (void)doBack {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

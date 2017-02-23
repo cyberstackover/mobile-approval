@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PRDetailViewController : UIViewController
+@interface PRDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property NSDictionary *data;
 
 @end

@@ -10,6 +10,7 @@
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 #import "PRViewCell.h"
+#import "PRDetailViewController.h"
 
 @interface PRViewController () {
     NSArray *list;
@@ -24,8 +25,16 @@
     
     self.title = @"Purchase Requsition";
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadPR)
+                                                 name:@"reloadPR" object:nil];
+    
     [self populateData];
     
+}
+
+- (void)reloadPR {
+    [self populateData];
 }
 
 - (void)populateData {
@@ -92,6 +101,17 @@
     //NSLog(@"pr: %@",[item objectForKey:@"pr"]);
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"detail" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSDictionary *item = [list objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    PRDetailViewController *vc = segue.destinationViewController;
+    vc.data = item;
 }
 
 

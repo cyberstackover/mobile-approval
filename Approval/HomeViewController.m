@@ -46,6 +46,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showPR)
