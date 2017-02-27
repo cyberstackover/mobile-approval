@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PMContractViewController : UITableViewController
+@interface PMContractViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end

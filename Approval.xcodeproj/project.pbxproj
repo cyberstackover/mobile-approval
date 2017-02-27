@@ -291,8 +291,8 @@
 				TargetAttributes = {
 					C22DB9BF1E5422FF00D90DCA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N4ATVYZ5YA;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VBTEZ42LJ7;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -529,15 +529,15 @@
 			baseConfigurationReference = 267B6C6D9AB7E86F1E198984 /* Pods-Approval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N4ATVYZ5YA;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = VBTEZ42LJ7;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "43d33403-3c17-46c4-a558-a21fb3675c97";
+				PROVISIONING_PROFILE_SPECIFIER = "Approval Adhoc";
 			};
 			name = Debug;
 		};
@@ -546,15 +546,15 @@
 			baseConfigurationReference = E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N4ATVYZ5YA;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = VBTEZ42LJ7;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "43d33403-3c17-46c4-a558-a21fb3675c97";
+				PROVISIONING_PROFILE_SPECIFIER = "Approval Adhoc";
 			};
 			name = Release;
 		};

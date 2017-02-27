@@ -71,7 +71,7 @@
 }
 
 - (IBAction)btnTapped:(id)sender {
-    UIAlertController * alert = [UIAlertController
+    UIAlertController* alert = [UIAlertController
                                  alertControllerWithTitle:@"SIM Approval"
                                  message:@"Apakah anda ingin menyetujui item ini"
                                  preferredStyle:UIAlertControllerStyleAlert];

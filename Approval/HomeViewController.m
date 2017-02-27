@@ -111,6 +111,41 @@
     [self addHome];
     [self addProcure];
     [self addHris];
+    
+    UIBarButtonItem *btnLogout = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
+    self.navigationItem.rightBarButtonItem = btnLogout;
+}
+
+- (void)logout {
+    UIAlertController* alert = [UIAlertController
+                                alertControllerWithTitle:@"SIM Approval"
+                                message:@"Apakah anda ingin keluar"
+                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"Ya"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                    [self doLogout];
+                                }];
+    
+    UIAlertAction* noButton = [UIAlertAction
+                               actionWithTitle:@"Tidak"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   //Handle no, thanks button
+                               }];
+    
+    [alert addAction:yesButton];
+    [alert addAction:noButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)doLogout {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"login"];
+    [[[[UIApplication sharedApplication] windows] firstObject] setRootViewController:vc];
 }
 
 - (void)addHome {

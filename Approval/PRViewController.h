@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PRViewController : UITableViewController
+@interface PRViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end
