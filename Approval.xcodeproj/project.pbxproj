@@ -42,6 +42,9 @@
 		C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */; };
 		C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */; };
 		C2EB5A171E5E6ED10092BAE7 /* PRDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB5A161E5E6ED10092BAE7 /* PRDetailViewCell.m */; };
+		C2F582031E6CF9F600275AD8 /* PODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F582021E6CF9F600275AD8 /* PODetailViewController.m */; };
+		C2F582061E6CFB9700275AD8 /* POViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F582051E6CFB9700275AD8 /* POViewCell.m */; };
+		C2F582091E6D0EE700275AD8 /* PODetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F582081E6D0EE700275AD8 /* PODetailViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,12 @@
 		C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractDetailViewCell.m; sourceTree = "<group>"; };
 		C2EB5A151E5E6ED10092BAE7 /* PRDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewCell.h; sourceTree = "<group>"; };
 		C2EB5A161E5E6ED10092BAE7 /* PRDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRDetailViewCell.m; sourceTree = "<group>"; };
+		C2F582011E6CF9F600275AD8 /* PODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PODetailViewController.h; sourceTree = "<group>"; };
+		C2F582021E6CF9F600275AD8 /* PODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PODetailViewController.m; sourceTree = "<group>"; };
+		C2F582041E6CFB9700275AD8 /* POViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POViewCell.h; sourceTree = "<group>"; };
+		C2F582051E6CFB9700275AD8 /* POViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POViewCell.m; sourceTree = "<group>"; };
+		C2F582071E6D0EE700275AD8 /* PODetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PODetailViewCell.h; sourceTree = "<group>"; };
+		C2F582081E6D0EE700275AD8 /* PODetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PODetailViewCell.m; sourceTree = "<group>"; };
 		E2153CF0B2A7CCBC2F6600B4 /* Pods-Approval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.release.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +217,8 @@
 				C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */,
 				C2EB59DB1E5D32D60092BAE7 /* POViewController.h */,
 				C2EB59DC1E5D32D60092BAE7 /* POViewController.m */,
+				C2F582011E6CF9F600275AD8 /* PODetailViewController.h */,
+				C2F582021E6CF9F600275AD8 /* PODetailViewController.m */,
 				C2EB59DE1E5D32E90092BAE7 /* TaxViewController.h */,
 				C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */,
 				C2EB59E41E5D330C0092BAE7 /* BOSViewController.h */,
@@ -239,6 +250,10 @@
 				C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */,
 				C2EB5A151E5E6ED10092BAE7 /* PRDetailViewCell.h */,
 				C2EB5A161E5E6ED10092BAE7 /* PRDetailViewCell.m */,
+				C2F582041E6CFB9700275AD8 /* POViewCell.h */,
+				C2F582051E6CFB9700275AD8 /* POViewCell.m */,
+				C2F582071E6D0EE700275AD8 /* PODetailViewCell.h */,
+				C2F582081E6D0EE700275AD8 /* PODetailViewCell.m */,
 				C2EB59EE1E5D60D10092BAE7 /* PMNotifViewCell.h */,
 				C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */,
 				C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */,
@@ -384,8 +399,10 @@
 				C2EB5A171E5E6ED10092BAE7 /* PRDetailViewCell.m in Sources */,
 				C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */,
 				C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */,
+				C2F582031E6CF9F600275AD8 /* PODetailViewController.m in Sources */,
 				C2EB5A021E5D69600092BAE7 /* LSOViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
+				C2F582061E6CFB9700275AD8 /* POViewCell.m in Sources */,
 				C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */,
 				C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */,
 				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
@@ -408,6 +425,7 @@
 				C2EB59FF1E5D69550092BAE7 /* LeaveViewController.m in Sources */,
 				C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */,
 				C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */,
+				C2F582091E6D0EE700275AD8 /* PODetailViewCell.m in Sources */,
 				C2EB5A081E5D69FD0092BAE7 /* OvertimeViewCell.m in Sources */,
 				C22DB9C51E5422FF00D90DCA /* main.m in Sources */,
 				C2EB59E91E5D33200092BAE7 /* PMContractViewController.m in Sources */,

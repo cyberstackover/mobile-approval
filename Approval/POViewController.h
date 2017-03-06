@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface POViewController : UITableViewController
+@interface POViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end
