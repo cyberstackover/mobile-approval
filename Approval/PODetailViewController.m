@@ -152,7 +152,7 @@
 }
 
 - (void)doBack {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPO" object:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
