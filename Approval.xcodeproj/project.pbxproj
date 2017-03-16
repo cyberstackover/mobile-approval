@@ -20,6 +20,13 @@
 		C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F2E1E568FB10044C921 /* HProcureViewController.m */; };
 		C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F311E568FC20044C921 /* HHrisViewController.m */; };
 		C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2373F341E56D4260044C921 /* MenuViewCell.m */; };
+		C23F778E1E7258D3007128A8 /* BosDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F778D1E7258D3007128A8 /* BosDetailViewController.m */; };
+		C23F77911E7258F0007128A8 /* TaxDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F77901E7258F0007128A8 /* TaxDetailViewController.m */; };
+		C23F77971E728E84007128A8 /* BosViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F77961E728E84007128A8 /* BosViewCell.m */; };
+		C24B412F1E79086C00C87F78 /* BosDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B412E1E79086C00C87F78 /* BosDetailViewCell.m */; };
+		C24B41321E790E6700C87F78 /* TaxViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41311E790E6600C87F78 /* TaxViewCell.m */; };
+		C24B41351E790E7E00C87F78 /* TaxDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41341E790E7E00C87F78 /* TaxDetailViewCell.m */; };
+		C24B41381E790EBC00C87F78 /* SubstitutionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41371E790EBC00C87F78 /* SubstitutionViewCell.m */; };
 		C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D61E5D30D60092BAE7 /* PRViewController.m */; };
 		C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */; };
 		C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59DC1E5D32D60092BAE7 /* POViewController.m */; };
@@ -71,6 +78,20 @@
 		C2373F311E568FC20044C921 /* HHrisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHrisViewController.m; sourceTree = "<group>"; };
 		C2373F331E56D4260044C921 /* MenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewCell.h; sourceTree = "<group>"; };
 		C2373F341E56D4260044C921 /* MenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewCell.m; sourceTree = "<group>"; };
+		C23F778C1E7258D3007128A8 /* BosDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosDetailViewController.h; sourceTree = "<group>"; };
+		C23F778D1E7258D3007128A8 /* BosDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BosDetailViewController.m; sourceTree = "<group>"; };
+		C23F778F1E7258F0007128A8 /* TaxDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxDetailViewController.h; sourceTree = "<group>"; };
+		C23F77901E7258F0007128A8 /* TaxDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxDetailViewController.m; sourceTree = "<group>"; };
+		C23F77951E728E84007128A8 /* BosViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosViewCell.h; sourceTree = "<group>"; };
+		C23F77961E728E84007128A8 /* BosViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BosViewCell.m; sourceTree = "<group>"; };
+		C24B412D1E79086C00C87F78 /* BosDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosDetailViewCell.h; sourceTree = "<group>"; };
+		C24B412E1E79086C00C87F78 /* BosDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BosDetailViewCell.m; sourceTree = "<group>"; };
+		C24B41301E790E6600C87F78 /* TaxViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxViewCell.h; sourceTree = "<group>"; };
+		C24B41311E790E6600C87F78 /* TaxViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxViewCell.m; sourceTree = "<group>"; };
+		C24B41331E790E7E00C87F78 /* TaxDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxDetailViewCell.h; sourceTree = "<group>"; };
+		C24B41341E790E7E00C87F78 /* TaxDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxDetailViewCell.m; sourceTree = "<group>"; };
+		C24B41361E790EBC00C87F78 /* SubstitutionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitutionViewCell.h; sourceTree = "<group>"; };
+		C24B41371E790EBC00C87F78 /* SubstitutionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitutionViewCell.m; sourceTree = "<group>"; };
 		C2EB59D51E5D30D60092BAE7 /* PRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewController.h; sourceTree = "<group>"; };
 		C2EB59D61E5D30D60092BAE7 /* PRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewController.m; sourceTree = "<group>"; };
 		C2EB59D81E5D30F20092BAE7 /* PRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewController.h; sourceTree = "<group>"; };
@@ -221,8 +242,12 @@
 				C2F582021E6CF9F600275AD8 /* PODetailViewController.m */,
 				C2EB59DE1E5D32E90092BAE7 /* TaxViewController.h */,
 				C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */,
+				C23F778F1E7258F0007128A8 /* TaxDetailViewController.h */,
+				C23F77901E7258F0007128A8 /* TaxDetailViewController.m */,
 				C2EB59E41E5D330C0092BAE7 /* BOSViewController.h */,
 				C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */,
+				C23F778C1E7258D3007128A8 /* BosDetailViewController.h */,
+				C23F778D1E7258D3007128A8 /* BosDetailViewController.m */,
 				C2EB59E11E5D33010092BAE7 /* PMNotifViewController.h */,
 				C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */,
 				C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */,
@@ -254,6 +279,14 @@
 				C2F582051E6CFB9700275AD8 /* POViewCell.m */,
 				C2F582071E6D0EE700275AD8 /* PODetailViewCell.h */,
 				C2F582081E6D0EE700275AD8 /* PODetailViewCell.m */,
+				C24B41301E790E6600C87F78 /* TaxViewCell.h */,
+				C24B41311E790E6600C87F78 /* TaxViewCell.m */,
+				C24B41331E790E7E00C87F78 /* TaxDetailViewCell.h */,
+				C24B41341E790E7E00C87F78 /* TaxDetailViewCell.m */,
+				C23F77951E728E84007128A8 /* BosViewCell.h */,
+				C23F77961E728E84007128A8 /* BosViewCell.m */,
+				C24B412D1E79086C00C87F78 /* BosDetailViewCell.h */,
+				C24B412E1E79086C00C87F78 /* BosDetailViewCell.m */,
 				C2EB59EE1E5D60D10092BAE7 /* PMNotifViewCell.h */,
 				C2EB59EF1E5D60D10092BAE7 /* PMNotifViewCell.m */,
 				C2EB59F11E5D60EB0092BAE7 /* POContractViewCell.h */,
@@ -264,6 +297,8 @@
 				C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */,
 				C2EB5A061E5D69FD0092BAE7 /* OvertimeViewCell.h */,
 				C2EB5A071E5D69FD0092BAE7 /* OvertimeViewCell.m */,
+				C24B41361E790EBC00C87F78 /* SubstitutionViewCell.h */,
+				C24B41371E790EBC00C87F78 /* SubstitutionViewCell.m */,
 				C2EB5A091E5D6A080092BAE7 /* LeaveViewCell.h */,
 				C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */,
 				C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */,
@@ -398,20 +433,26 @@
 				C2EB59F91E5D69330092BAE7 /* OvertimeViewController.m in Sources */,
 				C2EB5A171E5E6ED10092BAE7 /* PRDetailViewCell.m in Sources */,
 				C2373F351E56D4260044C921 /* MenuViewCell.m in Sources */,
+				C24B41381E790EBC00C87F78 /* SubstitutionViewCell.m in Sources */,
 				C22DB9DF1E54231C00D90DCA /* LoginViewController.m in Sources */,
 				C2F582031E6CF9F600275AD8 /* PODetailViewController.m in Sources */,
 				C2EB5A021E5D69600092BAE7 /* LSOViewController.m in Sources */,
 				C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */,
 				C2F582061E6CFB9700275AD8 /* POViewCell.m in Sources */,
+				C24B41321E790E6700C87F78 /* TaxViewCell.m in Sources */,
 				C2EB5A0E1E5D6A110092BAE7 /* LSOViewCell.m in Sources */,
 				C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */,
 				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
 				C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
+				C24B412F1E79086C00C87F78 /* BosDetailViewCell.m in Sources */,
 				C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */,
+				C24B41351E790E7E00C87F78 /* TaxDetailViewCell.m in Sources */,
+				C23F77911E7258F0007128A8 /* TaxDetailViewController.m in Sources */,
 				C2EB59E01E5D32E90092BAE7 /* TaxViewController.m in Sources */,
 				C22DB9D11E5422FF00D90DCA /* Approval.xcdatamodeld in Sources */,
+				C23F77971E728E84007128A8 /* BosViewCell.m in Sources */,
 				C2EB59F31E5D60EB0092BAE7 /* POContractViewCell.m in Sources */,
 				C2EB59FC1E5D69470092BAE7 /* SubstitusionViewController.m in Sources */,
 				C2EB59F01E5D60D20092BAE7 /* PMNotifViewCell.m in Sources */,
@@ -419,6 +460,7 @@
 				C2EB59ED1E5D47220092BAE7 /* PRViewCell.m in Sources */,
 				C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */,
 				C2373F2F1E568FB10044C921 /* HProcureViewController.m in Sources */,
+				C23F778E1E7258D3007128A8 /* BosDetailViewController.m in Sources */,
 				C2EB59F61E5D691E0092BAE7 /* TravelViewController.m in Sources */,
 				C2EB59E31E5D33010092BAE7 /* PMNotifViewController.m in Sources */,
 				C2EB5A051E5D69F30092BAE7 /* TravelViewCell.m in Sources */,

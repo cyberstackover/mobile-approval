@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BOSViewController : UITableViewController
+@interface BOSViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end
