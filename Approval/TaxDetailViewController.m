@@ -31,11 +31,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _nopr.text = [NSString stringWithFormat:@"PR No. %@",[_data objectForKey:@"pr"]];
-    _owner.text = [_data objectForKey:@"created_by"];
-    _nominal.text = [_data objectForKey:@"amount"];
+    _nopr.text = [_header objectForKey:@"DESC"];
+    _owner.text = [_header objectForKey:@"AMOUNT"];
+    _nominal.hidden = YES;
     
-    list = [_data objectForKey:@"detailpr"];
+    list = _data;
+    
     [self.tableView reloadData];
     
 }
@@ -55,11 +56,11 @@
     
     NSDictionary *item = [list objectAtIndex:indexPath.row];
     
-    cell.pr.text = [item objectForKey:@"itempr"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.material.text = [item objectForKey:@"material"];
-    cell.qty.text = [item objectForKey:@"quantity"];
-    cell.nominal.text = [item objectForKey:@"amount"];
-    cell.date.text = [item objectForKey:@"delv_date"];
+    cell.pr.text = [NSString stringWithFormat:@"SSP No. %@",[item objectForKey:@"SSP"]];
+    cell.material.text = [item objectForKey:@"VENDOR"];
+    cell.qty.text = [item objectForKey:@"STREET"];
+    cell.nominal.text = [item objectForKey:@"AMOUNT"];
+    cell.date.hidden = YES;
     
     return cell;
 }
@@ -75,7 +76,7 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
-    [param setObject:[_data objectForKey:@"BUKRS"] forKey:@"month"];
+    [param setObject:[_header objectForKey:@"month"] forKey:@"month"];
 
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
@@ -126,7 +127,7 @@
 
 
 - (void)doBack {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPR" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadTax" object:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -172,29 +173,4 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (IBAction)btnRejectTapped:(id)sender {
-    UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:@"SIM Approval"
-                                 message:@"Apakah anda ingin tidak menyetujui item ini"
-                                 preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction* yesButton = [UIAlertAction
-                                actionWithTitle:@"Ya"
-                                style:UIAlertActionStyleDefault
-                                handler:^(UIAlertAction * action) {
-                                    //[self doReject];
-                                }];
-    
-    UIAlertAction* noButton = [UIAlertAction
-                               actionWithTitle:@"Tidak"
-                               style:UIAlertActionStyleDefault
-                               handler:^(UIAlertAction * action) {
-                                   //Handle no, thanks button
-                               }];
-    
-    [alert addAction:yesButton];
-    [alert addAction:noButton];
-    
-    [self presentViewController:alert animated:YES completion:nil];
-}
 @end

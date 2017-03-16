@@ -10,6 +10,7 @@
 
 @interface TaxDetailViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
-@property NSDictionary *data;
+@property NSDictionary *header;
+@property NSArray *data;
 
 @end

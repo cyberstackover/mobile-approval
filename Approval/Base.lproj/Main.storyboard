@@ -825,7 +825,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-Dl-FDM">
                                 <rect key="frame" x="0.0" y="64" width="375" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail Purchase Requsition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1l-c0-7fB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail Tax Wapu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1l-c0-7fB">
                                         <rect key="frame" x="10" y="10" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="yr2-RO-RQ5"/>
@@ -970,7 +970,8 @@
                                 <rect key="frame" x="20" y="600" width="127" height="47"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ctX-MH-lV9"/>
+                                    <constraint firstAttribute="width" constant="130" id="Ahp-ps-gDQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="DpQ-8r-PzA"/>
                                 </constraints>
                                 <state key="normal" title="APPROVE">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -979,34 +980,16 @@
                                     <action selector="btnApproveTapped:" destination="uTO-gb-R7t" eventType="touchUpInside" id="5F7-j0-kP3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-CL-PUx">
-                                <rect key="frame" x="200" y="600" width="127" height="47"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="G55-gy-D2P"/>
-                                </constraints>
-                                <state key="normal" title="REJECT">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnRejectTapped:" destination="uTO-gb-R7t" eventType="touchUpInside" id="qD0-15-qAy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JYb-Dl-FDM" firstAttribute="top" secondItem="1GA-GQ-wPq" secondAttribute="bottom" id="2iI-K8-d7F"/>
-                            <constraint firstItem="CEQ-CL-PUx" firstAttribute="bottom" secondItem="Mko-69-Hiu" secondAttribute="bottom" id="4RE-SE-Uo2"/>
-                            <constraint firstItem="Mko-69-Hiu" firstAttribute="leading" secondItem="bgJ-X7-LIF" secondAttribute="leadingMargin" constant="30" id="8Db-4Y-BdT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CEQ-CL-PUx" secondAttribute="trailing" constant="30" id="9Qo-7M-2R6"/>
                             <constraint firstItem="gs7-Gh-YuC" firstAttribute="top" secondItem="Mko-69-Hiu" secondAttribute="bottom" constant="10" id="EKm-rZ-SUn"/>
-                            <constraint firstItem="CEQ-CL-PUx" firstAttribute="leading" secondItem="Mko-69-Hiu" secondAttribute="trailing" constant="20" id="I5a-Uw-IVR"/>
-                            <constraint firstItem="CEQ-CL-PUx" firstAttribute="width" secondItem="Mko-69-Hiu" secondAttribute="width" id="Qbc-ij-oI9"/>
-                            <constraint firstItem="CEQ-CL-PUx" firstAttribute="top" secondItem="Mko-69-Hiu" secondAttribute="top" id="RQ7-Yp-AOb"/>
                             <constraint firstAttribute="trailing" secondItem="JYb-Dl-FDM" secondAttribute="trailing" id="XnV-r3-1Yd"/>
                             <constraint firstItem="0sV-DQ-VTE" firstAttribute="trailing" secondItem="JYb-Dl-FDM" secondAttribute="trailing" id="XtP-nf-alu"/>
                             <constraint firstItem="Mko-69-Hiu" firstAttribute="top" secondItem="0sV-DQ-VTE" secondAttribute="bottom" constant="10" id="eNT-N9-B4t"/>
                             <constraint firstItem="JYb-Dl-FDM" firstAttribute="leading" secondItem="bgJ-X7-LIF" secondAttribute="leading" id="nYc-1o-rEI"/>
+                            <constraint firstItem="Mko-69-Hiu" firstAttribute="centerX" secondItem="bgJ-X7-LIF" secondAttribute="centerX" id="o8K-gO-n2R"/>
                             <constraint firstItem="0sV-DQ-VTE" firstAttribute="top" secondItem="JYb-Dl-FDM" secondAttribute="bottom" id="qdI-CF-Utz"/>
                             <constraint firstItem="0sV-DQ-VTE" firstAttribute="leading" secondItem="JYb-Dl-FDM" secondAttribute="leading" id="rSa-0l-qyV"/>
                         </constraints>

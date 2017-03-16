@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TaxViewController : UITableViewController
+@interface TaxViewController : UITableViewController{
+    long longPressIndex;
+    NSArray *item;
+}
 
 @end
