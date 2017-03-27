@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TravelViewController : UITableViewController
+@interface TravelViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeaveViewController : UITableViewController
+@interface LeaveViewController : UITableViewController{
+    long longPressIndex;
+}
+
 
 @end

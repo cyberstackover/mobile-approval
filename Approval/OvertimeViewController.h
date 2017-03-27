@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OvertimeViewController : UITableViewController
+@interface OvertimeViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end

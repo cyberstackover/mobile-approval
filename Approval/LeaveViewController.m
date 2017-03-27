@@ -84,6 +84,13 @@
     cell.place.text = [item objectForKey:@"place"];
     cell.date.text = [item objectForKey:@"times"];
     
+    cell.tag = indexPath.row;
+    
+    UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
+                                          initWithTarget:self action:@selector(handleLongPress:)];
+    lpgr.minimumPressDuration = 2.0; //seconds
+    [cell addGestureRecognizer:lpgr];
+    
     return cell;
 }
 
@@ -91,48 +98,160 @@
     return 100;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)handleLongPress:(UILongPressGestureRecognizer *)longPress {
+    if (longPress.state==UIGestureRecognizerStateBegan) {
+        NSLog(@"long press");
+        
+        longPressIndex = longPress.view.tag;
+        
+        UIAlertController* alert = [UIAlertController
+                                    alertControllerWithTitle:@"SIM Approval"
+                                    message:@"Apa yg ingin anda lakukan?"
+                                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* approveButton = [UIAlertAction
+                                        actionWithTitle:@"Approve"
+                                        style:UIAlertActionStyleDefault
+                                        handler:^(UIAlertAction * action) {
+                                            [self doApproval];
+                                        }];
+        
+        UIAlertAction* rejectButton = [UIAlertAction
+                                       actionWithTitle:@"Reject"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self doReject];
+                                       }];
+        
+        UIAlertAction* cancelButton = [UIAlertAction
+                                       actionWithTitle:@"Cancel"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           //Handle no, thanks button
+                                       }];
+        
+        [alert addAction:approveButton];
+        [alert addAction:rejectButton];
+        [alert addAction:cancelButton];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else if (longPress.state==UIGestureRecognizerStateEnded) {
+        
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)doApproval {
+    NSDictionary *data = [list objectAtIndex:longPressIndex];
+    
+    [SVProgressHUD showWithStatus:@"Please wait.."];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+    
+    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+    [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
+    [param setObject:@"Y" forKey:@"type"];
+    [param setObject:[data objectForKey:@"ct_id"] forKey:@"ct_id"];
+    
+    
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/approve_cuti" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        //list = responseObject;
+        
+        NSLog(@"responseObject: %@",responseObject);
+        
+        if ([[responseObject objectForKey:@"success"] boolValue]) {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:@"Anda sukses menyetujui item tersebut"
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
+        }
+        else {
+            
+        }
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"error: %@",error);
+        [SVProgressHUD dismiss];
+    }];
+    
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)doReject {
+    NSDictionary *data = [list objectAtIndex:longPressIndex];
+    
+    [SVProgressHUD showWithStatus:@"Please wait.."];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+    
+    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+    [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
+    [param setObject:@"X" forKey:@"type"];
+    [param setObject:[data objectForKey:@"ct_id"] forKey:@"ct_id"];
+    
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/approve_cuti" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        //list = responseObject;
+        
+        NSLog(@"responseObject: %@",responseObject);
+        
+        if ([[responseObject objectForKey:@"success"] boolValue]) {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:@"Anda sukses tidak menyetujui item tersebut"
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
+        }
+        else {
+            
+        }
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"error: %@",error);
+        [SVProgressHUD dismiss];
+    }];
+    
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
