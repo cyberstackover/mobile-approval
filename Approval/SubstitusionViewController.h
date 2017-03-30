@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SubstitusionViewController : UITableViewController
+@interface SubstitusionViewController : UITableViewController{
+    long longPressIndex;
+}
 
 @end
