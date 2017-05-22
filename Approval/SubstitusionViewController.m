@@ -2,7 +2,7 @@
 //  SubstitusionViewController.m
 //  Approval
 //
-//  Created by Dody Rachmat Wicaksono on 2/22/17.
+//  Created by Ryan Fabella on 2/22/17.
 //  Copyright © 2017 Semen Indonesia. All rights reserved.
 //
 
@@ -150,7 +150,7 @@
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
     [param setObject:@"Y" forKey:@"type"];
-    [param setObject:[data objectForKey:@"id_sub"] forKey:@"id_sub"];
+    [param setObject:[data objectForKey:@"id_sub"] forKey:@"ct_id"];
     
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
@@ -207,7 +207,7 @@
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
     [param setObject:@"X" forKey:@"type"];
-    [param setObject:[data objectForKey:@"id_sub"] forKey:@"id_sub"];
+    [param setObject:[data objectForKey:@"id_sub"] forKey:@"ct_id"];
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];

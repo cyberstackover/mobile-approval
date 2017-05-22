@@ -2,7 +2,7 @@
 //  PRDetailViewCell.m
 //  Approval
 //
-//  Created by Dody Rachmat Wicaksono on 2/23/17.
+//  Created by Ryan Fabella on 2/23/17.
 //  Copyright © 2017 Semen Indonesia. All rights reserved.
 //
 

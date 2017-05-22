@@ -2,7 +2,7 @@
 //  TaxDetailViewCell.m
 //  Approval
 //
-//  Created by Dody Rachmat Wicaksono on 3/15/17.
+//  Created by Ryan Fabella on 3/15/17.
 //  Copyright © 2017 Semen Indonesia. All rights reserved.
 //
 
