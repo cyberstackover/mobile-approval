@@ -28,7 +28,17 @@
     _nominal.text = [_data objectForKey:@"harga"];
     
     list = [_data objectForKey:@"podetail"];
-    listHistory = [_data objectForKey:@"histPO"];
+
+    if (![[_data objectForKey:@"histPO"] isKindOfClass:[NSNull class]]) {
+        NSLog(@"class: %@",[[_data objectForKey:@"histPO"] class]);
+        listHistory = [_data objectForKey:@"histPO"];
+    }
+    else {
+        listHistory = @[];
+        _lbApprovalHistory.hidden = YES;
+    }
+
+    
     [self.tableView reloadData];
     [self.tvHistory reloadData];
 
@@ -96,7 +106,7 @@
         return 90;
     }
     else {
-        return 40;
+        return 50;
     }
 }
 

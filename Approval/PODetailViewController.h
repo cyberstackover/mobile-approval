@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UITableView *tvHistory;
+@property (weak, nonatomic) IBOutlet UILabel *lbApprovalHistory;
 
 
 @property NSDictionary *data;
