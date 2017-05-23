@@ -8,6 +8,7 @@
 
 #import "PODetailViewController.h"
 #import "PODetailViewCell.h"
+#import "ApprovalHistoryViewCell.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 
@@ -20,12 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"data: %@",_data);
+    
     _ponum.text = [_data objectForKey:@"po"];
     _vendor.text = [_data objectForKey:@"vendor"];
     _nominal.text = [_data objectForKey:@"harga"];
     
     list = [_data objectForKey:@"podetail"];
+    listHistory = [_data objectForKey:@"histPO"];
     [self.tableView reloadData];
+    [self.tvHistory reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,25 +56,48 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return list.count;
+    if (tableView==self.tableView) {
+        return list.count;
+    }
+    else {
+        return listHistory.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    PODetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    NSDictionary *item = [list objectAtIndex:indexPath.row];
-    
-    cell.po.text = [item objectForKey:@"itempo"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.material.text = [item objectForKey:@"material"];
-    cell.qty.text = [item objectForKey:@"quantity"];
-    cell.nominal.text = [item objectForKey:@"amount"];
-    cell.date.text = [item objectForKey:@"deldate"];
-    
-    return cell;
+    if (tableView==self.tableView) {
+        PODetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        
+        NSDictionary *item = [list objectAtIndex:indexPath.row];
+        
+        cell.po.text = [item objectForKey:@"itempo"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
+        cell.material.text = [item objectForKey:@"material"];
+        cell.qty.text = [item objectForKey:@"quantity"];
+        cell.nominal.text = [item objectForKey:@"amount"];
+        cell.date.text = [item objectForKey:@"deldate"];
+        
+        return cell;
+    }
+    else {
+        ApprovalHistoryViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        
+        NSDictionary *item = [listHistory objectAtIndex:indexPath.row];
+        
+        cell.title.text = [item objectForKey:@"person"];
+        cell.date.text = [item objectForKey:@"dateTimes"];
+        
+        return cell;
+    }
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    if (tableView==self.tableView) {
+        return 90;
+    }
+    else {
+        return 40;
+    }
 }
 
 - (IBAction)btnTapped:(id)sender {

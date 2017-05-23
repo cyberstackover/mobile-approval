@@ -27,6 +27,7 @@
 		C24B41321E790E6700C87F78 /* TaxViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41311E790E6600C87F78 /* TaxViewCell.m */; };
 		C24B41351E790E7E00C87F78 /* TaxDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41341E790E7E00C87F78 /* TaxDetailViewCell.m */; };
 		C24B41381E790EBC00C87F78 /* SubstitutionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C24B41371E790EBC00C87F78 /* SubstitutionViewCell.m */; };
+		C28407161ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C28407151ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m */; };
 		C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D61E5D30D60092BAE7 /* PRViewController.m */; };
 		C2EB59DA1E5D30F20092BAE7 /* PRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */; };
 		C2EB59DD1E5D32D60092BAE7 /* POViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB59DC1E5D32D60092BAE7 /* POViewController.m */; };
@@ -92,6 +93,8 @@
 		C24B41341E790E7E00C87F78 /* TaxDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxDetailViewCell.m; sourceTree = "<group>"; };
 		C24B41361E790EBC00C87F78 /* SubstitutionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitutionViewCell.h; sourceTree = "<group>"; };
 		C24B41371E790EBC00C87F78 /* SubstitutionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitutionViewCell.m; sourceTree = "<group>"; };
+		C28407141ED2FEA50011CCA1 /* ApprovalHistoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalHistoryViewCell.h; sourceTree = "<group>"; };
+		C28407151ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalHistoryViewCell.m; sourceTree = "<group>"; };
 		C2EB59D51E5D30D60092BAE7 /* PRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewController.h; sourceTree = "<group>"; };
 		C2EB59D61E5D30D60092BAE7 /* PRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewController.m; sourceTree = "<group>"; };
 		C2EB59D81E5D30F20092BAE7 /* PRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewController.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 		C2EB59EA1E5D470C0092BAE7 /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				C28407141ED2FEA50011CCA1 /* ApprovalHistoryViewCell.h */,
+				C28407151ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m */,
 				C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */,
 				C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */,
 				C2EB5A151E5E6ED10092BAE7 /* PRDetailViewCell.h */,
@@ -444,6 +449,7 @@
 				C2EB5A141E5E36680092BAE7 /* POContractDetailViewCell.m in Sources */,
 				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
 				C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */,
+				C28407161ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
 				C24B412F1E79086C00C87F78 /* BosDetailViewCell.m in Sources */,

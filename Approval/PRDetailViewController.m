@@ -8,16 +8,20 @@
 
 #import "PRDetailViewController.h"
 #import "PRDetailViewCell.h"
+#import "ApprovalHistoryViewCell.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 
 @interface PRDetailViewController (){
     NSArray *list;
+    NSArray *listHistory;
 }
 @property (weak, nonatomic) IBOutlet UILabel *nopr;
 @property (weak, nonatomic) IBOutlet UILabel *owner;
 @property (weak, nonatomic) IBOutlet UILabel *nominal;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tvHistory;
+@property (weak, nonatomic) IBOutlet UILabel *lbApprovalHistory;
 
 - (IBAction)btnApproveTapped:(id)sender;
 - (IBAction)btnRejectTapped:(id)sender;
@@ -30,12 +34,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"data: %@",_data);
+    
     _nopr.text = [NSString stringWithFormat:@"PR No. %@",[_data objectForKey:@"pr"]];
     _owner.text = [_data objectForKey:@"created_by"];
     _nominal.text = [_data objectForKey:@"amount"];
     
     list = [_data objectForKey:@"detailpr"];
+    
+//    if ([[_data objectForKey:@"histPR"] isEqualToString:@"<null>"]) {
+//        listHistory = @[];
+//    }
+//    else {
+//        listHistory = [_data objectForKey:@"histPR"];
+//    }
+    
+    if (![[_data objectForKey:@"histPR"] isKindOfClass:[NSNull class]]) {
+        NSLog(@"class: %@",[[_data objectForKey:@"histPR"] class]);
+        listHistory = [_data objectForKey:@"histPR"];
+    }
+    else {
+        listHistory = @[];
+        _lbApprovalHistory.hidden = YES;
+    }
+    
+//    if (listHistory.count==0) {
+//        listHistory = @[];
+//    }
+    
+    //listHistory = [_data objectForKey:@"histPR"];
     [self.tableView reloadData];
+    [self.tvHistory reloadData];
 
 }
 
@@ -46,25 +75,50 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return list.count;
+    
+    if (tableView==self.tableView) {
+        return list.count;
+    }
+    else {
+        return listHistory.count;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    PRDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    NSDictionary *item = [list objectAtIndex:indexPath.row];
-    
-    cell.pr.text = [item objectForKey:@"itempr"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.material.text = [item objectForKey:@"material"];
-    cell.qty.text = [item objectForKey:@"quantity"];
-    cell.nominal.text = [item objectForKey:@"amount"];
-    cell.date.text = [item objectForKey:@"delv_date"];
-    
-    return cell;
+    if (tableView==self.tableView) {
+        PRDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        
+        NSDictionary *item = [list objectAtIndex:indexPath.row];
+        
+        cell.pr.text = [item objectForKey:@"itempr"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
+        cell.material.text = [item objectForKey:@"material"];
+        cell.qty.text = [item objectForKey:@"quantity"];
+        cell.nominal.text = [item objectForKey:@"amount"];
+        cell.date.text = [item objectForKey:@"delv_date"];
+        
+        return cell;
+    }
+    else {
+        ApprovalHistoryViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        
+        NSDictionary *item = [listHistory objectAtIndex:indexPath.row];
+        
+        cell.title.text = [item objectForKey:@"person"];
+        cell.date.text = [item objectForKey:@"dateTimes"];
+        
+        return cell;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    if (tableView==self.tableView) {
+        return 90;
+    }
+    else {
+        return 50;
+    }
 }
 
 

@@ -10,6 +10,7 @@
 
 @interface PODetailViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *list;
+    NSArray *listHistory;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *ponum;
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nominal;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (weak, nonatomic) IBOutlet UITableView *tvHistory;
+
 
 @property NSDictionary *data;
 
