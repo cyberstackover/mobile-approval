@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA680BD41EDAB43200C84C48 /* ReservationViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA680BD31EDAB43200C84C48 /* ReservationViewCell.m */; };
+		AA680BD61EDAB4AC00C84C48 /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */; };
 		B5C61B5828CE951200EE8FC2 /* libPods-Approval.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA1F75A61616143623AFC7 /* libPods-Approval.a */; };
 		C22DB9C51E5422FF00D90DCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C22DB9C41E5422FF00D90DCA /* main.m */; };
 		C22DB9C81E5422FF00D90DCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C22DB9C71E5422FF00D90DCA /* AppDelegate.m */; };
@@ -58,6 +60,10 @@
 /* Begin PBXFileReference section */
 		267B6C6D9AB7E86F1E198984 /* Pods-Approval.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Approval.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Approval/Pods-Approval.debug.xcconfig"; sourceTree = "<group>"; };
 		84FA1F75A61616143623AFC7 /* libPods-Approval.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Approval.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA680BD21EDAB34300C84C48 /* ReservationViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewCell.h; sourceTree = "<group>"; };
+		AA680BD31EDAB43200C84C48 /* ReservationViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewCell.m; sourceTree = "<group>"; };
+		AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
+		AA680BD71EDAB4D600C84C48 /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
 		C22DB9C01E5422FF00D90DCA /* Approval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22DB9C41E5422FF00D90DCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C22DB9C61E5422FF00D90DCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 				C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */,
 				C2EB5A001E5D69600092BAE7 /* LSOViewController.h */,
 				C2EB5A011E5D69600092BAE7 /* LSOViewController.m */,
+				AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */,
+				AA680BD71EDAB4D600C84C48 /* ReservationViewController.h */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -308,6 +316,8 @@
 				C2EB5A0A1E5D6A080092BAE7 /* LeaveViewCell.m */,
 				C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */,
 				C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */,
+				AA680BD21EDAB34300C84C48 /* ReservationViewCell.h */,
+				AA680BD31EDAB43200C84C48 /* ReservationViewCell.m */,
 			);
 			name = cells;
 			sourceTree = "<group>";
@@ -450,6 +460,7 @@
 				C2EB5A0B1E5D6A080092BAE7 /* LeaveViewCell.m in Sources */,
 				C2EB5A111E5DBA5B0092BAE7 /* POContractDetailViewController.m in Sources */,
 				C28407161ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m in Sources */,
+				AA680BD61EDAB4AC00C84C48 /* ReservationViewController.m in Sources */,
 				C2373F2C1E568FA40044C921 /* HHomeViewController.m in Sources */,
 				C2EB59D71E5D30D60092BAE7 /* PRViewController.m in Sources */,
 				C24B412F1E79086C00C87F78 /* BosDetailViewCell.m in Sources */,
@@ -470,6 +481,7 @@
 				C2EB59F61E5D691E0092BAE7 /* TravelViewController.m in Sources */,
 				C2EB59E31E5D33010092BAE7 /* PMNotifViewController.m in Sources */,
 				C2EB5A051E5D69F30092BAE7 /* TravelViewCell.m in Sources */,
+				AA680BD41EDAB43200C84C48 /* ReservationViewCell.m in Sources */,
 				C2EB59FF1E5D69550092BAE7 /* LeaveViewController.m in Sources */,
 				C2373F321E568FC20044C921 /* HHrisViewController.m in Sources */,
 				C22DB9E21E54232900D90DCA /* HomeViewController.m in Sources */,

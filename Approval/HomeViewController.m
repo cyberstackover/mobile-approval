@@ -73,6 +73,10 @@
                                              selector:@selector(showPOContract)
                                                  name:@"showPOContract" object:nil];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showReservation)
+                                                 name:@"showReservation" object:nil];
+    
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showTravel)
@@ -366,6 +370,10 @@
 
 - (void)showLSO {
     [self performSegueWithIdentifier:@"lso" sender:nil];
+}
+- (void)showReservation {
+    NSLog(@"reservation");
+    [self performSegueWithIdentifier:@"reservation" sender:nil];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

@@ -36,7 +36,7 @@
     
     NSLog(@"data: %@",_data);
     
-    _nopr.text = [NSString stringWithFormat:@"PR No. %@",[_data objectForKey:@"pr"]];
+    _nopr.text = [NSString stringWithFormat:@"%@",[_data objectForKey:@"pr"]];
     _owner.text = [_data objectForKey:@"created_by"];
     _nominal.text = [_data objectForKey:@"amount"];
     

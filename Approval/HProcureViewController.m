@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    menuImages = @[@"ic_pr",@"ic_po",@"ic_tax",@"ic_bos",@"ic_notif",@"ic_contract"];
-    menuTitles = @[@"Purchase Requsition",@"Purchase Order",@"TAX Wapu",@"BOS",@"PM Notif",@"PO Contract"];
+    menuImages = @[@"ic_pr",@"ic_po",@"ic_tax",@"ic_bos",@"ic_notif",@"ic_contract",@"ic_reservation"];
+    menuTitles = @[@"Purchase Requsition",@"Purchase Order",@"TAX Wapu",@"BOS",@"PM Notif",@"PO Contract",@"Reservation"];
     
 }
 
@@ -91,6 +91,9 @@
     }
     else if (indexPath.row==5) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"showPOContract" object:nil];
+    }
+    else if (indexPath.row==6) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showReservation" object:nil];
     }
 }
 
