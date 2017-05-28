@@ -179,25 +179,26 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
-    [param setObject:[data objectForKey:@"po"] forKey:@"po"];
-    [param setObject:[data objectForKey:@"rcode"] forKey:@"rc"];
+    [param setObject:[data objectForKey:@"no_reservasi"] forKey:@"rsnum"];
+    
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_po_contract/approve_contract" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation/set_approve" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
         //list = responseObject;
+        NSDictionary *result = [responseObject firstObject];
         
-        NSLog(@"responseObject: %@",responseObject);
+        NSLog(@"result: %@",result);
         
-        if ([[responseObject objectForKey:@"success"] boolValue]) {
+        if ([[result objectForKey:@"status"] isEqualToString:@"FAIL"]) {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:@"Anda sukses menyetujui item tersebut"
+                                         message:@"Anda gagal menyetujui item tersebut"
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
@@ -215,7 +216,22 @@
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadReservation" object:nil];
         }
         else {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:@"Anda sukses menyetujui item tersebut"
+                                         preferredStyle:UIAlertControllerStyleAlert];
             
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           //[self doBack];
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
         }
         
         

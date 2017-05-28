@@ -273,8 +273,8 @@
 				C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */,
 				C2EB5A001E5D69600092BAE7 /* LSOViewController.h */,
 				C2EB5A011E5D69600092BAE7 /* LSOViewController.m */,
-				AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */,
 				AA680BD71EDAB4D600C84C48 /* ReservationViewController.h */,
+				AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */,
 			);
 			name = modules;
 			sourceTree = "<group>";
