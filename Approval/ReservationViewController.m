@@ -48,11 +48,13 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_po_contract" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        
+        NSLog(@"responseObject: %@",[responseObject objectForKey:@"data"]);
         
         [SVProgressHUD dismiss];
         
-        list = responseObject;
+        list = [responseObject objectForKey:@"data"];
         
         NSLog(@"list: %lu",(unsigned long)list.count);
         
@@ -88,9 +90,21 @@
     
     NSDictionary *item = [list objectAtIndex:indexPath.row];
     
-    cell.title.text = [NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    cell.detail.text = [item objectForKey:@"vendor"];
-    cell.nominal.text = [item objectForKey:@"harga"];
+    /*
+     "material_description" = "SPAREPART TEST";
+     "material_number" = "623-600001";
+     "mrp_controller" = 203;
+     "no_reservasi" = 51566186;
+     "price_realease" = "          103101601";
+     quantity = "101000.000";
+     "quantity_realease" = 100981;
+     */
+    
+    cell.title.text = [NSString stringWithFormat:@"Reservasi No. %@",[item objectForKey:@"no_reservasi"]];
+    cell.detail.text = [NSString stringWithFormat:@"%@\nMaterial No. %@\nMRP: %@\nQTY: %@\nQTY Release: %@",[item objectForKey:@"material_description"],[item objectForKey:@"material_number"],[item objectForKey:@"mrp_controller"],[item objectForKey:@"quantity"],[item objectForKey:@"quantity_realease"]];
+    cell.nominal.text = [item objectForKey:@"price_realease"];
+    
+    cell.detail.numberOfLines = 0;
     
     //    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
     //    tapGestureRecognizer.numberOfTapsRequired = 1;
@@ -216,11 +230,11 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 120;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"detail" sender:nil];
+    //[self performSegueWithIdentifier:@"detail" sender:nil];
 }
 
 /*
