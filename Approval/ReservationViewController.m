@@ -7,6 +7,7 @@
 //
 
 #import "ReservationViewController.h"
+#import "ReservationDetailViewController.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 #import "ReservationViewCell.h"
@@ -280,6 +281,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //reservation_detail
+    NSDictionary *item = [list objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    NSLog(@"item: %@",item);
+    
+    ReservationDetailViewController *vc = segue.destinationViewController;
+    vc.data = item;
 }
 
 /*
