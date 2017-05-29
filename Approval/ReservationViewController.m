@@ -7,6 +7,7 @@
 //
 
 #import "ReservationViewController.h"
+#import "ReservationDetailViewController.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 #import "ReservationViewCell.h"
@@ -53,7 +54,7 @@
     
     [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
-        NSLog(@"responseObject: %@",[responseObject objectForKey:@"data"]);
+        NSLog(@"responseObject: %@", [responseObject objectForKey:@"data"]);
         
         [SVProgressHUD dismiss];
         
@@ -101,11 +102,17 @@
      "price_realease" = "          103101601";
      quantity = "101000.000";
      "quantity_realease" = 100981;
+     --
+     "no_reservasi": "51566186",
+     "plant": "7902",
+     "tot_val": 101000000,
+     "reservation_detail"
      */
     
     cell.title.text = [NSString stringWithFormat:@"Reservasi No. %@",[item objectForKey:@"no_reservasi"]];
-    cell.detail.text = [NSString stringWithFormat:@"%@\nMaterial No. %@\nMRP: %@\nQTY: %@\nQTY Release: %@",[item objectForKey:@"material_description"],[item objectForKey:@"material_number"],[item objectForKey:@"mrp_controller"],[item objectForKey:@"quantity"],[item objectForKey:@"quantity_realease"]];
-    cell.nominal.text = [item objectForKey:@"price_realease"];
+    //cell.detail.text = [NSString stringWithFormat:@"%@\nMaterial No. %@\nMRP: %@\nQTY: %@\nQTY Release: %@",[item objectForKey:@"material_description"],[item objectForKey:@"material_number"],[item objectForKey:@"mrp_controller"],[item objectForKey:@"quantity"],[item objectForKey:@"quantity_realease"]];
+    cell.nominal.text = [NSString stringWithFormat:@"%@",[item objectForKey:@"tot_val"]];//[item objectForKey:@"tot_val"];
+    cell.detail.text = [NSString stringWithFormat:@"Plant: %@",[item objectForKey:@"plant"]];
     
     cell.detail.numberOfLines = 0;
     
@@ -269,7 +276,17 @@
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //[self performSegueWithIdentifier:@"detail" sender:nil];
+    [self performSegueWithIdentifier:@"detail" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //reservation_detail
+    NSDictionary *item = [list objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    NSLog(@"item: %@",item);
+    
+    ReservationDetailViewController *vc = segue.destinationViewController;
+    vc.data = item;
 }
 
 /*
