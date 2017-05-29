@@ -86,10 +86,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+
     if (tableView==self.tableView) {
         PRDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
         
+
         NSDictionary *item = [list objectAtIndex:indexPath.row];
         
         cell.pr.text = [item objectForKey:@"itempr"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
@@ -102,7 +103,7 @@
     }
     else {
         ApprovalHistoryViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-        
+        cell.backgroundColor = ([indexPath row]%2)?[UIColor colorWithRed:0.95 green:0.84 blue:0.86 alpha:1.0]:[UIColor colorWithRed:0.94 green:0.63 blue:0.71 alpha:1.0];
         NSDictionary *item = [listHistory objectAtIndex:indexPath.row];
         
         cell.title.text = [item objectForKey:@"person"];
