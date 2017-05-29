@@ -11,7 +11,9 @@
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
 
-@interface ReservationDetailViewController ()
+@interface ReservationDetailViewController (){
+    NSString *approvalInput;
+}
 
 @end
 
@@ -94,7 +96,8 @@
                                 actionWithTitle:@"Ya"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction * action) {
-                                    [self doApproval];
+                                    //[self doApproval];
+                                    [self showApprovalInput];
                                 }];
     
     UIAlertAction* noButton = [UIAlertAction
@@ -110,6 +113,37 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+- (void)showApprovalInput {
+    UIAlertController *alert =
+    [UIAlertController alertControllerWithTitle:@"Reservasi Approval"
+                                        message:@"Silahkan memasukkan nilai ECE"
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"Nilai ECE";
+        textField.textAlignment = NSTextAlignmentCenter;
+        approvalInput = textField.text;
+    }];
+    
+    UIAlertAction* okButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   approvalInput = [alert.textFields firstObject].text;
+                                   NSLog(@"Nilai ECE: %@",approvalInput);
+                                   [self doApproval];
+                               }];
+    
+    [alert addAction:okButton];
+    
+    [self presentViewController:alert animated:TRUE completion:^{
+        
+    }];
+    
+}
+
+
 - (void)doApproval {
     [SVProgressHUD showWithStatus:@"Please wait.."];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
@@ -117,6 +151,9 @@
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
     [param setObject:[_data objectForKey:@"no_reservasi"] forKey:@"rsnum"];
+    [param setObject:approvalInput forKey:@"ECE"];
+    
+    NSLog(@"approval param: %@",param);
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];

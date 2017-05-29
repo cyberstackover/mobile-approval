@@ -15,6 +15,7 @@
 
 @interface ReservationViewController (){
     NSArray *list;
+    NSString *approvalInput;
 }
 
 @end
@@ -52,7 +53,11 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    NSString *s1 = @"http://localhost/reservasi.php";
+    NSString *s2 = @"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation";
+    
+    // s2 pakai POST
+    [manager GET:s1 parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         NSLog(@"responseObject: %@", [responseObject objectForKey:@"data"]);
         
@@ -151,7 +156,8 @@
                                         actionWithTitle:@"Approve"
                                         style:UIAlertActionStyleDefault
                                         handler:^(UIAlertAction * action) {
-                                            [self doApproval];
+                                            //[self doApproval];
+                                            [self showApprovalInput];
                                         }];
         
         //        UIAlertAction* rejectButton = [UIAlertAction
@@ -179,6 +185,35 @@
     }
 }
 
+- (void)showApprovalInput {
+    UIAlertController *alert =
+    [UIAlertController alertControllerWithTitle:@"Reservasi Approval"
+                                        message:@"Silahkan memasukkan nilai ECE"
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"Nilai ECE";
+        textField.textAlignment = NSTextAlignmentCenter;
+        approvalInput = textField.text;
+    }];
+    
+    UIAlertAction* okButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   approvalInput = [alert.textFields firstObject].text;
+                                   NSLog(@"Nilai ECE: %@",approvalInput);
+                                   [self doApproval];
+                               }];
+    
+    [alert addAction:okButton];
+    
+    [self presentViewController:alert animated:TRUE completion:^{
+        
+    }];
+    
+}
 
 - (void)doApproval {
     
@@ -190,7 +225,9 @@
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
     [param setObject:[data objectForKey:@"no_reservasi"] forKey:@"rsnum"];
+    [param setObject:approvalInput forKey:@"ECE"];
     
+    NSLog(@"approval param: %@",param);
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -276,7 +313,15 @@
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"detail" sender:nil];
+    
+    NSDictionary *item = [list objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    if ([[item objectForKey:@"reservation_detail"] isKindOfClass:[NSNull class]]) {
+        // do nothing
+    }
+    else {
+        [self performSegueWithIdentifier:@"detail" sender:nil];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
