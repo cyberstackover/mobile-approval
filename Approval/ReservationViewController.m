@@ -23,6 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 140;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reloadReservation)
                                                  name:@"reloadReservation" object:nil];
@@ -244,10 +247,26 @@
     
 }
 
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120;
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 150;
 }
+
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    return 250;
+//    
+//    NSDictionary *item = [list objectAtIndex:indexPath.row];
+//    
+//    if ([[item objectForKey:@"material_description"] length]>12*3) {
+//        return 150;
+//    }
+//    else {
+//        return 120;
+//    }
+//    
+//    
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //[self performSegueWithIdentifier:@"detail" sender:nil];

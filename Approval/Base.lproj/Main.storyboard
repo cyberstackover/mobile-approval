@@ -2733,6 +2733,7 @@
                                         <constraint firstItem="WcL-Ru-Nvx" firstAttribute="top" secondItem="tx9-Xf-dth" secondAttribute="bottom" id="DaB-WE-c84"/>
                                         <constraint firstItem="WcL-Ru-Nvx" firstAttribute="leading" secondItem="tx9-Xf-dth" secondAttribute="leading" id="WiF-cz-nst"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="tx9-Xf-dth" secondAttribute="trailing" constant="10" id="oKg-tq-qCg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="WcL-Ru-Nvx" secondAttribute="bottom" constant="5" id="xF6-9N-9V8"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
