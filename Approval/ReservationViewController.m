@@ -56,8 +56,8 @@
     NSString *s1 = @"http://localhost/reservasi.php";
     NSString *s2 = @"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation";
     
-    // s2 pakai POST
-    [manager GET:s1 parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    // s2 pakai POST, s1 GET
+    [manager POST:s2 parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         NSLog(@"responseObject: %@", [responseObject objectForKey:@"data"]);
         
