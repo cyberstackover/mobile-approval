@@ -614,8 +614,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "91db854c-0adf-4109-9f11-84ee25a97596";
-				PROVISIONING_PROFILE_SPECIFIER = "Approval Adhoc";
+				PROVISIONING_PROFILE = "0791b0c0-4989-4c1f-aa2b-eb246579af29";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: com.semenindonesia.Approval";
 			};
 			name = Debug;
 		};
@@ -631,8 +631,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.semenindonesia.Approval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "43d33403-3c17-46c4-a558-a21fb3675c97";
-				PROVISIONING_PROFILE_SPECIFIER = "Approval Adhoc";
+				PROVISIONING_PROFILE = "0791b0c0-4989-4c1f-aa2b-eb246579af29";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: com.semenindonesia.Approval";
 			};
 			name = Release;
 		};
