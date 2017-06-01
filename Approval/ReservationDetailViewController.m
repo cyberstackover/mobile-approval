@@ -63,23 +63,64 @@
     
     NSDictionary *item = [list objectAtIndex:indexPath.row];
     
-    cell.reservasi.text = @"";//[item objectForKey:@"no_reservasi"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
-    //
-    cell.material.text = @"";
-    cell.qty.text = @"";
-    cell.nominal.text = @"";
-    cell.reservasi.numberOfLines = 0;
+    
     
     NSString *priceRelease = [[item objectForKey:@"price_realease"] stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSString *totalValue = [[item objectForKey:@"total_value"] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *qtyRelease = [[item objectForKey:@"quantity_realease"] stringByReplacingOccurrencesOfString:@" " withString:@""];
     
-    cell.reservasi.text = [NSString stringWithFormat:@"Item No: %@\nMaterial No: %@\nMaterial: %@\nQTY: %@\nQTY Release: %@\nMRP Controller: %@\nPrice Release: %@\nNet Value: %@\nTotal Value: %@",[item objectForKey:@"item_number"],[item objectForKey:@"material_number"],[item objectForKey:@"material_description"],[item objectForKey:@"quantity_real"],[item objectForKey:@"quantity_realease"],[item objectForKey:@"mrp_controller"],priceRelease,[item objectForKey:@"net_value"],totalValue];
+    
+    cell.lbTop.text = [NSString stringWithFormat:@"Item No: %@\nMaterial No: %@\nMaterial: %@",[item objectForKey:@"item_number"],[item objectForKey:@"material_number"],[item objectForKey:@"material_description"]];
+    
+    cell.lbLeft.text = [NSString stringWithFormat:@"QTY: %@\nQTY Release: %@\nMRP Controller: %@",[item objectForKey:@"quantity_real"],qtyRelease,[item objectForKey:@"mrp_controller"]];
+    
+    cell.lbRight.text = [NSString stringWithFormat:@"Price Release: %@\nNet Value: %@\nTotal Value: %@",priceRelease,[item objectForKey:@"net_value"],totalValue];
+    
+    cell.tfEce.tag = [[item objectForKey:@"item_number"] intValue];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 150;
+}
+
+- (NSString*)getECEValues {
+    NSArray *allTf = [self findAllTextFieldsInView:self.view];
+    
+    NSMutableArray *values = [[NSMutableArray alloc] init];
+    
+    for (UITextField *t in allTf) {
+        
+        if ([t.text length]==0) {
+            [values addObject:[NSNumber numberWithInt:25]];
+        }
+        else {
+            [values addObject:[NSNumber numberWithInt:[t.text intValue]]];
+        }
+    }
+    
+    return [values componentsJoinedByString: @","];
+}
+
+- (NSArray*)findAllTextFieldsInView:(UIView*)view{
+    NSMutableArray* textfieldarray = [[NSMutableArray alloc] init];
+    for(id x in [view subviews]){
+        if([x isKindOfClass:[UITextField class]])
+            [textfieldarray addObject:x];
+        
+        if([x respondsToSelector:@selector(subviews)]){
+            // if it has subviews, loop through those, too
+            [textfieldarray addObjectsFromArray:[self findAllTextFieldsInView:x]];
+        }
+    }
+    
+    // sort by tag
+    
+    NSSortDescriptor *ascendingSort = [[NSSortDescriptor alloc] initWithKey:@"tag" ascending:YES];
+    NSArray *sortedArray = [textfieldarray sortedArrayUsingDescriptors:[NSArray arrayWithObject:ascendingSort]];
+    
+    return sortedArray;
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -96,8 +137,9 @@
                                 actionWithTitle:@"Ya"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction * action) {
-                                    //[self doApproval];
-                                    [self showApprovalInput];
+                                    
+                                    [self doApproval];
+                                    //[self showApprovalInput];
                                 }];
     
     UIAlertAction* noButton = [UIAlertAction
@@ -145,13 +187,17 @@
 
 
 - (void)doApproval {
+    
+    NSString *ece = [self getECEValues];
+    
     [SVProgressHUD showWithStatus:@"Please wait.."];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
     [param setObject:[_data objectForKey:@"no_reservasi"] forKey:@"rsnum"];
-    [param setObject:approvalInput forKey:@"ECE"];
+    [param setObject:[_data objectForKey:@"plant"] forKey:@"plant"];
+    [param setObject:ece forKey:@"price"];
     
     NSLog(@"approval param: %@",param);
     

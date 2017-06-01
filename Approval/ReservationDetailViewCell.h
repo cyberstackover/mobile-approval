@@ -10,10 +10,11 @@
 
 @interface ReservationDetailViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *reservasi;
-@property (weak, nonatomic) IBOutlet UILabel *material;
-@property (weak, nonatomic) IBOutlet UILabel *qty;
-@property (weak, nonatomic) IBOutlet UILabel *nominal;
+@property (weak, nonatomic) IBOutlet UILabel *lbTop;
+@property (weak, nonatomic) IBOutlet UILabel *lbLeft;
+@property (weak, nonatomic) IBOutlet UILabel *lbRight;
+@property (weak, nonatomic) IBOutlet UITextField *tfEce;
+
 
 
 

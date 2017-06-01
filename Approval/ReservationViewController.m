@@ -127,13 +127,14 @@
     
     //    [cell addGestureRecognizer:tapGestureRecognizer];
     
+    /*
     cell.tag = indexPath.row;
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
                                           initWithTarget:self action:@selector(handleLongPress:)];
     lpgr.minimumPressDuration = 2.0; //seconds
     [cell addGestureRecognizer:lpgr];
-    
+    */
     return cell;
 }
 
