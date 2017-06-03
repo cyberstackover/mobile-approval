@@ -116,7 +116,9 @@
     
     cell.title.text = [NSString stringWithFormat:@"Reservasi No. %@",[item objectForKey:@"no_reservasi"]];
     //cell.detail.text = [NSString stringWithFormat:@"%@\nMaterial No. %@\nMRP: %@\nQTY: %@\nQTY Release: %@",[item objectForKey:@"material_description"],[item objectForKey:@"material_number"],[item objectForKey:@"mrp_controller"],[item objectForKey:@"quantity"],[item objectForKey:@"quantity_realease"]];
-    cell.nominal.text = [NSString stringWithFormat:@"%@",[item objectForKey:@"tot_val"]];//[item objectForKey:@"tot_val"];
+    //cell.nominal.text = [NSString stringWithFormat:@"%@",[item objectForKey:@"tot_val"]];//[item objectForKey:@"tot_val"];
+    
+    cell.nominal.hidden = YES;
     cell.detail.text = [NSString stringWithFormat:@"Plant: %@",[item objectForKey:@"plant"]];
     
     cell.detail.numberOfLines = 0;

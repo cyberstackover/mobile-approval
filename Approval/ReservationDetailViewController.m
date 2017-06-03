@@ -27,7 +27,8 @@
     
     _reservasinum.text = [NSString stringWithFormat:@"Reservasi No. %@",[_data objectForKey:@"no_reservasi"]];
     _plant.text = [NSString stringWithFormat:@"Plant: %@",[_data objectForKey:@"plant"]];
-    _nominal.text = [NSString stringWithFormat:@"Total Value: %@",[_data objectForKey:@"tot_val"]];
+    //_nominal.text = [NSString stringWithFormat:@"Total Value: %@",[_data objectForKey:@"tot_val"]];
+    _nominal.hidden = YES;
     
     list = [_data objectForKey:@"reservation_detail"];
     [self.tableView reloadData];
@@ -72,11 +73,17 @@
     
     cell.lbTop.text = [NSString stringWithFormat:@"Item No: %@\nMaterial No: %@\nMaterial: %@",[item objectForKey:@"item_number"],[item objectForKey:@"material_number"],[item objectForKey:@"material_description"]];
     
-    cell.lbLeft.text = [NSString stringWithFormat:@"QTY: %@\nQTY Release: %@\nMRP Controller: %@",[item objectForKey:@"quantity_real"],qtyRelease,[item objectForKey:@"mrp_controller"]];
+    //cell.lbLeft.text = [NSString stringWithFormat:@"QTY: %@\nQTY Release: %@\nMRP Controller: %@",[item objectForKey:@"quantity_real"],qtyRelease,[item objectForKey:@"mrp_controller"]];
     
-    cell.lbRight.text = [NSString stringWithFormat:@"Price Release: %@\nNet Value: %@\nTotal Value: %@",priceRelease,[item objectForKey:@"net_value"],totalValue];
+    //cell.lbRight.text = [NSString stringWithFormat:@"Price Release: %@\nNet Value: %@\nTotal Value: %@",priceRelease,[item objectForKey:@"net_value"],totalValue];
+    
+    cell.lbLeft.text = @"QTY: \nQTY Release: \nMRP Controller: \nPrice Release: \nNet Value: \nTotal Value: ";
+    cell.lbRight.text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@",[item objectForKey:@"quantity_real"],qtyRelease,[item objectForKey:@"mrp_controller"],priceRelease,[item objectForKey:@"net_value"],totalValue];
+    cell.lbRight.textAlignment = NSTextAlignmentRight;
     
     cell.tfEce.tag = [[item objectForKey:@"item_number"] intValue];
+    cell.tfEce.text = [item objectForKey:@"ece"];
+    cell.tfEce.placeholder = @"";
     
     return cell;
 }
