@@ -66,9 +66,9 @@
     
     
     
-    NSString *priceRelease = [[item objectForKey:@"price_realease"] stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString *totalValue = [[item objectForKey:@"total_value"] stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString *qtyRelease = [[item objectForKey:@"quantity_realease"] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *priceRelease = [item objectForKey:@"price_realease"]; //stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *totalValue = [item objectForKey:@"total_value"]; //stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *qtyRelease = [item objectForKey:@"quantity_realease"]; //stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     
     cell.lbTop.text = [NSString stringWithFormat:@"Item No: %@\nMaterial No: %@\nMaterial: %@",[item objectForKey:@"item_number"],[item objectForKey:@"material_number"],[item objectForKey:@"material_description"]];
@@ -78,11 +78,12 @@
     //cell.lbRight.text = [NSString stringWithFormat:@"Price Release: %@\nNet Value: %@\nTotal Value: %@",priceRelease,[item objectForKey:@"net_value"],totalValue];
     
     cell.lbLeft.text = @"QTY: \nQTY Release: \nMRP Controller: \nPrice Release: \nNet Value: \nTotal Value: ";
+    
     cell.lbRight.text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@",[item objectForKey:@"quantity_real"],qtyRelease,[item objectForKey:@"mrp_controller"],priceRelease,[item objectForKey:@"net_value"],totalValue];
     cell.lbRight.textAlignment = NSTextAlignmentRight;
     
     cell.tfEce.tag = [[item objectForKey:@"item_number"] intValue];
-    cell.tfEce.text = [item objectForKey:@"ece"];
+    cell.tfEce.text = [NSString stringWithFormat:@"%d",[[item objectForKey:@"ece"] intValue]];
     cell.tfEce.placeholder = @"";
     
     return cell;
