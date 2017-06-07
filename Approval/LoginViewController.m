@@ -29,8 +29,10 @@
     UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"loginbv"]];
     _vwTop.backgroundColor = background;
     
-    _tfUsername.text = @"amin.erfandy";
-    _tfPassword.text = @"aminkerja";
+    //_tfUsername.text = @"amin.erfandy";
+    //_tfPassword.text = @"aminkerja";
+    _tfUsername.text = @"";
+    _tfPassword.text = @"";
 
 }
 
