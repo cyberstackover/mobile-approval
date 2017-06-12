@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworkActivityLogger.h"
+#import "AFNetworkActivityConsoleLogger.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    AFNetworkActivityConsoleLogger *logger = [AFNetworkActivityLogger sharedLogger].loggers.anyObject;
+    logger.level = AFLoggerLevelDebug;
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
     
     [[UINavigationBar appearance] setBarStyle:UIStatusBarStyleLightContent];
     
