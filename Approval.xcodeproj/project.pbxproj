@@ -64,7 +64,7 @@
 		84FA1F75A61616143623AFC7 /* libPods-Approval.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Approval.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA680BD21EDAB34300C84C48 /* ReservationViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewCell.h; sourceTree = "<group>"; };
 		AA680BD31EDAB43200C84C48 /* ReservationViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewCell.m; sourceTree = "<group>"; };
-		AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
+		AA680BD51EDAB4AC00C84C48 /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ReservationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AA680BD71EDAB4D600C84C48 /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
 		C22DB9C01E5422FF00D90DCA /* Approval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Approval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22DB9C41E5422FF00D90DCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		C22DB9D51E5422FF00D90DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22DB9D71E5422FF00D90DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C22DB9DD1E54231C00D90DCA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		C22DB9DE1E54231C00D90DCA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C22DB9DE1E54231C00D90DCA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LoginViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C22DB9E01E54232900D90DCA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C22DB9E11E54232900D90DCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C2373F2A1E568FA40044C921 /* HHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHomeViewController.h; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		C2373F331E56D4260044C921 /* MenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewCell.h; sourceTree = "<group>"; };
 		C2373F341E56D4260044C921 /* MenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewCell.m; sourceTree = "<group>"; };
 		C23F778C1E7258D3007128A8 /* BosDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosDetailViewController.h; sourceTree = "<group>"; };
-		C23F778D1E7258D3007128A8 /* BosDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BosDetailViewController.m; sourceTree = "<group>"; };
+		C23F778D1E7258D3007128A8 /* BosDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BosDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C23F778F1E7258F0007128A8 /* TaxDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxDetailViewController.h; sourceTree = "<group>"; };
 		C23F77901E7258F0007128A8 /* TaxDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxDetailViewController.m; sourceTree = "<group>"; };
 		C23F77951E728E84007128A8 /* BosViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosViewCell.h; sourceTree = "<group>"; };
@@ -104,23 +104,23 @@
 		C28407141ED2FEA50011CCA1 /* ApprovalHistoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalHistoryViewCell.h; sourceTree = "<group>"; };
 		C28407151ED2FEA50011CCA1 /* ApprovalHistoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalHistoryViewCell.m; sourceTree = "<group>"; };
 		C29E84A41EDC4A130071CF73 /* ReservationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationDetailViewController.h; sourceTree = "<group>"; };
-		C29E84A51EDC4A130071CF73 /* ReservationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationDetailViewController.m; sourceTree = "<group>"; };
+		C29E84A51EDC4A130071CF73 /* ReservationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ReservationDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C29E84A71EDC4A850071CF73 /* ReservationDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationDetailViewCell.h; sourceTree = "<group>"; };
 		C29E84A81EDC4A850071CF73 /* ReservationDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationDetailViewCell.m; sourceTree = "<group>"; };
 		C2EB59D51E5D30D60092BAE7 /* PRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewController.h; sourceTree = "<group>"; };
-		C2EB59D61E5D30D60092BAE7 /* PRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewController.m; sourceTree = "<group>"; };
+		C2EB59D61E5D30D60092BAE7 /* PRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PRViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59D81E5D30F20092BAE7 /* PRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewController.h; sourceTree = "<group>"; };
-		C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRDetailViewController.m; sourceTree = "<group>"; };
+		C2EB59D91E5D30F20092BAE7 /* PRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PRDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59DB1E5D32D60092BAE7 /* POViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POViewController.h; sourceTree = "<group>"; };
-		C2EB59DC1E5D32D60092BAE7 /* POViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POViewController.m; sourceTree = "<group>"; };
+		C2EB59DC1E5D32D60092BAE7 /* POViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = POViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59DE1E5D32E90092BAE7 /* TaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxViewController.h; sourceTree = "<group>"; };
 		C2EB59DF1E5D32E90092BAE7 /* TaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxViewController.m; sourceTree = "<group>"; };
 		C2EB59E11E5D33010092BAE7 /* PMNotifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNotifViewController.h; sourceTree = "<group>"; };
-		C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNotifViewController.m; sourceTree = "<group>"; };
+		C2EB59E21E5D33010092BAE7 /* PMNotifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PMNotifViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59E41E5D330C0092BAE7 /* BOSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOSViewController.h; sourceTree = "<group>"; };
-		C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOSViewController.m; sourceTree = "<group>"; };
+		C2EB59E51E5D330C0092BAE7 /* BOSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BOSViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59E71E5D33200092BAE7 /* PMContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMContractViewController.h; sourceTree = "<group>"; };
-		C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMContractViewController.m; sourceTree = "<group>"; };
+		C2EB59E81E5D33200092BAE7 /* PMContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PMContractViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59EB1E5D47220092BAE7 /* PRViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRViewCell.h; sourceTree = "<group>"; };
 		C2EB59EC1E5D47220092BAE7 /* PRViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRViewCell.m; sourceTree = "<group>"; };
 		C2EB59EE1E5D60D10092BAE7 /* PMNotifViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNotifViewCell.h; sourceTree = "<group>"; };
@@ -130,13 +130,13 @@
 		C2EB59F41E5D691E0092BAE7 /* TravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewController.h; sourceTree = "<group>"; };
 		C2EB59F51E5D691E0092BAE7 /* TravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewController.m; sourceTree = "<group>"; };
 		C2EB59F71E5D69330092BAE7 /* OvertimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvertimeViewController.h; sourceTree = "<group>"; };
-		C2EB59F81E5D69330092BAE7 /* OvertimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvertimeViewController.m; sourceTree = "<group>"; };
+		C2EB59F81E5D69330092BAE7 /* OvertimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OvertimeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59FA1E5D69470092BAE7 /* SubstitusionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstitusionViewController.h; sourceTree = "<group>"; };
-		C2EB59FB1E5D69470092BAE7 /* SubstitusionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstitusionViewController.m; sourceTree = "<group>"; };
+		C2EB59FB1E5D69470092BAE7 /* SubstitusionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SubstitusionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB59FD1E5D69550092BAE7 /* LeaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveViewController.h; sourceTree = "<group>"; };
-		C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveViewController.m; sourceTree = "<group>"; };
+		C2EB59FE1E5D69550092BAE7 /* LeaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LeaveViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB5A001E5D69600092BAE7 /* LSOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOViewController.h; sourceTree = "<group>"; };
-		C2EB5A011E5D69600092BAE7 /* LSOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSOViewController.m; sourceTree = "<group>"; };
+		C2EB5A011E5D69600092BAE7 /* LSOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LSOViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB5A031E5D69F30092BAE7 /* TravelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewCell.h; sourceTree = "<group>"; };
 		C2EB5A041E5D69F30092BAE7 /* TravelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewCell.m; sourceTree = "<group>"; };
 		C2EB5A061E5D69FD0092BAE7 /* OvertimeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvertimeViewCell.h; sourceTree = "<group>"; };
@@ -146,13 +146,13 @@
 		C2EB5A0C1E5D6A110092BAE7 /* LSOViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOViewCell.h; sourceTree = "<group>"; };
 		C2EB5A0D1E5D6A110092BAE7 /* LSOViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSOViewCell.m; sourceTree = "<group>"; };
 		C2EB5A0F1E5DBA5B0092BAE7 /* POContractDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractDetailViewController.h; sourceTree = "<group>"; };
-		C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractDetailViewController.m; sourceTree = "<group>"; };
+		C2EB5A101E5DBA5B0092BAE7 /* POContractDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = POContractDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2EB5A121E5E36680092BAE7 /* POContractDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POContractDetailViewCell.h; sourceTree = "<group>"; };
 		C2EB5A131E5E36680092BAE7 /* POContractDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POContractDetailViewCell.m; sourceTree = "<group>"; };
 		C2EB5A151E5E6ED10092BAE7 /* PRDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDetailViewCell.h; sourceTree = "<group>"; };
 		C2EB5A161E5E6ED10092BAE7 /* PRDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRDetailViewCell.m; sourceTree = "<group>"; };
 		C2F582011E6CF9F600275AD8 /* PODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PODetailViewController.h; sourceTree = "<group>"; };
-		C2F582021E6CF9F600275AD8 /* PODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PODetailViewController.m; sourceTree = "<group>"; };
+		C2F582021E6CF9F600275AD8 /* PODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PODetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C2F582041E6CFB9700275AD8 /* POViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POViewCell.h; sourceTree = "<group>"; };
 		C2F582051E6CFB9700275AD8 /* POViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POViewCell.m; sourceTree = "<group>"; };
 		C2F582071E6D0EE700275AD8 /* PODetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PODetailViewCell.h; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 				TargetAttributes = {
 					C22DB9BF1E5422FF00D90DCA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N4ATVYZ5YA;
+						DevelopmentTeam = VBTEZ42LJ7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -620,7 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N4ATVYZ5YA;
+				DEVELOPMENT_TEAM = VBTEZ42LJ7;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -637,7 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N4ATVYZ5YA;
+				DEVELOPMENT_TEAM = VBTEZ42LJ7;
 				INFOPLIST_FILE = Approval/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

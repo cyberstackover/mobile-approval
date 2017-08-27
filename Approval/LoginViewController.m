@@ -58,12 +58,14 @@
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:_tfUsername.text forKey:@"username"];
     [param setObject:_tfPassword.text forKey:@"passuser"];
+    [param setObject:@"7"  forKey:@"VersionCode"];
+
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/c_auth" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/c_auth" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
