@@ -213,7 +213,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_reservation/set_approve_ece" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation/set_approve_ece" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -227,7 +227,7 @@
         if ([[result objectForKey:@"status"] isEqualToString:@"FAIL"]) {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:@"Anda gagal menyetujui item tersebut"
+                                         message:[result objectForKey:@"msg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
@@ -247,7 +247,7 @@
         else {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:@"Anda sukses menyetujui item tersebut"
+                                         message:[result objectForKey:@"msg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction

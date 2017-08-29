@@ -136,7 +136,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_pr_list/do_approve" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_pr_list/do_approve" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -147,7 +147,7 @@
         if ([[responseObject objectForKey:@"success"] boolValue]) {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:@"Anda sukses menyetujui item tersebut"
+                                         message:[responseObject objectForKey:@"msg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
@@ -190,7 +190,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_pr_list/do_reject" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_pr_list/do_reject" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -201,7 +201,7 @@
         if ([[responseObject objectForKey:@"success"] boolValue]) {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:@"Anda sukses tidak menyetujui item tersebut"
+                                         message:[responseObject objectForKey:@"msg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
