@@ -227,7 +227,7 @@
         if ([[result objectForKey:@"status"] isEqualToString:@"FAIL"]) {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:[result objectForKey:@"msg"]
+                                         message:[result objectForKey:@"returnmsg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
@@ -247,7 +247,7 @@
         else {
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"SIM Approval"
-                                         message:[result objectForKey:@"msg"]
+                                         message:[result objectForKey:@"returnmsg"]
                                          preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction* okButton = [UIAlertAction
