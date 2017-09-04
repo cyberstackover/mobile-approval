@@ -39,7 +39,7 @@
     _tfUsername.text = @"";
     _tfPassword.text = @"";
     
-    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"loginhideusername"]isEqualToString:@"Y"]) {
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"loginhideusername"]isEqualToString:@"Y"]) {
         _vwLoginOverlay.hidden = NO;
         _btnProfile.hidden = NO;
         _lbUsernameProfile.hidden = NO;
@@ -113,10 +113,10 @@
 
 - (IBAction)btnLoginTapped:(id)sender {
     
-    BOOL isOfflineTest = YES;
+    BOOL isOfflineTest = NO;
     
     if (isOfflineTest) {
-        
+
         NSDictionary *menu = @{
                                @"HRIS":@{
                                        @"Cuti":@"Y",
@@ -146,6 +146,7 @@
         [[[[UIApplication sharedApplication] windows] firstObject] setRootViewController:vc];
     }
     else {
+
         [SVProgressHUD showWithStatus:@"Logging in.."];
         [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
         

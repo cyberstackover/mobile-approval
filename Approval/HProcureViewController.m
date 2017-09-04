@@ -27,11 +27,11 @@
     menuPriv = @[
                  [m objectForKey:@"PR"],
                  [m objectForKey:@"PO"],
-                 [m objectForKey:@"TAX_WAPU"],
+                 [m objectForKey:@"TAX WAPU"],
                  [m objectForKey:@"BOS"],
                  [m objectForKey:@"PM Notif"],
                  [m objectForKey:@"Contract"],
-                 @"Y",
+                 @"Y"
                  ];
     
     menuImages = @[@"ic_pr",@"ic_po",@"ic_tax",@"ic_bos",@"ic_notif",@"ic_contract",@"ic_reservation"];
