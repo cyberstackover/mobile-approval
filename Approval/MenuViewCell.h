@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *img;
 @property (weak, nonatomic) IBOutlet UILabel *lb;
 @property (weak, nonatomic) IBOutlet UIView *bg;
+@property (weak, nonatomic) IBOutlet UIImageView *imgLock;
 
 @end

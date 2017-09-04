@@ -10,7 +10,7 @@
 #import "MenuViewCell.h"
 
 @interface HProcureViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>{
-    NSArray *menuImages, *menuTitles;
+    NSArray *menuImages, *menuTitles, *menuPriv;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lb;
@@ -21,6 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSDictionary *m = [[[NSUserDefaults standardUserDefaults] objectForKey:@"menu"] objectForKey:@"PROC"];
+    
+    menuPriv = @[
+                 [m objectForKey:@"PR"],
+                 [m objectForKey:@"PO"],
+                 [m objectForKey:@"TAX_WAPU"],
+                 [m objectForKey:@"BOS"],
+                 [m objectForKey:@"PM Notif"],
+                 [m objectForKey:@"Contract"],
+                 @"Y",
+                 ];
     
     menuImages = @[@"ic_pr",@"ic_po",@"ic_tax",@"ic_bos",@"ic_notif",@"ic_contract",@"ic_reservation"];
     menuTitles = @[@"Purchase Requsition",@"Purchase Order",@"TAX Wapu",@"BOS",@"PM Notif",@"PO Contract",@"Reservation"];
@@ -39,11 +51,6 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-//    Goal *item = [items objectAtIndex:indexPath.row];
-//    
-//    NSString *identifier = [NSString stringWithFormat:@"Identifier_%d-%d-%d", (int)indexPath.section, (int)indexPath.row, (int)indexPath.item];
-//    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
-    
     MenuViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
     [cell.img setImage:[UIImage imageNamed:[menuImages objectAtIndex:indexPath.row]]];
@@ -51,21 +58,18 @@
     
     cell.bg.layer.cornerRadius = 10.0f;
     
-    /*
-    int w = 180;
-    int wi = 80;
-    int s = (w-wi)/2/2;
+    // priv
     
-    GoalView *gv = [[GoalView alloc] initWithFrame:(CGRect){0,0,180,180}];
-    
-    if (IS_IPHONE_5) {
-        gv = [[GoalView alloc] initWithFrame:(CGRect){0,0,150,150}];
+    if ([[menuPriv objectAtIndex:indexPath.row] isEqualToString:@"X"]) {
+        cell.lb.alpha = 0.2;
+        cell.img.alpha = 0.2;
+        cell.imgLock.hidden = NO;
     }
-    
-    gv.backgroundColor = [UIColor redColor];
-    [gv draw:item];
-    [cell addSubview:gv];
-    */
+    else {
+        cell.lb.alpha = 1.0;
+        cell.img.alpha = 1.0;
+        cell.imgLock.hidden = YES;
+    }
     
     return cell;
 }
@@ -74,26 +78,28 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row==0) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showPR" object:nil];
-    }
-    else if (indexPath.row==1) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showPO" object:nil];
-    }
-    else if (indexPath.row==2) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showTax" object:nil];
-    }
-    else if (indexPath.row==3) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showBOS" object:nil];
-    }
-    else if (indexPath.row==4) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showPMNotif" object:nil];
-    }
-    else if (indexPath.row==5) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showPOContract" object:nil];
-    }
-    else if (indexPath.row==6) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showReservation" object:nil];
+    if ([[menuPriv objectAtIndex:indexPath.row] isEqualToString:@"Y"]) {
+        if (indexPath.row==0) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showPR" object:nil];
+        }
+        else if (indexPath.row==1) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showPO" object:nil];
+        }
+        else if (indexPath.row==2) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showTax" object:nil];
+        }
+        else if (indexPath.row==3) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showBOS" object:nil];
+        }
+        else if (indexPath.row==4) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showPMNotif" object:nil];
+        }
+        else if (indexPath.row==5) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showPOContract" object:nil];
+        }
+        else if (indexPath.row==6) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showReservation" object:nil];
+        }
     }
 }
 

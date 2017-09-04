@@ -358,16 +358,25 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-iS-G4R">
+                                                    <rect key="frame" x="13" y="13" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="MZR-BG-UdI"/>
+                                                        <constraint firstAttribute="width" constant="30" id="dJu-Ov-mLc"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="topMargin" secondItem="vPZ-hE-594" secondAttribute="top" constant="10" id="1kS-Dj-Fo1"/>
                                             <constraint firstItem="Y8P-lm-KJy" firstAttribute="leading" secondItem="Mgx-p9-SU2" secondAttribute="leadingMargin" id="Dqh-ob-0WX"/>
                                             <constraint firstItem="zr4-5d-n9e" firstAttribute="trailing" secondItem="vPZ-hE-594" secondAttribute="trailing" id="G5O-od-ew1"/>
+                                            <constraint firstItem="6fF-iS-G4R" firstAttribute="top" secondItem="Mgx-p9-SU2" secondAttribute="topMargin" constant="5" id="Hnu-m5-OER"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="Y8P-lm-KJy" secondAttribute="bottom" id="NGp-Wv-KqS"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="zr4-5d-n9e" secondAttribute="bottom" constant="10" id="UBn-oq-A64"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="vPZ-hE-594" secondAttribute="leading" id="WYV-a8-Iu4"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="Y8P-lm-KJy" secondAttribute="trailing" id="aj4-t2-fw8"/>
+                                            <constraint firstItem="6fF-iS-G4R" firstAttribute="leading" secondItem="Mgx-p9-SU2" secondAttribute="leadingMargin" constant="5" id="iO5-VE-Oqk"/>
                                             <constraint firstItem="zr4-5d-n9e" firstAttribute="leading" secondItem="vPZ-hE-594" secondAttribute="leading" id="jW7-Ob-un8"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="vPZ-hE-594" secondAttribute="bottom" constant="20" id="nla-g3-CPL"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="vPZ-hE-594" secondAttribute="trailing" id="wph-4R-19V"/>
@@ -376,6 +385,7 @@
                                         <connections>
                                             <outlet property="bg" destination="Y8P-lm-KJy" id="6zw-Pk-61K"/>
                                             <outlet property="img" destination="vPZ-hE-594" id="Y36-ik-Bmp"/>
+                                            <outlet property="imgLock" destination="6fF-iS-G4R" id="aeN-bt-Gjv"/>
                                             <outlet property="lb" destination="zr4-5d-n9e" id="hfv-Vf-qjW"/>
                                         </connections>
                                     </collectionViewCell>
@@ -480,11 +490,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_lock" translatesAutoresizingMaskIntoConstraints="NO" id="Up8-P6-Viw">
+                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Z40-uQ-MJc"/>
+                                                        <constraint firstAttribute="width" constant="30" id="ZsJ-px-BIh"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="bottomMargin" secondItem="pKm-UW-sV6" secondAttribute="bottom" constant="20" id="10n-2n-acn"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="9kc-Gz-G5M" secondAttribute="trailing" id="7Fn-Su-64o"/>
+                                            <constraint firstItem="Up8-P6-Viw" firstAttribute="top" secondItem="oAI-k3-OSY" secondAttribute="topMargin" constant="5" id="Mzj-ac-q4r"/>
                                             <constraint firstAttribute="topMargin" secondItem="pKm-UW-sV6" secondAttribute="top" constant="10" id="c1x-PJ-zYQ"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="pKm-UW-sV6" secondAttribute="leading" id="dKa-n6-v00"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="vPG-fO-yT4" secondAttribute="bottom" constant="10" id="e25-sr-9Fp"/>
@@ -494,10 +512,12 @@
                                             <constraint firstItem="9kc-Gz-G5M" firstAttribute="top" secondItem="oAI-k3-OSY" secondAttribute="topMargin" id="hex-9M-rwf"/>
                                             <constraint firstItem="9kc-Gz-G5M" firstAttribute="leading" secondItem="oAI-k3-OSY" secondAttribute="leadingMargin" id="sSo-2C-m7q"/>
                                             <constraint firstItem="vPG-fO-yT4" firstAttribute="trailing" secondItem="pKm-UW-sV6" secondAttribute="trailing" id="y6C-2p-whQ"/>
+                                            <constraint firstItem="Up8-P6-Viw" firstAttribute="leading" secondItem="oAI-k3-OSY" secondAttribute="leadingMargin" constant="5" id="y6I-x4-4bN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="bg" destination="9kc-Gz-G5M" id="nIJ-dU-I9v"/>
                                             <outlet property="img" destination="pKm-UW-sV6" id="PJs-3W-OtP"/>
+                                            <outlet property="imgLock" destination="Up8-P6-Viw" id="zXb-eU-PaK"/>
                                             <outlet property="lb" destination="vPG-fO-yT4" id="nSc-Z8-J1S"/>
                                         </connections>
                                     </collectionViewCell>
@@ -2988,6 +3008,7 @@
     </scenes>
     <resources>
         <image name="bg_app" width="600" height="800"/>
+        <image name="ic_lock" width="72" height="72"/>
         <image name="ic_profile" width="72" height="72"/>
         <image name="loginbg" width="150" height="90"/>
         <image name="logo" width="170" height="142"/>

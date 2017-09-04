@@ -112,53 +112,91 @@
 }
 
 - (IBAction)btnLoginTapped:(id)sender {
-    [SVProgressHUD showWithStatus:@"Logging in.."];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
     
-    NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
-    [param setObject:_tfUsername.text forKey:@"username"];
-    [param setObject:_tfPassword.text forKey:@"passuser"];
-    [param setObject:@"7"  forKey:@"VersionCode"];
+    BOOL isOfflineTest = YES;
+    
+    if (isOfflineTest) {
+        
+        NSDictionary *menu = @{
+                               @"HRIS":@{
+                                       @"Cuti":@"Y",
+                                       @"LSO":@"Y",
+                                       @"SUBSTITUSI":@"X",
+                                       @"SPPD":@"X",
+                                       @"LEMBUR":@"Y",
+                                       },
+                               @"PROC":@{
+                                          @"PR":@"Y",
+                                          @"PO":@"Y",
+                                          @"TAX_WAPU":@"Y",
+                                          @"BOS":@"X",
+                                          @"PM Notif":@"X",
+                                          @"Contract":@"X",
+                                          }};
+        
+        NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
+        [userdefault setObject:_tfUsername.text forKey:@"username"];
+        [userdefault setObject:[NSDate date] forKey:@"lastlogin"];
+        [userdefault setObject:@"Y" forKey:@"loginhideusername"];
+        [userdefault setObject:menu forKey:@"menu"];
+        [userdefault synchronize];
+        
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
+        [[[[UIApplication sharedApplication] windows] firstObject] setRootViewController:vc];
+    }
+    else {
+        [SVProgressHUD showWithStatus:@"Logging in.."];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+        
+        NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
+        [param setObject:_tfUsername.text forKey:@"username"];
+        [param setObject:_tfPassword.text forKey:@"passuser"];
+        [param setObject:@"7"  forKey:@"VersionCode"];
+        
+        
+        AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+        
+        [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/c_auth" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+            
+            [SVProgressHUD dismiss];
+            
+            NSDictionary *result = responseObject;
+            
+            NSLog(@"result: %@",result);
+            
+            if ([[result objectForKey:@"loginreturn"] boolValue]) {
+                NSLog(@"login sukses");
+                
+                NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
+                [userdefault setObject:_tfUsername.text forKey:@"username"];
+                [userdefault setObject:[NSDate date] forKey:@"lastlogin"];
+                [userdefault setObject:@"Y" forKey:@"loginhideusername"];
+                [userdefault setObject:[result objectForKey:@"menu"] forKey:@"menu"];
+                [userdefault synchronize];
+                
+                UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
+                [[[[UIApplication sharedApplication] windows] firstObject] setRootViewController:vc];
+            }
+            else {
+                NSLog(@"login gagal");
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Approval" message:@"Login gagal" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                [alert show];
+            }
+            
+            
+            
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            NSLog(@"error: %@",error);
+            [SVProgressHUD dismiss];
+        }];}
 
+    }
     
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/c_auth" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
-        
-        [SVProgressHUD dismiss];
-        
-        NSDictionary *result = responseObject;
-        
-        NSLog(@"result: %@",result);
-        
-        if ([[result objectForKey:@"loginreturn"] boolValue]) {
-            NSLog(@"login sukses");
-            
-            NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
-            [userdefault setObject:_tfUsername.text forKey:@"username"];
-            [userdefault setObject:[NSDate date] forKey:@"lastlogin"];
-            [userdefault setObject:@"Y" forKey:@"loginhideusername"];
-            [userdefault synchronize];
-            
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"home"];
-            [[[[UIApplication sharedApplication] windows] firstObject] setRootViewController:vc];
-        }
-        else {
-            NSLog(@"login gagal");
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Approval" message:@"Login gagal" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-            [alert show];
-        }
-        
-        
-        
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        NSLog(@"error: %@",error);
-        [SVProgressHUD dismiss];
-    }];}
 @end

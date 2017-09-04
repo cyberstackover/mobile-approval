@@ -10,7 +10,7 @@
 #import "MenuViewCell.h"
 
 @interface HHrisViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>{
-    NSArray *menuImages, *menuTitles;
+    NSArray *menuImages, *menuTitles, *menuPriv;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lb;
@@ -25,8 +25,18 @@
     
     _lb.text = @"Human Resources";
     
-    menuImages = @[@"ic_sppd",@"ic_overtime",@"ic_substitution",@"ic_absen",@"ic_lso"];
-    menuTitles = @[@"Travel Management",@"Overtime",@"Substitusion",@"Leave",@"Lso"];
+    NSDictionary *m = [[[NSUserDefaults standardUserDefaults] objectForKey:@"menu"] objectForKey:@"HRIS"];
+    
+    menuPriv = @[
+                 [m objectForKey:@"SPPD"],
+                 [m objectForKey:@"LEMBUR"],
+                 [m objectForKey:@"SUBSTITUSI"],
+                 [m objectForKey:@"Cuti"]/*,
+                 [m objectForKey:@"LSO"]*/
+                 ];
+    
+    menuImages = @[@"ic_sppd",@"ic_overtime",@"ic_substitution",@"ic_absen",/*@"ic_lso"*/];
+    menuTitles = @[@"Travel Management",@"Overtime",@"Substitusion",@"Leave",/*@"Lso"*/];
     
 }
 
@@ -42,11 +52,6 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    //    Goal *item = [items objectAtIndex:indexPath.row];
-    //
-    //    NSString *identifier = [NSString stringWithFormat:@"Identifier_%d-%d-%d", (int)indexPath.section, (int)indexPath.row, (int)indexPath.item];
-    //    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
-    
     MenuViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
     [cell.img setImage:[UIImage imageNamed:[menuImages objectAtIndex:indexPath.row]]];
@@ -54,22 +59,19 @@
     
     cell.bg.layer.cornerRadius = 10.0f;
     
-    /*
-     int w = 180;
-     int wi = 80;
-     int s = (w-wi)/2/2;
-     
-     GoalView *gv = [[GoalView alloc] initWithFrame:(CGRect){0,0,180,180}];
-     
-     if (IS_IPHONE_5) {
-     gv = [[GoalView alloc] initWithFrame:(CGRect){0,0,150,150}];
-     }
-     
-     gv.backgroundColor = [UIColor redColor];
-     [gv draw:item];
-     [cell addSubview:gv];
-     */
+    // priv
     
+    if ([[menuPriv objectAtIndex:indexPath.row] isEqualToString:@"X"]) {
+        cell.lb.alpha = 0.2;
+        cell.img.alpha = 0.2;
+        cell.imgLock.hidden = NO;
+    }
+    else {
+        cell.lb.alpha = 1.0;
+        cell.img.alpha = 1.0;
+        cell.imgLock.hidden = YES;
+    }
+
     return cell;
 }
 
@@ -77,20 +79,22 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row==0) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showTravel" object:nil];
-    }
-    else if (indexPath.row==1) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showOvertime" object:nil];
-    }
-    else if (indexPath.row==2) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showSubstitusion" object:nil];
-    }
-    else if (indexPath.row==3) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showLeave" object:nil];
-    }
-    else if (indexPath.row==4) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"showLSO" object:nil];
+    if ([[menuPriv objectAtIndex:indexPath.row] isEqualToString:@"Y"]) {
+        if (indexPath.row==0) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showTravel" object:nil];
+        }
+        else if (indexPath.row==1) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showOvertime" object:nil];
+        }
+        else if (indexPath.row==2) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showSubstitusion" object:nil];
+        }
+        else if (indexPath.row==3) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showLeave" object:nil];
+        }
+        else if (indexPath.row==4) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showLSO" object:nil];
+        }
     }
 }
 
