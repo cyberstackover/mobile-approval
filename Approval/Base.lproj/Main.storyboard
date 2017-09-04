@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xup-fL-5Sm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xup-fL-5Sm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -171,19 +171,51 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dee-oB-zpK">
+                                        <rect key="frame" x="30" y="186" width="240" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZLj-fN-zce"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-KE-x1n">
+                                        <rect key="frame" x="100" y="100" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ilT-Q3-Asr"/>
+                                            <constraint firstAttribute="height" constant="40" id="zFI-Ma-eXb"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_profile"/>
+                                        <connections>
+                                            <action selector="btnProfilTapped:" destination="2Nr-cG-rHX" eventType="touchUpInside" id="CZu-ee-PWq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD3-zS-iA7">
+                                        <rect key="frame" x="129" y="200" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="QD3-zS-iA7" firstAttribute="top" secondItem="Mkx-KE-x1n" secondAttribute="bottom" constant="5" id="5yg-ZA-Moz"/>
                                     <constraint firstItem="klX-TH-gjQ" firstAttribute="leading" secondItem="gEh-Vn-THu" secondAttribute="leading" id="9rd-BM-33a"/>
                                     <constraint firstItem="gEh-Vn-THu" firstAttribute="leading" secondItem="iqP-e3-u8S" secondAttribute="leading" id="AZ0-UZ-IM9"/>
+                                    <constraint firstItem="dee-oB-zpK" firstAttribute="top" secondItem="iqP-e3-u8S" secondAttribute="top" id="EWr-Co-ML4"/>
                                     <constraint firstItem="Dd1-yx-j0P" firstAttribute="top" secondItem="iqP-e3-u8S" secondAttribute="bottom" constant="2" id="FNA-db-F0u"/>
                                     <constraint firstItem="gEh-Vn-THu" firstAttribute="trailing" secondItem="iqP-e3-u8S" secondAttribute="trailing" id="ISY-Wd-mIs"/>
+                                    <constraint firstItem="QD3-zS-iA7" firstAttribute="leading" secondItem="iqP-e3-u8S" secondAttribute="leading" id="KRZ-mx-JQA"/>
+                                    <constraint firstItem="Mkx-KE-x1n" firstAttribute="centerX" secondItem="tfZ-ac-b29" secondAttribute="centerX" id="R4f-Oz-vTA"/>
                                     <constraint firstItem="gEh-Vn-THu" firstAttribute="top" secondItem="klX-TH-gjQ" secondAttribute="bottom" constant="8" id="XMC-Xj-wte"/>
+                                    <constraint firstItem="QD3-zS-iA7" firstAttribute="trailing" secondItem="iqP-e3-u8S" secondAttribute="trailing" id="XsA-su-8Vn"/>
                                     <constraint firstItem="Anb-Ig-X5M" firstAttribute="top" secondItem="tfZ-ac-b29" secondAttribute="top" constant="20" id="c8k-38-qFZ"/>
                                     <constraint firstItem="Dd1-yx-j0P" firstAttribute="trailing" secondItem="iqP-e3-u8S" secondAttribute="trailing" id="cPa-Rd-YaP"/>
                                     <constraint firstItem="Dd1-yx-j0P" firstAttribute="leading" secondItem="iqP-e3-u8S" secondAttribute="leading" id="hQL-DW-Lbe"/>
+                                    <constraint firstItem="dee-oB-zpK" firstAttribute="trailing" secondItem="iqP-e3-u8S" secondAttribute="trailing" id="kLx-GU-mlE"/>
+                                    <constraint firstItem="dee-oB-zpK" firstAttribute="leading" secondItem="iqP-e3-u8S" secondAttribute="leading" id="ngu-Vo-bgs"/>
                                     <constraint firstItem="Anb-Ig-X5M" firstAttribute="leading" secondItem="tfZ-ac-b29" secondAttribute="leading" id="ni6-Rd-lU4"/>
                                     <constraint firstAttribute="bottom" secondItem="gEh-Vn-THu" secondAttribute="bottom" constant="49" id="nqr-xD-qqh"/>
+                                    <constraint firstItem="Mkx-KE-x1n" firstAttribute="top" secondItem="Anb-Ig-X5M" secondAttribute="bottom" id="qPa-NF-mfv"/>
                                     <constraint firstAttribute="trailing" secondItem="Anb-Ig-X5M" secondAttribute="trailing" id="qur-Z9-EyB"/>
                                     <constraint firstItem="iqP-e3-u8S" firstAttribute="top" secondItem="Anb-Ig-X5M" secondAttribute="bottom" constant="30" id="viq-3J-dD9"/>
                                     <constraint firstItem="iqP-e3-u8S" firstAttribute="centerX" secondItem="tfZ-ac-b29" secondAttribute="centerX" id="wkT-om-TdU"/>
@@ -204,8 +236,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="qbv-7y-MlZ"/>
                     <connections>
+                        <outlet property="btnProfile" destination="Mkx-KE-x1n" id="XeV-Zi-72X"/>
+                        <outlet property="lbUsernameProfile" destination="QD3-zS-iA7" id="rKI-a3-Ho8"/>
                         <outlet property="tfPassword" destination="bEI-go-EcC" id="aNa-wO-hUy"/>
                         <outlet property="tfUsername" destination="PU8-6N-38P" id="uvR-Gq-jxz"/>
+                        <outlet property="vwLoginOverlay" destination="dee-oB-zpK" id="rBX-XE-nNi"/>
                         <outlet property="vwTop" destination="rXd-0f-5Yj" id="hPe-hk-O2Q"/>
                     </connections>
                 </viewController>
@@ -2953,6 +2988,7 @@
     </scenes>
     <resources>
         <image name="bg_app" width="600" height="800"/>
+        <image name="ic_profile" width="72" height="72"/>
         <image name="loginbg" width="150" height="90"/>
         <image name="logo" width="170" height="142"/>
         <image name="passicon" width="128" height="128"/>

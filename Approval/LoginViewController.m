@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet UIView *vwTop;
 @property (weak, nonatomic) IBOutlet UITextField *tfUsername;
 @property (weak, nonatomic) IBOutlet UITextField *tfPassword;
+@property (weak, nonatomic) IBOutlet UIView *vwLoginOverlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnProfile;
+@property (weak, nonatomic) IBOutlet UILabel *lbUsernameProfile;
+
+- (IBAction)btnProfilTapped:(id)sender;
 
 
 - (IBAction)btnLoginTapped:(id)sender;
@@ -29,10 +34,23 @@
     UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"loginbv"]];
     _vwTop.backgroundColor = background;
     
-    //_tfUsername.text = @"amin.erfandy";
-    //_tfPassword.text = @"aminkerja";
+//    _tfUsername.text = @"amin.erfandy";
+//    _tfPassword.text = @"aminkerja";
     _tfUsername.text = @"";
     _tfPassword.text = @"";
+    
+    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"loginhideusername"]isEqualToString:@"Y"]) {
+        _vwLoginOverlay.hidden = NO;
+        _btnProfile.hidden = NO;
+        _lbUsernameProfile.hidden = NO;
+        _lbUsernameProfile.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+        _tfUsername.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+    }
+    else {
+        _vwLoginOverlay.hidden = YES;
+        _btnProfile.hidden = YES;
+        _lbUsernameProfile.hidden = YES;
+    }
 
 }
 
@@ -50,6 +68,48 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+- (IBAction)btnProfilTapped:(id)sender {
+    UIAlertController* alert = [UIAlertController
+                                alertControllerWithTitle:@"SIM Approval"
+                                message:@""
+                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* clearUserButton = [UIAlertAction
+                                    actionWithTitle:@"Clear User"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action) {
+                                        [self doClearUser];
+                                    }];
+    
+    
+    UIAlertAction* cancelButton = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+                                       //Handle no, thanks button
+                                   }];
+    
+    [alert addAction:clearUserButton];
+    [alert addAction:cancelButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)doClearUser {
+    NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
+    [userdefault setObject:@"N" forKey:@"loginhideusername"];
+    [userdefault synchronize];
+    
+    _vwLoginOverlay.hidden = YES;
+    _btnProfile.hidden = YES;
+    _lbUsernameProfile.hidden = YES;
+    
+    _tfUsername.text = @"";
+    _tfPassword.text = @"";
+}
 
 - (IBAction)btnLoginTapped:(id)sender {
     [SVProgressHUD showWithStatus:@"Logging in.."];
@@ -78,6 +138,8 @@
             
             NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
             [userdefault setObject:_tfUsername.text forKey:@"username"];
+            [userdefault setObject:[NSDate date] forKey:@"lastlogin"];
+            [userdefault setObject:@"Y" forKey:@"loginhideusername"];
             [userdefault synchronize];
             
             UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
