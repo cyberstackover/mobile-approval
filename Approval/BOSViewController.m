@@ -199,7 +199,21 @@
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
         }
         else {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:[responseObject objectForKey:@"msg"]
+                                         preferredStyle:UIAlertControllerStyleAlert];
             
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
         }
         
         
@@ -258,7 +272,21 @@
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
         }
         else {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:[responseObject objectForKey:@"msg"]
+                                         preferredStyle:UIAlertControllerStyleAlert];
             
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
         }
         
         
