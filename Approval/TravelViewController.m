@@ -39,7 +39,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/get_sppd" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_hris/get_sppd" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -148,7 +148,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_hris/approve_sppd" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_hris/approve_sppd" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
@@ -176,7 +176,21 @@
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadPOContract" object:nil];
         }
         else {
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"SIM Approval"
+                                         message:[responseObject objectForKey:@"msg"]
+                                         preferredStyle:UIAlertControllerStyleAlert];
             
+            UIAlertAction* okButton = [UIAlertAction
+                                       actionWithTitle:@"OK"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                           [self populateData];
+                                       }];
+            
+            [alert addAction:okButton];
+            
+            [self presentViewController:alert animated:YES completion:nil];
         }
         
         
@@ -198,14 +212,14 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
     [param setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"username"] forKey:@"username"];
-    [param setObject:[data objectForKey:@"pr"] forKey:@"pr"];
-    [param setObject:[data objectForKey:@"rcode"] forKey:@"rc"];
+    [param setObject:[data objectForKey:@"nopeg"] forKey:@"nopeg"];
+    [param setObject:[data objectForKey:@"sppdid"] forKey:@"sppdid"];
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_pr_list/do_reject" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_hris/reject_sppd" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         

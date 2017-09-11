@@ -54,7 +54,7 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     NSString *s1 = @"http://localhost/reservasi.php";
-    NSString *s2 = @"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation";
+    NSString *s2 = @"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_reservation";
     
     // s2 pakai POST, s1 GET
     [manager POST:s2 parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
@@ -236,7 +236,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
-    [manager POST:@"http://dev-app.semenindonesia.com/dev/approval2/index.php/mobile/mob_reservation/set_approve" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager POST:@"https://approval.semenindonesia.com/sgg/approval2/index.php/mobile/mob_reservation/set_approve" parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
