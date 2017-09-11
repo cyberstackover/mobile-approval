@@ -266,23 +266,38 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meeting Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-Ka-7T3">
                                 <rect key="frame" x="83" y="244" width="208" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="J5P-Kh-JkI"/>
+                                    <constraint firstAttribute="height" constant="30" id="J5P-Kh-JkI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-gt-Obb">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="J17-5R-wcb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5v6-Ka-7T3" firstAttribute="top" secondItem="AaQ-Hh-C4b" secondAttribute="bottom" constant="30" id="04j-o2-D4Q"/>
+                            <constraint firstItem="5v6-Ka-7T3" firstAttribute="top" secondItem="AaQ-Hh-C4b" secondAttribute="bottom" constant="20" id="04j-o2-D4Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B6K-gt-Obb" secondAttribute="trailing" constant="20" id="CHW-yu-mtE"/>
+                            <constraint firstItem="B6K-gt-Obb" firstAttribute="leading" secondItem="ZNI-EC-IZ4" secondAttribute="leadingMargin" constant="20" id="DFb-V3-p3q"/>
                             <constraint firstItem="AaQ-Hh-C4b" firstAttribute="leading" secondItem="ZNI-EC-IZ4" secondAttribute="leading" id="Fdf-Wh-bh3"/>
                             <constraint firstItem="5v6-Ka-7T3" firstAttribute="leading" secondItem="AaQ-Hh-C4b" secondAttribute="leading" id="QLe-Ld-ILM"/>
                             <constraint firstAttribute="trailing" secondItem="AaQ-Hh-C4b" secondAttribute="trailing" id="Rfr-eV-KO8"/>
+                            <constraint firstItem="B6K-gt-Obb" firstAttribute="top" secondItem="5v6-Ka-7T3" secondAttribute="bottom" constant="10" id="dCv-zF-m2y"/>
                             <constraint firstItem="AaQ-Hh-C4b" firstAttribute="top" secondItem="yju-1K-rXQ" secondAttribute="bottom" constant="40" id="jfR-Qa-HTi"/>
                             <constraint firstItem="5v6-Ka-7T3" firstAttribute="trailing" secondItem="AaQ-Hh-C4b" secondAttribute="trailing" id="ry4-gd-8cp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbEvents" destination="B6K-gt-Obb" id="XJL-Bo-uDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Fd-my-Pd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

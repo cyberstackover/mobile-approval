@@ -13,6 +13,7 @@
 
 @interface HHomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *lbEvents;
 
 @property (strong, nonatomic) EKEventStore *eventStore;
 
@@ -111,7 +112,28 @@
         
         NSArray *events = [eventsDict allValues];
         
-        NSLog(@"events: %@",events);
+        NSDateFormatter *df = [[NSDateFormatter alloc] init];
+        [df setDateFormat:@"d-M-Y hh:mm"];
+        
+        for(EKEvent *event in events) {
+            NSLog(@"event title: %@",event.title);
+            NSLog(@"event start: %@",event.startDate);
+            NSLog(@"event end: %@",event.endDate);
+            NSLog(@"event calendar title: %@",event.calendar.title);
+            NSLog(@"event location: %@",event.location);
+            
+            _lbEvents.text = [NSString stringWithFormat:@"%@%@",
+                              _lbEvents.text,
+                              [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n\n",
+                               event.title,
+                               [df stringFromDate:event.startDate],
+                               [df stringFromDate:event.endDate],
+                               event.location
+                               ]];
+            
+        }
+        
+        //NSLog(@"events: %@",events);
     }
 }
 
