@@ -9,11 +9,14 @@
 #import "HHomeViewController.h"
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
+#import "EventCell.h"
 
-
-@interface HHomeViewController ()
+@interface HHomeViewController ()<UITableViewDelegate, UITableViewDataSource>{
+    //NSArray *events;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *lbEvents;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) EKEventStore *eventStore;
 
@@ -25,7 +28,7 @@
 
 @property (strong, nonatomic) EKCalendar *calendar;
 
-@property (copy, nonatomic) NSArray *events;
+@property (copy, nonatomic) NSArray *eventList;
 
 @end
 
@@ -88,8 +91,8 @@
         
         _eventStore = [[EKEventStore alloc] init];
         
-        NSDate *start = [NSDate dateWithTimeIntervalSinceNow:-3600*24];
-        NSDate *finish = [NSDate dateWithTimeIntervalSinceNow:3600*24];
+        NSDate *start = [NSDate dateWithTimeIntervalSinceNow:-3600*24*2];
+        NSDate *finish = [NSDate dateWithTimeIntervalSinceNow:3600*24*2];
         
         // use Dictionary for remove duplicates produced by events covered more one year segment
         NSMutableDictionary *eventsDict = [NSMutableDictionary dictionaryWithCapacity:1024];
@@ -121,6 +124,9 @@
         
         NSArray *events = [eventsDict allValues];
         
+        _eventList = events;
+        [self.tableView reloadData];
+        
         NSDateFormatter *df = [[NSDateFormatter alloc] init];
         [df setDateFormat:@"d-M-Y hh:mm"];
         
@@ -144,6 +150,36 @@
         
         //NSLog(@"events: %@",events);
     }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _eventList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    EventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if (cell == nil) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    EKEvent *e = [_eventList objectAtIndex:indexPath.row];
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"M/d/Y hh:mm:ss"];
+    
+    cell.lbTitle.text = e.title;
+    cell.lbTime.text = [df stringFromDate:e.startDate];
+    cell.lbLocation.text = e.location;
+    
+    return cell;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 80;
 }
 
 @end
