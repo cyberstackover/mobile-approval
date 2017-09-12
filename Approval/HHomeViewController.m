@@ -33,9 +33,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _lbEvents.text = @"";
     [self updateAuthorizationStatusToAccessEventStore];
-    [self fetchEvents];
+    //[self fetchEvents];
+}
+
+- (EKEventStore *)eventStore {
+    if (!_eventStore) {
+        _eventStore = [[EKEventStore alloc] init];
+    }
+    return _eventStore;
 }
 
 - (void)updateAuthorizationStatusToAccessEventStore {
@@ -57,6 +64,7 @@
             // 4
         case EKAuthorizationStatusAuthorized:
             self.isAccessToEventStoreGranted = YES;
+            [self fetchEvents];
             break;
             
             // 5
@@ -66,6 +74,7 @@
                                             completion:^(BOOL granted, NSError *error) {
                                                 dispatch_async(dispatch_get_main_queue(), ^{
                                                     weakSelf.isAccessToEventStoreGranted = granted;
+                                                    [self fetchEvents];
                                                     //[weakSelf.tableView reloadData];
                                                 });
                                             }];
