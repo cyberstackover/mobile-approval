@@ -31,7 +31,7 @@
                  [m objectForKey:@"BOS"],
                  [m objectForKey:@"PM Notif"],
                  [m objectForKey:@"Contract"],
-                 @"Y"
+                 [m objectForKey:@"Reservation"]
                  ];
     
     menuImages = @[@"ic_pr",@"ic_po",@"ic_tax",@"ic_bos",@"ic_notif",@"ic_contract",@"ic_reservation"];
