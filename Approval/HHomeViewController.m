@@ -91,8 +91,8 @@
         
         _eventStore = [[EKEventStore alloc] init];
         
-        NSDate *start = [NSDate dateWithTimeIntervalSinceNow:-3600*24*2];
-        NSDate *finish = [NSDate dateWithTimeIntervalSinceNow:3600*24*2];
+        NSDate *start = [NSDate dateWithTimeIntervalSinceNow:0];
+        NSDate *finish = [NSDate dateWithTimeIntervalSinceNow:3600*24*365];
         
         // use Dictionary for remove duplicates produced by events covered more one year segment
         NSMutableDictionary *eventsDict = [NSMutableDictionary dictionaryWithCapacity:1024];
