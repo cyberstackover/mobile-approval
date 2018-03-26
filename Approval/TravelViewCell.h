@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *person;
 @property (weak, nonatomic) IBOutlet UILabel *jenis;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet UILabel *dest;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 
 @end

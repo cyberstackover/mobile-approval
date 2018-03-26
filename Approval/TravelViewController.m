@@ -82,6 +82,7 @@
     cell.person.text = [item objectForKey:@"person"];//[NSString stringWithFormat:@"PO No. %@",[item objectForKey:@"po"]];
     cell.jenis.text = [item objectForKey:@"jenis"];
     cell.desc.text = [item objectForKey:@"deskripsi"];
+    cell.dest.text = [item objectForKey:@"destination"];
     cell.date.text = [item objectForKey:@"date"];
     
     cell.tag = indexPath.row;

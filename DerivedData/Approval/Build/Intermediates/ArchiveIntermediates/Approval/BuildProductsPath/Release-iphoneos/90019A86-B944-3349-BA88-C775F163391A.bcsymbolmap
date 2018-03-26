@@ -1,0 +1,3843 @@
+BCSymbolMap Version: 2.0
+-[OvertimeViewController viewDidLoad]
+-[OvertimeViewController populateData]
+___38-[OvertimeViewController populateData]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+___38-[OvertimeViewController populateData]_block_invoke.60
+-[OvertimeViewController didReceiveMemoryWarning]
+-[OvertimeViewController numberOfSectionsInTableView:]
+-[OvertimeViewController tableView:numberOfRowsInSection:]
+-[OvertimeViewController tableView:cellForRowAtIndexPath:]
+-[OvertimeViewController tableView:heightForRowAtIndexPath:]
+-[OvertimeViewController handleLongPress:]
+___42-[OvertimeViewController handleLongPress:]_block_invoke
+___copy_helper_block_.139
+___destroy_helper_block_.140
+___42-[OvertimeViewController handleLongPress:]_block_invoke.147
+___copy_helper_block_.150
+___destroy_helper_block_.151
+___42-[OvertimeViewController handleLongPress:]_block_invoke.155
+-[OvertimeViewController doApproval]
+___36-[OvertimeViewController doApproval]_block_invoke
+___36-[OvertimeViewController doApproval]_block_invoke_2
+___copy_helper_block_.180
+___destroy_helper_block_.181
+___copy_helper_block_.183
+___destroy_helper_block_.184
+___36-[OvertimeViewController doApproval]_block_invoke.186
+-[OvertimeViewController doReject]
+___34-[OvertimeViewController doReject]_block_invoke
+___34-[OvertimeViewController doReject]_block_invoke_2
+___copy_helper_block_.191
+___destroy_helper_block_.192
+___34-[OvertimeViewController doReject]_block_invoke.194
+___copy_helper_block_.195
+___destroy_helper_block_.196
+___copy_helper_block_.198
+___destroy_helper_block_.199
+___34-[OvertimeViewController doReject]_block_invoke.201
+-[OvertimeViewController .cxx_destruct]
+_OBJC_CLASS_$_OvertimeViewController
+_OBJC_CLASS_$_SVProgressHUD
+_OBJC_CLASS_$_AFHTTPSessionManager
+_OBJC_CLASS_$_AFHTTPRequestSerializer
+_OBJC_IVAR_$_OvertimeViewController.list
+___block_descriptor_tmp
+___block_descriptor_tmp.64
+___block_literal_global
+_OBJC_IVAR_$_OvertimeViewController.longPressIndex
+___block_descriptor_tmp.142
+___block_descriptor_tmp.152
+___block_descriptor_tmp.156
+___block_literal_global.157
+___block_descriptor_tmp.182
+___block_descriptor_tmp.185
+___block_descriptor_tmp.187
+___block_literal_global.188
+___block_descriptor_tmp.193
+___block_descriptor_tmp.197
+___block_descriptor_tmp.200
+___block_descriptor_tmp.202
+___block_literal_global.203
+_OBJC_METACLASS_$_OvertimeViewController
+Apple LLVM version 8.1.0 (clang-802.0.42)
+/Users/sisi/Documents/Herwin/approval-2/Approval/OvertimeViewController.m
+/Users/sisi/Documents/Herwin/approval-2
+__34-[OvertimeViewController doReject]_block_invoke.201
+__destroy_helper_block_
+__copy_helper_block_
+__34-[OvertimeViewController doReject]_block_invoke.194
+__34-[OvertimeViewController doReject]_block_invoke_2
+__34-[OvertimeViewController doReject]_block_invoke
+__36-[OvertimeViewController doApproval]_block_invoke.186
+__36-[OvertimeViewController doApproval]_block_invoke_2
+__36-[OvertimeViewController doApproval]_block_invoke
+__42-[OvertimeViewController handleLongPress:]_block_invoke.155
+__42-[OvertimeViewController handleLongPress:]_block_invoke.147
+__42-[OvertimeViewController handleLongPress:]_block_invoke
+__38-[OvertimeViewController populateData]_block_invoke.60
+__38-[OvertimeViewController populateData]_block_invoke
+-[PRDetailViewCell awakeFromNib]
+-[PRDetailViewCell setSelected:animated:]
+-[PRDetailViewCell pr]
+-[PRDetailViewCell setPr:]
+-[PRDetailViewCell material]
+-[PRDetailViewCell setMaterial:]
+-[PRDetailViewCell qty]
+-[PRDetailViewCell setQty:]
+-[PRDetailViewCell nominal]
+-[PRDetailViewCell setNominal:]
+-[PRDetailViewCell date]
+-[PRDetailViewCell setDate:]
+-[PRDetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_PRDetailViewCell
+_OBJC_IVAR_$_PRDetailViewCell._pr
+_OBJC_IVAR_$_PRDetailViewCell._material
+_OBJC_IVAR_$_PRDetailViewCell._qty
+_OBJC_IVAR_$_PRDetailViewCell._nominal
+_OBJC_IVAR_$_PRDetailViewCell._date
+_OBJC_METACLASS_$_PRDetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRDetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRDetailViewCell.h
+-[MenuViewCell img]
+-[MenuViewCell setImg:]
+-[MenuViewCell lb]
+-[MenuViewCell setLb:]
+-[MenuViewCell bg]
+-[MenuViewCell setBg:]
+-[MenuViewCell imgLock]
+-[MenuViewCell setImgLock:]
+-[MenuViewCell .cxx_destruct]
+_OBJC_IVAR_$_MenuViewCell._img
+_OBJC_IVAR_$_MenuViewCell._lb
+_OBJC_IVAR_$_MenuViewCell._bg
+_OBJC_IVAR_$_MenuViewCell._imgLock
+_OBJC_METACLASS_$_MenuViewCell
+_OBJC_CLASS_$_MenuViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/MenuViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/MenuViewCell.h
+-[SubstitutionViewCell awakeFromNib]
+-[SubstitutionViewCell setSelected:animated:]
+-[SubstitutionViewCell person]
+-[SubstitutionViewCell setPerson:]
+-[SubstitutionViewCell date]
+-[SubstitutionViewCell setDate:]
+-[SubstitutionViewCell from]
+-[SubstitutionViewCell setFrom:]
+-[SubstitutionViewCell to]
+-[SubstitutionViewCell setTo:]
+-[SubstitutionViewCell .cxx_destruct]
+_OBJC_CLASS_$_SubstitutionViewCell
+_OBJC_IVAR_$_SubstitutionViewCell._person
+_OBJC_IVAR_$_SubstitutionViewCell._date
+_OBJC_IVAR_$_SubstitutionViewCell._from
+_OBJC_IVAR_$_SubstitutionViewCell._to
+_OBJC_METACLASS_$_SubstitutionViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/SubstitutionViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/SubstitutionViewCell.h
+-[LoginViewController viewDidLoad]
+-[LoginViewController didReceiveMemoryWarning]
+-[LoginViewController btnProfilTapped:]
+___39-[LoginViewController btnProfilTapped:]_block_invoke
+___39-[LoginViewController btnProfilTapped:]_block_invoke.46
+-[LoginViewController doClearUser]
+-[LoginViewController btnLoginTapped:]
+___38-[LoginViewController btnLoginTapped:]_block_invoke
+___copy_helper_block_.177
+___destroy_helper_block_.178
+___38-[LoginViewController btnLoginTapped:]_block_invoke.181
+-[LoginViewController vwTop]
+-[LoginViewController setVwTop:]
+-[LoginViewController tfUsername]
+-[LoginViewController setTfUsername:]
+-[LoginViewController tfPassword]
+-[LoginViewController setTfPassword:]
+-[LoginViewController vwLoginOverlay]
+-[LoginViewController setVwLoginOverlay:]
+-[LoginViewController btnProfile]
+-[LoginViewController setBtnProfile:]
+-[LoginViewController lbUsernameProfile]
+-[LoginViewController setLbUsernameProfile:]
+-[LoginViewController .cxx_destruct]
+_OBJC_CLASS_$_LoginViewController
+_OBJC_IVAR_$_LoginViewController._vwTop
+_OBJC_IVAR_$_LoginViewController._tfUsername
+_OBJC_IVAR_$_LoginViewController._tfPassword
+_OBJC_IVAR_$_LoginViewController._vwLoginOverlay
+_OBJC_IVAR_$_LoginViewController._btnProfile
+_OBJC_IVAR_$_LoginViewController._lbUsernameProfile
+___block_descriptor_tmp.47
+___block_descriptor_tmp.180
+___block_literal_global.186
+_OBJC_METACLASS_$_LoginViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/LoginViewController.m
+__38-[LoginViewController btnLoginTapped:]_block_invoke.181
+__38-[LoginViewController btnLoginTapped:]_block_invoke
+__39-[LoginViewController btnProfilTapped:]_block_invoke.46
+__39-[LoginViewController btnProfilTapped:]_block_invoke
+-[PODetailViewController viewDidLoad]
+-[PODetailViewController didReceiveMemoryWarning]
+-[PODetailViewController numberOfSectionsInTableView:]
+-[PODetailViewController tableView:numberOfRowsInSection:]
+-[PODetailViewController tableView:cellForRowAtIndexPath:]
+-[PODetailViewController tableView:heightForRowAtIndexPath:]
+-[PODetailViewController btnTapped:]
+___36-[PODetailViewController btnTapped:]_block_invoke
+___36-[PODetailViewController btnTapped:]_block_invoke.89
+-[PODetailViewController doApproval]
+___36-[PODetailViewController doApproval]_block_invoke
+___36-[PODetailViewController doApproval]_block_invoke_2
+___copy_helper_block_.154
+___destroy_helper_block_.155
+___36-[PODetailViewController doApproval]_block_invoke.157
+___copy_helper_block_.158
+___destroy_helper_block_.159
+___copy_helper_block_.161
+___destroy_helper_block_.162
+___36-[PODetailViewController doApproval]_block_invoke.165
+-[PODetailViewController doBack]
+-[PODetailViewController ponum]
+-[PODetailViewController setPonum:]
+-[PODetailViewController vendor]
+-[PODetailViewController setVendor:]
+-[PODetailViewController nominal]
+-[PODetailViewController setNominal:]
+-[PODetailViewController tableView]
+-[PODetailViewController setTableView:]
+-[PODetailViewController btn]
+-[PODetailViewController setBtn:]
+-[PODetailViewController tvHistory]
+-[PODetailViewController setTvHistory:]
+-[PODetailViewController lbApprovalHistory]
+-[PODetailViewController setLbApprovalHistory:]
+-[PODetailViewController data]
+-[PODetailViewController setData:]
+-[PODetailViewController .cxx_destruct]
+_OBJC_CLASS_$_PODetailViewController
+_OBJC_IVAR_$_PODetailViewController._data
+_OBJC_IVAR_$_PODetailViewController._ponum
+_OBJC_IVAR_$_PODetailViewController._vendor
+_OBJC_IVAR_$_PODetailViewController._nominal
+_OBJC_IVAR_$_PODetailViewController.list
+_OBJC_IVAR_$_PODetailViewController.listHistory
+_OBJC_IVAR_$_PODetailViewController._lbApprovalHistory
+___block_descriptor_tmp.90
+___block_descriptor_tmp.160
+___block_descriptor_tmp.164
+___block_descriptor_tmp.169
+___block_literal_global.170
+_OBJC_IVAR_$_PODetailViewController._tableView
+_OBJC_IVAR_$_PODetailViewController._btn
+_OBJC_IVAR_$_PODetailViewController._tvHistory
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+_OBJC_METACLASS_$_PODetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/PODetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PODetailViewController.h
+__36-[PODetailViewController doApproval]_block_invoke.165
+__36-[PODetailViewController doApproval]_block_invoke.157
+__36-[PODetailViewController doApproval]_block_invoke_2
+__36-[PODetailViewController doApproval]_block_invoke
+__36-[PODetailViewController btnTapped:]_block_invoke.89
+__36-[PODetailViewController btnTapped:]_block_invoke
+-[ReservationDetailViewCell awakeFromNib]
+-[ReservationDetailViewCell setSelected:animated:]
+-[ReservationDetailViewCell lbTop]
+-[ReservationDetailViewCell setLbTop:]
+-[ReservationDetailViewCell lbLeft]
+-[ReservationDetailViewCell setLbLeft:]
+-[ReservationDetailViewCell lbRight]
+-[ReservationDetailViewCell setLbRight:]
+-[ReservationDetailViewCell tfEce]
+-[ReservationDetailViewCell setTfEce:]
+-[ReservationDetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_ReservationDetailViewCell
+_OBJC_IVAR_$_ReservationDetailViewCell._lbTop
+_OBJC_IVAR_$_ReservationDetailViewCell._lbLeft
+_OBJC_IVAR_$_ReservationDetailViewCell._lbRight
+_OBJC_IVAR_$_ReservationDetailViewCell._tfEce
+_OBJC_METACLASS_$_ReservationDetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationDetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationDetailViewCell.h
+-[LSOViewController viewDidLoad]
+-[LSOViewController populateData]
+___33-[LSOViewController populateData]_block_invoke
+___33-[LSOViewController populateData]_block_invoke.60
+-[LSOViewController didReceiveMemoryWarning]
+-[LSOViewController numberOfSectionsInTableView:]
+-[LSOViewController tableView:numberOfRowsInSection:]
+-[LSOViewController tableView:cellForRowAtIndexPath:]
+-[LSOViewController tableView:heightForRowAtIndexPath:]
+-[LSOViewController handleLongPress:]
+___37-[LSOViewController handleLongPress:]_block_invoke
+___copy_helper_block_.124
+___destroy_helper_block_.125
+___37-[LSOViewController handleLongPress:]_block_invoke.132
+___copy_helper_block_.135
+___destroy_helper_block_.136
+___37-[LSOViewController handleLongPress:]_block_invoke.140
+-[LSOViewController doApproval]
+___31-[LSOViewController doApproval]_block_invoke
+___31-[LSOViewController doApproval]_block_invoke_2
+___31-[LSOViewController doApproval]_block_invoke.180
+___copy_helper_block_.181
+___destroy_helper_block_.182
+___copy_helper_block_.184
+___destroy_helper_block_.185
+___31-[LSOViewController doApproval]_block_invoke.187
+-[LSOViewController doReject]
+___29-[LSOViewController doReject]_block_invoke
+___29-[LSOViewController doReject]_block_invoke_2
+___copy_helper_block_.192
+___destroy_helper_block_.193
+___29-[LSOViewController doReject]_block_invoke.195
+___copy_helper_block_.196
+___destroy_helper_block_.197
+___copy_helper_block_.199
+___destroy_helper_block_.200
+___29-[LSOViewController doReject]_block_invoke.202
+-[LSOViewController .cxx_destruct]
+_OBJC_CLASS_$_LSOViewController
+_OBJC_IVAR_$_LSOViewController.list
+_OBJC_IVAR_$_LSOViewController.longPressIndex
+___block_descriptor_tmp.127
+___block_descriptor_tmp.137
+___block_descriptor_tmp.141
+___block_literal_global.142
+___block_descriptor_tmp.179
+___block_descriptor_tmp.183
+___block_descriptor_tmp.186
+___block_descriptor_tmp.188
+___block_literal_global.189
+___block_descriptor_tmp.194
+___block_descriptor_tmp.198
+___block_descriptor_tmp.201
+___block_descriptor_tmp.203
+___block_literal_global.204
+_OBJC_METACLASS_$_LSOViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/LSOViewController.m
+__29-[LSOViewController doReject]_block_invoke.202
+__29-[LSOViewController doReject]_block_invoke.195
+__29-[LSOViewController doReject]_block_invoke_2
+__29-[LSOViewController doReject]_block_invoke
+__31-[LSOViewController doApproval]_block_invoke.187
+__31-[LSOViewController doApproval]_block_invoke.180
+__31-[LSOViewController doApproval]_block_invoke_2
+__31-[LSOViewController doApproval]_block_invoke
+__37-[LSOViewController handleLongPress:]_block_invoke.140
+__37-[LSOViewController handleLongPress:]_block_invoke.132
+__37-[LSOViewController handleLongPress:]_block_invoke
+__33-[LSOViewController populateData]_block_invoke.60
+__33-[LSOViewController populateData]_block_invoke
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate persistentContainer]
+___34-[AppDelegate persistentContainer]_block_invoke
+-[AppDelegate saveContext]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+_OBJC_CLASS_$_AFNetworkActivityLogger
+_OBJC_IVAR_$_AppDelegate._persistentContainer
+_OBJC_IVAR_$_AppDelegate._window
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_METACLASS_$_AppDelegate
+_OBJC_CLASS_$_AppDelegate
+/Users/sisi/Documents/Herwin/approval-2/Approval/AppDelegate.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/AppDelegate.h
+__34-[AppDelegate persistentContainer]_block_invoke
+-[POViewCell awakeFromNib]
+-[POViewCell setSelected:animated:]
+-[POViewCell title]
+-[POViewCell setTitle:]
+-[POViewCell detail]
+-[POViewCell setDetail:]
+-[POViewCell nominal]
+-[POViewCell setNominal:]
+-[POViewCell .cxx_destruct]
+_OBJC_CLASS_$_POViewCell
+_OBJC_IVAR_$_POViewCell._title
+_OBJC_IVAR_$_POViewCell._detail
+_OBJC_IVAR_$_POViewCell._nominal
+_OBJC_METACLASS_$_POViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/POViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/POViewCell.h
+-[EventCell lbTitle]
+-[EventCell setLbTitle:]
+-[EventCell lbTime]
+-[EventCell setLbTime:]
+-[EventCell lbLocation]
+-[EventCell setLbLocation:]
+-[EventCell .cxx_destruct]
+_OBJC_IVAR_$_EventCell._lbTitle
+_OBJC_IVAR_$_EventCell._lbTime
+_OBJC_IVAR_$_EventCell._lbLocation
+_OBJC_METACLASS_$_EventCell
+_OBJC_CLASS_$_EventCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/EventCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/EventCell.h
+-[TaxViewCell awakeFromNib]
+-[TaxViewCell setSelected:animated:]
+-[TaxViewCell title]
+-[TaxViewCell setTitle:]
+-[TaxViewCell detail]
+-[TaxViewCell setDetail:]
+-[TaxViewCell nominal]
+-[TaxViewCell setNominal:]
+-[TaxViewCell date]
+-[TaxViewCell setDate:]
+-[TaxViewCell .cxx_destruct]
+_OBJC_CLASS_$_TaxViewCell
+_OBJC_IVAR_$_TaxViewCell._title
+_OBJC_IVAR_$_TaxViewCell._detail
+_OBJC_IVAR_$_TaxViewCell._nominal
+_OBJC_IVAR_$_TaxViewCell._date
+_OBJC_METACLASS_$_TaxViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxViewCell.h
+-[LSOViewCell awakeFromNib]
+-[LSOViewCell setSelected:animated:]
+-[LSOViewCell person]
+-[LSOViewCell setPerson:]
+-[LSOViewCell detail]
+-[LSOViewCell setDetail:]
+-[LSOViewCell place]
+-[LSOViewCell setPlace:]
+-[LSOViewCell date]
+-[LSOViewCell setDate:]
+-[LSOViewCell .cxx_destruct]
+_OBJC_CLASS_$_LSOViewCell
+_OBJC_IVAR_$_LSOViewCell._person
+_OBJC_IVAR_$_LSOViewCell._detail
+_OBJC_IVAR_$_LSOViewCell._place
+_OBJC_IVAR_$_LSOViewCell._date
+_OBJC_METACLASS_$_LSOViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/LSOViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/LSOViewCell.h
+-[POContractDetailViewCell awakeFromNib]
+-[POContractDetailViewCell setSelected:animated:]
+-[POContractDetailViewCell po]
+-[POContractDetailViewCell setPo:]
+-[POContractDetailViewCell material]
+-[POContractDetailViewCell setMaterial:]
+-[POContractDetailViewCell qty]
+-[POContractDetailViewCell setQty:]
+-[POContractDetailViewCell nominal]
+-[POContractDetailViewCell setNominal:]
+-[POContractDetailViewCell date]
+-[POContractDetailViewCell setDate:]
+-[POContractDetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_POContractDetailViewCell
+_OBJC_IVAR_$_POContractDetailViewCell._po
+_OBJC_IVAR_$_POContractDetailViewCell._material
+_OBJC_IVAR_$_POContractDetailViewCell._qty
+_OBJC_IVAR_$_POContractDetailViewCell._nominal
+_OBJC_IVAR_$_POContractDetailViewCell._date
+_OBJC_METACLASS_$_POContractDetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractDetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractDetailViewCell.h
+-[LeaveViewCell awakeFromNib]
+-[LeaveViewCell setSelected:animated:]
+-[LeaveViewCell person]
+-[LeaveViewCell setPerson:]
+-[LeaveViewCell detail]
+-[LeaveViewCell setDetail:]
+-[LeaveViewCell place]
+-[LeaveViewCell setPlace:]
+-[LeaveViewCell date]
+-[LeaveViewCell setDate:]
+-[LeaveViewCell .cxx_destruct]
+_OBJC_CLASS_$_LeaveViewCell
+_OBJC_IVAR_$_LeaveViewCell._person
+_OBJC_IVAR_$_LeaveViewCell._detail
+_OBJC_IVAR_$_LeaveViewCell._place
+_OBJC_IVAR_$_LeaveViewCell._date
+_OBJC_METACLASS_$_LeaveViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/LeaveViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/LeaveViewCell.h
+-[POContractDetailViewController viewDidLoad]
+-[POContractDetailViewController didReceiveMemoryWarning]
+-[POContractDetailViewController numberOfSectionsInTableView:]
+-[POContractDetailViewController tableView:numberOfRowsInSection:]
+-[POContractDetailViewController tableView:cellForRowAtIndexPath:]
+-[POContractDetailViewController tableView:heightForRowAtIndexPath:]
+-[POContractDetailViewController btnTapped:]
+___44-[POContractDetailViewController btnTapped:]_block_invoke
+___44-[POContractDetailViewController btnTapped:]_block_invoke.59
+-[POContractDetailViewController doApproval]
+___44-[POContractDetailViewController doApproval]_block_invoke
+___44-[POContractDetailViewController doApproval]_block_invoke_2
+___44-[POContractDetailViewController doApproval]_block_invoke.127
+___copy_helper_block_.128
+___destroy_helper_block_.129
+___copy_helper_block_.131
+___destroy_helper_block_.132
+___44-[POContractDetailViewController doApproval]_block_invoke.135
+-[POContractDetailViewController doBack]
+-[POContractDetailViewController ponum]
+-[POContractDetailViewController setPonum:]
+-[POContractDetailViewController vendor]
+-[POContractDetailViewController setVendor:]
+-[POContractDetailViewController nominal]
+-[POContractDetailViewController setNominal:]
+-[POContractDetailViewController tableView]
+-[POContractDetailViewController setTableView:]
+-[POContractDetailViewController btn]
+-[POContractDetailViewController setBtn:]
+-[POContractDetailViewController data]
+-[POContractDetailViewController setData:]
+-[POContractDetailViewController .cxx_destruct]
+_OBJC_CLASS_$_POContractDetailViewController
+_OBJC_IVAR_$_POContractDetailViewController._ponum
+_OBJC_IVAR_$_POContractDetailViewController._data
+_OBJC_IVAR_$_POContractDetailViewController._vendor
+_OBJC_IVAR_$_POContractDetailViewController._nominal
+_OBJC_IVAR_$_POContractDetailViewController.list
+___block_descriptor_tmp.60
+___block_descriptor_tmp.126
+___block_descriptor_tmp.130
+___block_descriptor_tmp.134
+___block_descriptor_tmp.139
+___block_literal_global.140
+_OBJC_IVAR_$_POContractDetailViewController._tableView
+_OBJC_IVAR_$_POContractDetailViewController._btn
+_OBJC_METACLASS_$_POContractDetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractDetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractDetailViewController.h
+__44-[POContractDetailViewController doApproval]_block_invoke.135
+__44-[POContractDetailViewController doApproval]_block_invoke.127
+__44-[POContractDetailViewController doApproval]_block_invoke_2
+__44-[POContractDetailViewController doApproval]_block_invoke
+__44-[POContractDetailViewController btnTapped:]_block_invoke.59
+__44-[POContractDetailViewController btnTapped:]_block_invoke
+-[ApprovalHistoryViewCell awakeFromNib]
+-[ApprovalHistoryViewCell setSelected:animated:]
+-[ApprovalHistoryViewCell title]
+-[ApprovalHistoryViewCell setTitle:]
+-[ApprovalHistoryViewCell date]
+-[ApprovalHistoryViewCell setDate:]
+-[ApprovalHistoryViewCell .cxx_destruct]
+_OBJC_CLASS_$_ApprovalHistoryViewCell
+_OBJC_IVAR_$_ApprovalHistoryViewCell._title
+_OBJC_IVAR_$_ApprovalHistoryViewCell._date
+_OBJC_METACLASS_$_ApprovalHistoryViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/ApprovalHistoryViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/ApprovalHistoryViewCell.h
+-[ReservationViewController viewDidLoad]
+-[ReservationViewController reloadReservation]
+-[ReservationViewController populateData]
+___41-[ReservationViewController populateData]_block_invoke
+___41-[ReservationViewController populateData]_block_invoke.77
+-[ReservationViewController didReceiveMemoryWarning]
+-[ReservationViewController numberOfSectionsInTableView:]
+-[ReservationViewController tableView:numberOfRowsInSection:]
+-[ReservationViewController tableView:cellForRowAtIndexPath:]
+-[ReservationViewController cellTapped:]
+-[ReservationViewController handleLongPress:]
+___45-[ReservationViewController handleLongPress:]_block_invoke
+___copy_helper_block_.137
+___destroy_helper_block_.138
+___45-[ReservationViewController handleLongPress:]_block_invoke.145
+-[ReservationViewController showApprovalInput]
+___46-[ReservationViewController showApprovalInput]_block_invoke
+___copy_helper_block_.164
+___destroy_helper_block_.165
+___46-[ReservationViewController showApprovalInput]_block_invoke.172
+___46-[ReservationViewController showApprovalInput]_block_invoke.184
+-[ReservationViewController doApproval]
+___39-[ReservationViewController doApproval]_block_invoke
+___39-[ReservationViewController doApproval]_block_invoke_2
+___copy_helper_block_.206
+___destroy_helper_block_.207
+___39-[ReservationViewController doApproval]_block_invoke.209
+___copy_helper_block_.210
+___destroy_helper_block_.211
+___copy_helper_block_.213
+___destroy_helper_block_.214
+___39-[ReservationViewController doApproval]_block_invoke.217
+-[ReservationViewController tableView:estimatedHeightForRowAtIndexPath:]
+-[ReservationViewController tableView:didSelectRowAtIndexPath:]
+-[ReservationViewController prepareForSegue:sender:]
+-[ReservationViewController .cxx_destruct]
+_OBJC_CLASS_$_ReservationViewController
+_OBJC_IVAR_$_ReservationViewController.list
+___block_descriptor_tmp.81
+_OBJC_IVAR_$_ReservationViewController.longPressIndex
+___block_descriptor_tmp.140
+___block_descriptor_tmp.146
+___block_literal_global.147
+_OBJC_IVAR_$_ReservationViewController.approvalInput
+___block_descriptor_tmp.167
+___block_literal_global.187
+___block_descriptor_tmp.208
+___block_descriptor_tmp.212
+___block_descriptor_tmp.216
+___block_descriptor_tmp.218
+___block_literal_global.219
+_OBJC_METACLASS_$_ReservationViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationViewController.m
+__39-[ReservationViewController doApproval]_block_invoke.217
+__39-[ReservationViewController doApproval]_block_invoke.209
+__39-[ReservationViewController doApproval]_block_invoke_2
+__39-[ReservationViewController doApproval]_block_invoke
+__46-[ReservationViewController showApprovalInput]_block_invoke.184
+__46-[ReservationViewController showApprovalInput]_block_invoke.172
+__46-[ReservationViewController showApprovalInput]_block_invoke
+__45-[ReservationViewController handleLongPress:]_block_invoke.145
+__45-[ReservationViewController handleLongPress:]_block_invoke
+__41-[ReservationViewController populateData]_block_invoke.77
+__41-[ReservationViewController populateData]_block_invoke
+-[HHomeViewController viewDidLoad]
+-[HHomeViewController eventStore]
+-[HHomeViewController updateAuthorizationStatusToAccessEventStore]
+___66-[HHomeViewController updateAuthorizationStatusToAccessEventStore]_block_invoke
+___66-[HHomeViewController updateAuthorizationStatusToAccessEventStore]_block_invoke_2
+___copy_helper_block_.29
+___destroy_helper_block_.30
+-[HHomeViewController fetchEvents]
+___34-[HHomeViewController fetchEvents]_block_invoke
+___copy_helper_block_.53
+___destroy_helper_block_.54
+-[HHomeViewController tableView:numberOfRowsInSection:]
+-[HHomeViewController tableView:cellForRowAtIndexPath:]
+-[HHomeViewController tableView:heightForRowAtIndexPath:]
+-[HHomeViewController lbEvents]
+-[HHomeViewController setLbEvents:]
+-[HHomeViewController tableView]
+-[HHomeViewController setTableView:]
+-[HHomeViewController setEventStore:]
+-[HHomeViewController isAccessToEventStoreGranted]
+-[HHomeViewController setIsAccessToEventStoreGranted:]
+-[HHomeViewController todoItems]
+-[HHomeViewController setTodoItems:]
+-[HHomeViewController calendar]
+-[HHomeViewController setCalendar:]
+-[HHomeViewController eventList]
+-[HHomeViewController setEventList:]
+-[HHomeViewController .cxx_destruct]
+_OBJC_CLASS_$_HHomeViewController
+_OBJC_IVAR_$_HHomeViewController._lbEvents
+_OBJC_IVAR_$_HHomeViewController._eventStore
+___block_descriptor_tmp.32
+___block_descriptor_tmp.56
+_OBJC_IVAR_$_HHomeViewController._eventList
+_OBJC_IVAR_$_HHomeViewController._tableView
+_OBJC_IVAR_$_HHomeViewController._isAccessToEventStoreGranted
+_OBJC_IVAR_$_HHomeViewController._todoItems
+_OBJC_IVAR_$_HHomeViewController._calendar
+_OBJC_METACLASS_$_HHomeViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/HHomeViewController.m
+__34-[HHomeViewController fetchEvents]_block_invoke
+__66-[HHomeViewController updateAuthorizationStatusToAccessEventStore]_block_invoke_2
+__66-[HHomeViewController updateAuthorizationStatusToAccessEventStore]_block_invoke
+-[PRViewController viewDidLoad]
+-[PRViewController reloadPR]
+-[PRViewController populateData]
+___32-[PRViewController populateData]_block_invoke
+___32-[PRViewController populateData]_block_invoke.67
+-[PRViewController didReceiveMemoryWarning]
+-[PRViewController numberOfSectionsInTableView:]
+-[PRViewController tableView:numberOfRowsInSection:]
+-[PRViewController tableView:heightForRowAtIndexPath:]
+-[PRViewController tableView:cellForRowAtIndexPath:]
+-[PRViewController handleLongPress:]
+___36-[PRViewController handleLongPress:]_block_invoke
+___copy_helper_block_.138
+___destroy_helper_block_.139
+___36-[PRViewController handleLongPress:]_block_invoke.146
+___copy_helper_block_.149
+___destroy_helper_block_.150
+___36-[PRViewController handleLongPress:]_block_invoke.154
+-[PRViewController doApproval]
+___30-[PRViewController doApproval]_block_invoke
+___30-[PRViewController doApproval]_block_invoke_2
+___30-[PRViewController doApproval]_block_invoke.180
+___30-[PRViewController doApproval]_block_invoke.188
+-[PRViewController doReject]
+___28-[PRViewController doReject]_block_invoke
+___28-[PRViewController doReject]_block_invoke_2
+___28-[PRViewController doReject]_block_invoke.198
+___copy_helper_block_.202
+___destroy_helper_block_.203
+___28-[PRViewController doReject]_block_invoke.205
+-[PRViewController tableView:didSelectRowAtIndexPath:]
+-[PRViewController prepareForSegue:sender:]
+-[PRViewController .cxx_destruct]
+_OBJC_CLASS_$_PRViewController
+_OBJC_IVAR_$_PRViewController.list
+___block_descriptor_tmp.71
+_OBJC_IVAR_$_PRViewController.longPressIndex
+___block_descriptor_tmp.151
+___block_descriptor_tmp.155
+___block_literal_global.156
+___block_descriptor_tmp.189
+___block_literal_global.190
+___block_descriptor_tmp.204
+___block_descriptor_tmp.206
+___block_literal_global.207
+_OBJC_METACLASS_$_PRViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRViewController.m
+__28-[PRViewController doReject]_block_invoke.205
+__28-[PRViewController doReject]_block_invoke.198
+__28-[PRViewController doReject]_block_invoke_2
+__28-[PRViewController doReject]_block_invoke
+__30-[PRViewController doApproval]_block_invoke.188
+__30-[PRViewController doApproval]_block_invoke.180
+__30-[PRViewController doApproval]_block_invoke_2
+__30-[PRViewController doApproval]_block_invoke
+__36-[PRViewController handleLongPress:]_block_invoke.154
+__36-[PRViewController handleLongPress:]_block_invoke.146
+__36-[PRViewController handleLongPress:]_block_invoke
+__32-[PRViewController populateData]_block_invoke.67
+__32-[PRViewController populateData]_block_invoke
+-[BosDetailViewCell awakeFromNib]
+-[BosDetailViewCell setSelected:animated:]
+-[BosDetailViewCell pr]
+-[BosDetailViewCell setPr:]
+-[BosDetailViewCell material]
+-[BosDetailViewCell setMaterial:]
+-[BosDetailViewCell qty]
+-[BosDetailViewCell setQty:]
+-[BosDetailViewCell nominal]
+-[BosDetailViewCell setNominal:]
+-[BosDetailViewCell date]
+-[BosDetailViewCell setDate:]
+-[BosDetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_BosDetailViewCell
+_OBJC_IVAR_$_BosDetailViewCell._pr
+_OBJC_IVAR_$_BosDetailViewCell._material
+_OBJC_IVAR_$_BosDetailViewCell._qty
+_OBJC_IVAR_$_BosDetailViewCell._nominal
+_OBJC_IVAR_$_BosDetailViewCell._date
+_OBJC_METACLASS_$_BosDetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosDetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosDetailViewCell.h
+-[PRDetailViewController viewDidLoad]
+-[PRDetailViewController numberOfSectionsInTableView:]
+-[PRDetailViewController tableView:numberOfRowsInSection:]
+-[PRDetailViewController tableView:cellForRowAtIndexPath:]
+-[PRDetailViewController tableView:heightForRowAtIndexPath:]
+-[PRDetailViewController doApproval]
+___36-[PRDetailViewController doApproval]_block_invoke
+___36-[PRDetailViewController doApproval]_block_invoke_2
+___36-[PRDetailViewController doApproval]_block_invoke.145
+___copy_helper_block_.146
+___destroy_helper_block_.147
+___36-[PRDetailViewController doApproval]_block_invoke.153
+-[PRDetailViewController doReject]
+___34-[PRDetailViewController doReject]_block_invoke
+___34-[PRDetailViewController doReject]_block_invoke_2
+___copy_helper_block_.162
+___destroy_helper_block_.163
+___34-[PRDetailViewController doReject]_block_invoke.165
+___copy_helper_block_.166
+___destroy_helper_block_.167
+___copy_helper_block_.169
+___destroy_helper_block_.170
+___34-[PRDetailViewController doReject]_block_invoke.172
+-[PRDetailViewController doBack]
+-[PRDetailViewController didReceiveMemoryWarning]
+-[PRDetailViewController btnApproveTapped:]
+___43-[PRDetailViewController btnApproveTapped:]_block_invoke
+___copy_helper_block_.194
+___destroy_helper_block_.195
+___43-[PRDetailViewController btnApproveTapped:]_block_invoke.199
+-[PRDetailViewController btnRejectTapped:]
+___42-[PRDetailViewController btnRejectTapped:]_block_invoke
+___42-[PRDetailViewController btnRejectTapped:]_block_invoke.209
+-[PRDetailViewController data]
+-[PRDetailViewController setData:]
+-[PRDetailViewController nopr]
+-[PRDetailViewController setNopr:]
+-[PRDetailViewController owner]
+-[PRDetailViewController setOwner:]
+-[PRDetailViewController nominal]
+-[PRDetailViewController setNominal:]
+-[PRDetailViewController tableView]
+-[PRDetailViewController setTableView:]
+-[PRDetailViewController tvHistory]
+-[PRDetailViewController setTvHistory:]
+-[PRDetailViewController lbApprovalHistory]
+-[PRDetailViewController setLbApprovalHistory:]
+-[PRDetailViewController .cxx_destruct]
+_OBJC_CLASS_$_PRDetailViewController
+_OBJC_IVAR_$_PRDetailViewController._data
+_OBJC_IVAR_$_PRDetailViewController._nopr
+_OBJC_IVAR_$_PRDetailViewController._owner
+_OBJC_IVAR_$_PRDetailViewController._nominal
+_OBJC_IVAR_$_PRDetailViewController.list
+_OBJC_IVAR_$_PRDetailViewController.listHistory
+_OBJC_IVAR_$_PRDetailViewController._lbApprovalHistory
+___block_descriptor_tmp.148
+___block_descriptor_tmp.157
+___block_descriptor_tmp.168
+___block_descriptor_tmp.171
+___block_descriptor_tmp.173
+___block_literal_global.174
+___block_descriptor_tmp.196
+___block_literal_global.201
+___block_descriptor_tmp.210
+___block_literal_global.211
+_OBJC_IVAR_$_PRDetailViewController._tableView
+_OBJC_IVAR_$_PRDetailViewController._tvHistory
+_OBJC_METACLASS_$_PRDetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRDetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRDetailViewController.h
+__42-[PRDetailViewController btnRejectTapped:]_block_invoke.209
+__42-[PRDetailViewController btnRejectTapped:]_block_invoke
+__43-[PRDetailViewController btnApproveTapped:]_block_invoke.199
+__43-[PRDetailViewController btnApproveTapped:]_block_invoke
+__34-[PRDetailViewController doReject]_block_invoke.172
+__34-[PRDetailViewController doReject]_block_invoke.165
+__34-[PRDetailViewController doReject]_block_invoke_2
+__34-[PRDetailViewController doReject]_block_invoke
+__36-[PRDetailViewController doApproval]_block_invoke.153
+__36-[PRDetailViewController doApproval]_block_invoke.145
+__36-[PRDetailViewController doApproval]_block_invoke_2
+__36-[PRDetailViewController doApproval]_block_invoke
+-[TaxDetailViewCell awakeFromNib]
+-[TaxDetailViewCell setSelected:animated:]
+-[TaxDetailViewCell pr]
+-[TaxDetailViewCell setPr:]
+-[TaxDetailViewCell material]
+-[TaxDetailViewCell setMaterial:]
+-[TaxDetailViewCell qty]
+-[TaxDetailViewCell setQty:]
+-[TaxDetailViewCell nominal]
+-[TaxDetailViewCell setNominal:]
+-[TaxDetailViewCell date]
+-[TaxDetailViewCell setDate:]
+-[TaxDetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_TaxDetailViewCell
+_OBJC_IVAR_$_TaxDetailViewCell._pr
+_OBJC_IVAR_$_TaxDetailViewCell._material
+_OBJC_IVAR_$_TaxDetailViewCell._qty
+_OBJC_IVAR_$_TaxDetailViewCell._nominal
+_OBJC_IVAR_$_TaxDetailViewCell._date
+_OBJC_METACLASS_$_TaxDetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxDetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxDetailViewCell.h
+-[TaxDetailViewController viewDidLoad]
+-[TaxDetailViewController numberOfSectionsInTableView:]
+-[TaxDetailViewController tableView:numberOfRowsInSection:]
+-[TaxDetailViewController tableView:cellForRowAtIndexPath:]
+-[TaxDetailViewController tableView:heightForRowAtIndexPath:]
+-[TaxDetailViewController doApproval]
+___37-[TaxDetailViewController doApproval]_block_invoke
+___37-[TaxDetailViewController doApproval]_block_invoke_2
+___37-[TaxDetailViewController doApproval]_block_invoke.113
+___copy_helper_block_.114
+___destroy_helper_block_.115
+___copy_helper_block_.117
+___destroy_helper_block_.118
+___37-[TaxDetailViewController doApproval]_block_invoke.121
+-[TaxDetailViewController doBack]
+-[TaxDetailViewController didReceiveMemoryWarning]
+-[TaxDetailViewController btnApproveTapped:]
+___44-[TaxDetailViewController btnApproveTapped:]_block_invoke
+___copy_helper_block_.147
+___destroy_helper_block_.148
+___44-[TaxDetailViewController btnApproveTapped:]_block_invoke.152
+-[TaxDetailViewController header]
+-[TaxDetailViewController setHeader:]
+-[TaxDetailViewController data]
+-[TaxDetailViewController setData:]
+-[TaxDetailViewController nopr]
+-[TaxDetailViewController setNopr:]
+-[TaxDetailViewController owner]
+-[TaxDetailViewController setOwner:]
+-[TaxDetailViewController nominal]
+-[TaxDetailViewController setNominal:]
+-[TaxDetailViewController tableView]
+-[TaxDetailViewController setTableView:]
+-[TaxDetailViewController .cxx_destruct]
+_OBJC_CLASS_$_TaxDetailViewController
+_OBJC_IVAR_$_TaxDetailViewController._nopr
+_OBJC_IVAR_$_TaxDetailViewController._header
+_OBJC_IVAR_$_TaxDetailViewController._owner
+_OBJC_IVAR_$_TaxDetailViewController._nominal
+_OBJC_IVAR_$_TaxDetailViewController._data
+_OBJC_IVAR_$_TaxDetailViewController.list
+___block_descriptor_tmp.116
+___block_descriptor_tmp.120
+___block_descriptor_tmp.125
+___block_descriptor_tmp.149
+___block_descriptor_tmp.153
+___block_literal_global.154
+_OBJC_IVAR_$_TaxDetailViewController._tableView
+_OBJC_METACLASS_$_TaxDetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxDetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxDetailViewController.h
+__44-[TaxDetailViewController btnApproveTapped:]_block_invoke.152
+__44-[TaxDetailViewController btnApproveTapped:]_block_invoke
+__37-[TaxDetailViewController doApproval]_block_invoke.121
+__37-[TaxDetailViewController doApproval]_block_invoke.113
+__37-[TaxDetailViewController doApproval]_block_invoke_2
+__37-[TaxDetailViewController doApproval]_block_invoke
+-[TaxViewController viewDidLoad]
+-[TaxViewController reloadTax]
+-[TaxViewController populateData]
+___33-[TaxViewController populateData]_block_invoke
+___33-[TaxViewController populateData]_block_invoke.71
+-[TaxViewController didReceiveMemoryWarning]
+-[TaxViewController numberOfSectionsInTableView:]
+-[TaxViewController tableView:numberOfRowsInSection:]
+-[TaxViewController tableView:cellForRowAtIndexPath:]
+-[TaxViewController tableView:heightForRowAtIndexPath:]
+-[TaxViewController handleLongPress:]
+___37-[TaxViewController handleLongPress:]_block_invoke
+___copy_helper_block_.142
+___destroy_helper_block_.143
+___37-[TaxViewController handleLongPress:]_block_invoke.150
+-[TaxViewController doApproval]
+___31-[TaxViewController doApproval]_block_invoke
+___31-[TaxViewController doApproval]_block_invoke_2
+___copy_helper_block_.171
+___destroy_helper_block_.172
+___31-[TaxViewController doApproval]_block_invoke.174
+___copy_helper_block_.175
+___destroy_helper_block_.176
+___copy_helper_block_.178
+___destroy_helper_block_.179
+___31-[TaxViewController doApproval]_block_invoke.181
+-[TaxViewController tableView:didSelectRowAtIndexPath:]
+-[TaxViewController prepareForSegue:sender:]
+-[TaxViewController .cxx_destruct]
+_OBJC_CLASS_$_TaxViewController
+_OBJC_IVAR_$_TaxViewController.list
+_OBJC_IVAR_$_TaxViewController.item
+___block_descriptor_tmp.75
+_OBJC_IVAR_$_TaxViewController.longPressIndex
+___block_descriptor_tmp.145
+___block_literal_global.152
+___block_descriptor_tmp.177
+___block_literal_global.183
+_OBJC_METACLASS_$_TaxViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/TaxViewController.m
+__31-[TaxViewController doApproval]_block_invoke.181
+__31-[TaxViewController doApproval]_block_invoke.174
+__31-[TaxViewController doApproval]_block_invoke_2
+__31-[TaxViewController doApproval]_block_invoke
+__37-[TaxViewController handleLongPress:]_block_invoke.150
+__37-[TaxViewController handleLongPress:]_block_invoke
+__33-[TaxViewController populateData]_block_invoke.71
+__33-[TaxViewController populateData]_block_invoke
+-[BosViewCell awakeFromNib]
+-[BosViewCell setSelected:animated:]
+-[BosViewCell name]
+-[BosViewCell setName:]
+-[BosViewCell nominal]
+-[BosViewCell setNominal:]
+-[BosViewCell type]
+-[BosViewCell setType:]
+-[BosViewCell comname]
+-[BosViewCell setComname:]
+-[BosViewCell lifnr]
+-[BosViewCell setLifnr:]
+-[BosViewCell bilno]
+-[BosViewCell setBilno:]
+-[BosViewCell .cxx_destruct]
+_OBJC_CLASS_$_BosViewCell
+_OBJC_IVAR_$_BosViewCell._name
+_OBJC_IVAR_$_BosViewCell._nominal
+_OBJC_IVAR_$_BosViewCell._type
+_OBJC_IVAR_$_BosViewCell._comname
+_OBJC_IVAR_$_BosViewCell._lifnr
+_OBJC_IVAR_$_BosViewCell._bilno
+_OBJC_METACLASS_$_BosViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosViewCell.h
+-[POContractViewCell awakeFromNib]
+-[POContractViewCell setSelected:animated:]
+-[POContractViewCell title]
+-[POContractViewCell setTitle:]
+-[POContractViewCell detail]
+-[POContractViewCell setDetail:]
+-[POContractViewCell nominal]
+-[POContractViewCell setNominal:]
+-[POContractViewCell .cxx_destruct]
+_OBJC_CLASS_$_POContractViewCell
+_OBJC_IVAR_$_POContractViewCell._title
+_OBJC_IVAR_$_POContractViewCell._detail
+_OBJC_IVAR_$_POContractViewCell._nominal
+_OBJC_METACLASS_$_POContractViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/POContractViewCell.h
+-[SubstitusionViewController viewDidLoad]
+-[SubstitusionViewController populateData]
+___42-[SubstitusionViewController populateData]_block_invoke
+___42-[SubstitusionViewController populateData]_block_invoke.60
+-[SubstitusionViewController didReceiveMemoryWarning]
+-[SubstitusionViewController numberOfSectionsInTableView:]
+-[SubstitusionViewController tableView:numberOfRowsInSection:]
+-[SubstitusionViewController tableView:cellForRowAtIndexPath:]
+-[SubstitusionViewController tableView:heightForRowAtIndexPath:]
+-[SubstitusionViewController handleLongPress:]
+___46-[SubstitusionViewController handleLongPress:]_block_invoke
+___46-[SubstitusionViewController handleLongPress:]_block_invoke.143
+___46-[SubstitusionViewController handleLongPress:]_block_invoke.151
+-[SubstitusionViewController doApproval]
+___40-[SubstitusionViewController doApproval]_block_invoke
+___40-[SubstitusionViewController doApproval]_block_invoke_2
+___40-[SubstitusionViewController doApproval]_block_invoke.181
+___copy_helper_block_.182
+___destroy_helper_block_.183
+___copy_helper_block_.185
+___destroy_helper_block_.186
+___40-[SubstitusionViewController doApproval]_block_invoke.188
+-[SubstitusionViewController doReject]
+___38-[SubstitusionViewController doReject]_block_invoke
+___38-[SubstitusionViewController doReject]_block_invoke_2
+___copy_helper_block_.193
+___destroy_helper_block_.194
+___38-[SubstitusionViewController doReject]_block_invoke.199
+-[SubstitusionViewController .cxx_destruct]
+_OBJC_CLASS_$_SubstitusionViewController
+_OBJC_IVAR_$_SubstitusionViewController.list
+_OBJC_IVAR_$_SubstitusionViewController.longPressIndex
+___block_descriptor_tmp.138
+___block_literal_global.153
+___block_descriptor_tmp.184
+___block_descriptor_tmp.195
+_OBJC_METACLASS_$_SubstitusionViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/SubstitusionViewController.m
+__38-[SubstitusionViewController doReject]_block_invoke.199
+__38-[SubstitusionViewController doReject]_block_invoke_2
+__38-[SubstitusionViewController doReject]_block_invoke
+__40-[SubstitusionViewController doApproval]_block_invoke.188
+__40-[SubstitusionViewController doApproval]_block_invoke.181
+__40-[SubstitusionViewController doApproval]_block_invoke_2
+__40-[SubstitusionViewController doApproval]_block_invoke
+__46-[SubstitusionViewController handleLongPress:]_block_invoke.151
+__46-[SubstitusionViewController handleLongPress:]_block_invoke.143
+__46-[SubstitusionViewController handleLongPress:]_block_invoke
+__42-[SubstitusionViewController populateData]_block_invoke.60
+__42-[SubstitusionViewController populateData]_block_invoke
+-[PMNotifViewCell awakeFromNib]
+-[PMNotifViewCell setSelected:animated:]
+-[PMNotifViewCell title]
+-[PMNotifViewCell setTitle:]
+-[PMNotifViewCell detail]
+-[PMNotifViewCell setDetail:]
+-[PMNotifViewCell phone]
+-[PMNotifViewCell setPhone:]
+-[PMNotifViewCell tujuan]
+-[PMNotifViewCell setTujuan:]
+-[PMNotifViewCell type]
+-[PMNotifViewCell setType:]
+-[PMNotifViewCell .cxx_destruct]
+_OBJC_CLASS_$_PMNotifViewCell
+_OBJC_IVAR_$_PMNotifViewCell._title
+_OBJC_IVAR_$_PMNotifViewCell._detail
+_OBJC_IVAR_$_PMNotifViewCell._phone
+_OBJC_IVAR_$_PMNotifViewCell._tujuan
+_OBJC_IVAR_$_PMNotifViewCell._type
+_OBJC_METACLASS_$_PMNotifViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/PMNotifViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PMNotifViewCell.h
+-[BOSViewController viewDidLoad]
+-[BOSViewController reloadBos]
+-[BOSViewController populateData]
+___33-[BOSViewController populateData]_block_invoke
+___33-[BOSViewController populateData]_block_invoke.69
+-[BOSViewController didReceiveMemoryWarning]
+-[BOSViewController numberOfSectionsInTableView:]
+-[BOSViewController tableView:numberOfRowsInSection:]
+-[BOSViewController tableView:cellForRowAtIndexPath:]
+-[BOSViewController handleLongPress:]
+___37-[BOSViewController handleLongPress:]_block_invoke
+___copy_helper_block_.160
+___destroy_helper_block_.161
+___37-[BOSViewController handleLongPress:]_block_invoke.168
+___37-[BOSViewController handleLongPress:]_block_invoke.176
+-[BOSViewController doApproval]
+___31-[BOSViewController doApproval]_block_invoke
+___31-[BOSViewController doApproval]_block_invoke_2
+___copy_helper_block_.207
+___destroy_helper_block_.208
+___31-[BOSViewController doApproval]_block_invoke.210
+___copy_helper_block_.211
+___destroy_helper_block_.212
+___copy_helper_block_.214
+___destroy_helper_block_.215
+___31-[BOSViewController doApproval]_block_invoke.217
+-[BOSViewController doReject]
+___29-[BOSViewController doReject]_block_invoke
+___29-[BOSViewController doReject]_block_invoke_2
+___copy_helper_block_.222
+___destroy_helper_block_.223
+___29-[BOSViewController doReject]_block_invoke.225
+___copy_helper_block_.226
+___destroy_helper_block_.227
+___copy_helper_block_.229
+___destroy_helper_block_.230
+___29-[BOSViewController doReject]_block_invoke.232
+-[BOSViewController tableView:heightForRowAtIndexPath:]
+-[BOSViewController tableView:didSelectRowAtIndexPath:]
+-[BOSViewController prepareForSegue:sender:]
+-[BOSViewController data]
+-[BOSViewController setData:]
+-[BOSViewController .cxx_destruct]
+_OBJC_CLASS_$_BOSViewController
+_OBJC_IVAR_$_BOSViewController.list
+___block_descriptor_tmp.73
+_OBJC_IVAR_$_BOSViewController.longPressIndex
+___block_descriptor_tmp.163
+___block_literal_global.178
+___block_descriptor_tmp.209
+___block_descriptor_tmp.213
+___block_descriptor_tmp.224
+___block_descriptor_tmp.228
+___block_descriptor_tmp.231
+___block_descriptor_tmp.233
+___block_literal_global.234
+_OBJC_IVAR_$_BOSViewController._data
+_OBJC_METACLASS_$_BOSViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/BOSViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/BOSViewController.h
+__29-[BOSViewController doReject]_block_invoke.232
+__29-[BOSViewController doReject]_block_invoke.225
+__29-[BOSViewController doReject]_block_invoke_2
+__29-[BOSViewController doReject]_block_invoke
+__31-[BOSViewController doApproval]_block_invoke.217
+__31-[BOSViewController doApproval]_block_invoke.210
+__31-[BOSViewController doApproval]_block_invoke_2
+__31-[BOSViewController doApproval]_block_invoke
+__37-[BOSViewController handleLongPress:]_block_invoke.176
+__37-[BOSViewController handleLongPress:]_block_invoke.168
+__37-[BOSViewController handleLongPress:]_block_invoke
+__33-[BOSViewController populateData]_block_invoke.69
+__33-[BOSViewController populateData]_block_invoke
+-[ReservationDetailViewController viewDidLoad]
+-[ReservationDetailViewController didReceiveMemoryWarning]
+-[ReservationDetailViewController numberOfSectionsInTableView:]
+-[ReservationDetailViewController tableView:numberOfRowsInSection:]
+-[ReservationDetailViewController tableView:cellForRowAtIndexPath:]
+-[ReservationDetailViewController tableView:estimatedHeightForRowAtIndexPath:]
+-[ReservationDetailViewController getECEValues]
+-[ReservationDetailViewController findAllTextFieldsInView:]
+-[ReservationDetailViewController btnTapped:]
+___45-[ReservationDetailViewController btnTapped:]_block_invoke
+___45-[ReservationDetailViewController btnTapped:]_block_invoke.145
+-[ReservationDetailViewController showApprovalInput]
+___52-[ReservationDetailViewController showApprovalInput]_block_invoke
+___copy_helper_block_.157
+___destroy_helper_block_.158
+___52-[ReservationDetailViewController showApprovalInput]_block_invoke.165
+___copy_helper_block_.172
+___destroy_helper_block_.173
+___52-[ReservationDetailViewController showApprovalInput]_block_invoke.175
+-[ReservationDetailViewController doApproval]
+___45-[ReservationDetailViewController doApproval]_block_invoke
+___45-[ReservationDetailViewController doApproval]_block_invoke_2
+___45-[ReservationDetailViewController doApproval]_block_invoke_3
+___copy_helper_block_.240
+___destroy_helper_block_.241
+___copy_helper_block_.243
+___destroy_helper_block_.244
+___45-[ReservationDetailViewController doApproval]_block_invoke.247
+-[ReservationDetailViewController doBack]
+-[ReservationDetailViewController reservasinum]
+-[ReservationDetailViewController setReservasinum:]
+-[ReservationDetailViewController plant]
+-[ReservationDetailViewController setPlant:]
+-[ReservationDetailViewController nominal]
+-[ReservationDetailViewController setNominal:]
+-[ReservationDetailViewController tableView]
+-[ReservationDetailViewController setTableView:]
+-[ReservationDetailViewController btn]
+-[ReservationDetailViewController setBtn:]
+-[ReservationDetailViewController data]
+-[ReservationDetailViewController setData:]
+-[ReservationDetailViewController .cxx_destruct]
+_OBJC_CLASS_$_ReservationDetailViewController
+_OBJC_IVAR_$_ReservationDetailViewController._reservasinum
+_OBJC_IVAR_$_ReservationDetailViewController._data
+_OBJC_IVAR_$_ReservationDetailViewController._plant
+_OBJC_IVAR_$_ReservationDetailViewController._nominal
+_OBJC_IVAR_$_ReservationDetailViewController.list
+_OBJC_IVAR_$_ReservationDetailViewController.approvalInput
+___block_descriptor_tmp.174
+___block_descriptor_tmp.236
+___block_literal_global.237
+___block_descriptor_tmp.242
+___block_descriptor_tmp.246
+___block_descriptor_tmp.251
+___block_literal_global.252
+_OBJC_IVAR_$_ReservationDetailViewController._tableView
+_OBJC_IVAR_$_ReservationDetailViewController._btn
+_OBJC_METACLASS_$_ReservationDetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationDetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationDetailViewController.h
+__45-[ReservationDetailViewController doApproval]_block_invoke.247
+__45-[ReservationDetailViewController doApproval]_block_invoke_3
+__45-[ReservationDetailViewController doApproval]_block_invoke_2
+__45-[ReservationDetailViewController doApproval]_block_invoke
+__52-[ReservationDetailViewController showApprovalInput]_block_invoke.175
+__52-[ReservationDetailViewController showApprovalInput]_block_invoke.165
+__52-[ReservationDetailViewController showApprovalInput]_block_invoke
+__45-[ReservationDetailViewController btnTapped:]_block_invoke.145
+__45-[ReservationDetailViewController btnTapped:]_block_invoke
+-[PRViewCell awakeFromNib]
+-[PRViewCell setSelected:animated:]
+-[PRViewCell title]
+-[PRViewCell setTitle:]
+-[PRViewCell detail]
+-[PRViewCell setDetail:]
+-[PRViewCell nominal]
+-[PRViewCell setNominal:]
+-[PRViewCell date]
+-[PRViewCell setDate:]
+-[PRViewCell .cxx_destruct]
+_OBJC_CLASS_$_PRViewCell
+_OBJC_IVAR_$_PRViewCell._title
+_OBJC_IVAR_$_PRViewCell._detail
+_OBJC_IVAR_$_PRViewCell._nominal
+_OBJC_IVAR_$_PRViewCell._date
+_OBJC_METACLASS_$_PRViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PRViewCell.h
+-[POViewController viewDidLoad]
+-[POViewController reloadPOContract]
+-[POViewController populateData]
+___32-[POViewController populateData]_block_invoke
+___32-[POViewController populateData]_block_invoke.67
+-[POViewController didReceiveMemoryWarning]
+-[POViewController numberOfSectionsInTableView:]
+-[POViewController tableView:numberOfRowsInSection:]
+-[POViewController tableView:cellForRowAtIndexPath:]
+-[POViewController cellTapped:]
+-[POViewController handleLongPress:]
+___36-[POViewController handleLongPress:]_block_invoke
+___copy_helper_block_.134
+___destroy_helper_block_.135
+___36-[POViewController handleLongPress:]_block_invoke.142
+-[POViewController doApproval]
+___30-[POViewController doApproval]_block_invoke
+___30-[POViewController doApproval]_block_invoke_2
+___copy_helper_block_.165
+___destroy_helper_block_.166
+___30-[POViewController doApproval]_block_invoke.168
+___30-[POViewController doApproval]_block_invoke.176
+-[POViewController tableView:heightForRowAtIndexPath:]
+-[POViewController tableView:didSelectRowAtIndexPath:]
+-[POViewController prepareForSegue:sender:]
+-[POViewController .cxx_destruct]
+_OBJC_CLASS_$_POViewController
+_OBJC_IVAR_$_POViewController.list
+_OBJC_IVAR_$_POViewController.longPressIndex
+___block_descriptor_tmp.143
+___block_literal_global.144
+___block_descriptor_tmp.175
+_OBJC_METACLASS_$_POViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/POViewController.m
+__30-[POViewController doApproval]_block_invoke.176
+__30-[POViewController doApproval]_block_invoke.168
+__30-[POViewController doApproval]_block_invoke_2
+__30-[POViewController doApproval]_block_invoke
+__36-[POViewController handleLongPress:]_block_invoke.142
+__36-[POViewController handleLongPress:]_block_invoke
+__32-[POViewController populateData]_block_invoke.67
+__32-[POViewController populateData]_block_invoke
+-[HProcureViewController viewDidLoad]
+-[HProcureViewController didReceiveMemoryWarning]
+-[HProcureViewController collectionView:numberOfItemsInSection:]
+-[HProcureViewController collectionView:cellForItemAtIndexPath:]
+-[HProcureViewController collectionView:didSelectItemAtIndexPath:]
+-[HProcureViewController collectionView:layout:sizeForItemAtIndexPath:]
+-[HProcureViewController lb]
+-[HProcureViewController setLb:]
+-[HProcureViewController cv]
+-[HProcureViewController setCv:]
+-[HProcureViewController .cxx_destruct]
+_OBJC_CLASS_$_HProcureViewController
+_OBJC_IVAR_$_HProcureViewController.menuPriv
+_OBJC_IVAR_$_HProcureViewController.menuImages
+_OBJC_IVAR_$_HProcureViewController.menuTitles
+_OBJC_IVAR_$_HProcureViewController._lb
+_OBJC_IVAR_$_HProcureViewController._cv
+l_OBJC_PROTOCOL_$_UICollectionViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
+l_OBJC_PROTOCOL_$_UICollectionViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
+_OBJC_METACLASS_$_HProcureViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/HProcureViewController.m
+CGSizeMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+-[BosDetailViewController viewDidLoad]
+-[BosDetailViewController numberOfSectionsInTableView:]
+-[BosDetailViewController tableView:numberOfRowsInSection:]
+-[BosDetailViewController tableView:cellForRowAtIndexPath:]
+-[BosDetailViewController tableView:heightForRowAtIndexPath:]
+-[BosDetailViewController doApproval]
+___37-[BosDetailViewController doApproval]_block_invoke
+___37-[BosDetailViewController doApproval]_block_invoke_2
+___37-[BosDetailViewController doApproval]_block_invoke.127
+___37-[BosDetailViewController doApproval]_block_invoke.135
+-[BosDetailViewController doReject]
+___35-[BosDetailViewController doReject]_block_invoke
+___35-[BosDetailViewController doReject]_block_invoke_2
+___copy_helper_block_.144
+___destroy_helper_block_.145
+___35-[BosDetailViewController doReject]_block_invoke.147
+___copy_helper_block_.148
+___destroy_helper_block_.149
+___copy_helper_block_.151
+___destroy_helper_block_.152
+___35-[BosDetailViewController doReject]_block_invoke.154
+-[BosDetailViewController doBack]
+-[BosDetailViewController didReceiveMemoryWarning]
+-[BosDetailViewController btnApproveTapped:]
+___44-[BosDetailViewController btnApproveTapped:]_block_invoke
+___copy_helper_block_.176
+___destroy_helper_block_.177
+___44-[BosDetailViewController btnApproveTapped:]_block_invoke.181
+-[BosDetailViewController btnRejectTapped:]
+___43-[BosDetailViewController btnRejectTapped:]_block_invoke
+___copy_helper_block_.188
+___destroy_helper_block_.189
+___43-[BosDetailViewController btnRejectTapped:]_block_invoke.191
+-[BosDetailViewController data]
+-[BosDetailViewController setData:]
+-[BosDetailViewController bilNo]
+-[BosDetailViewController setBilNo:]
+-[BosDetailViewController name]
+-[BosDetailViewController setName:]
+-[BosDetailViewController nominal]
+-[BosDetailViewController setNominal:]
+-[BosDetailViewController tableView]
+-[BosDetailViewController setTableView:]
+-[BosDetailViewController .cxx_destruct]
+_OBJC_CLASS_$_BosDetailViewController
+_OBJC_IVAR_$_BosDetailViewController._bilNo
+_OBJC_IVAR_$_BosDetailViewController._data
+_OBJC_IVAR_$_BosDetailViewController._name
+_OBJC_IVAR_$_BosDetailViewController._nominal
+_OBJC_IVAR_$_BosDetailViewController.list
+___block_descriptor_tmp.150
+___block_descriptor_tmp.178
+___block_descriptor_tmp.190
+___block_descriptor_tmp.192
+___block_literal_global.193
+_OBJC_IVAR_$_BosDetailViewController._tableView
+_OBJC_METACLASS_$_BosDetailViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosDetailViewController.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/BosDetailViewController.h
+__43-[BosDetailViewController btnRejectTapped:]_block_invoke.191
+__43-[BosDetailViewController btnRejectTapped:]_block_invoke
+__44-[BosDetailViewController btnApproveTapped:]_block_invoke.181
+__44-[BosDetailViewController btnApproveTapped:]_block_invoke
+__35-[BosDetailViewController doReject]_block_invoke.154
+__35-[BosDetailViewController doReject]_block_invoke.147
+__35-[BosDetailViewController doReject]_block_invoke_2
+__35-[BosDetailViewController doReject]_block_invoke
+__37-[BosDetailViewController doApproval]_block_invoke.135
+__37-[BosDetailViewController doApproval]_block_invoke.127
+__37-[BosDetailViewController doApproval]_block_invoke_2
+__37-[BosDetailViewController doApproval]_block_invoke
+-[TravelViewController viewDidLoad]
+-[TravelViewController populateData]
+___36-[TravelViewController populateData]_block_invoke
+___36-[TravelViewController populateData]_block_invoke.60
+-[TravelViewController didReceiveMemoryWarning]
+-[TravelViewController numberOfSectionsInTableView:]
+-[TravelViewController tableView:numberOfRowsInSection:]
+-[TravelViewController tableView:cellForRowAtIndexPath:]
+-[TravelViewController tableView:heightForRowAtIndexPath:]
+-[TravelViewController handleLongPress:]
+___40-[TravelViewController handleLongPress:]_block_invoke
+___copy_helper_block_.130
+___destroy_helper_block_.131
+___40-[TravelViewController handleLongPress:]_block_invoke.138
+-[TravelViewController doApproval]
+___34-[TravelViewController doApproval]_block_invoke
+___34-[TravelViewController doApproval]_block_invoke_2
+___34-[TravelViewController doApproval]_block_invoke.164
+___copy_helper_block_.168
+___destroy_helper_block_.169
+___34-[TravelViewController doApproval]_block_invoke.171
+-[TravelViewController doReject]
+___32-[TravelViewController doReject]_block_invoke
+___32-[TravelViewController doReject]_block_invoke_2
+___32-[TravelViewController doReject]_block_invoke.179
+___32-[TravelViewController doReject]_block_invoke.186
+-[TravelViewController .cxx_destruct]
+_OBJC_CLASS_$_TravelViewController
+_OBJC_IVAR_$_TravelViewController.list
+_OBJC_IVAR_$_TravelViewController.longPressIndex
+___block_descriptor_tmp.133
+___block_descriptor_tmp.170
+___block_descriptor_tmp.172
+___block_literal_global.173
+_OBJC_METACLASS_$_TravelViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/TravelViewController.m
+__32-[TravelViewController doReject]_block_invoke.186
+__32-[TravelViewController doReject]_block_invoke.179
+__32-[TravelViewController doReject]_block_invoke_2
+__32-[TravelViewController doReject]_block_invoke
+__34-[TravelViewController doApproval]_block_invoke.171
+__34-[TravelViewController doApproval]_block_invoke.164
+__34-[TravelViewController doApproval]_block_invoke_2
+__34-[TravelViewController doApproval]_block_invoke
+__40-[TravelViewController handleLongPress:]_block_invoke.138
+__40-[TravelViewController handleLongPress:]_block_invoke
+__36-[TravelViewController populateData]_block_invoke.60
+__36-[TravelViewController populateData]_block_invoke
+-[PMNotifViewController viewDidLoad]
+-[PMNotifViewController populateData]
+___37-[PMNotifViewController populateData]_block_invoke
+___37-[PMNotifViewController populateData]_block_invoke.60
+-[PMNotifViewController didReceiveMemoryWarning]
+-[PMNotifViewController numberOfSectionsInTableView:]
+-[PMNotifViewController tableView:numberOfRowsInSection:]
+-[PMNotifViewController tableView:cellForRowAtIndexPath:]
+-[PMNotifViewController .cxx_destruct]
+_OBJC_CLASS_$_PMNotifViewController
+_OBJC_IVAR_$_PMNotifViewController.list
+_OBJC_METACLASS_$_PMNotifViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/PMNotifViewController.m
+__37-[PMNotifViewController populateData]_block_invoke.60
+__37-[PMNotifViewController populateData]_block_invoke
+-[TravelViewCell awakeFromNib]
+-[TravelViewCell setSelected:animated:]
+-[TravelViewCell person]
+-[TravelViewCell setPerson:]
+-[TravelViewCell jenis]
+-[TravelViewCell setJenis:]
+-[TravelViewCell desc]
+-[TravelViewCell setDesc:]
+-[TravelViewCell dest]
+-[TravelViewCell setDest:]
+-[TravelViewCell date]
+-[TravelViewCell setDate:]
+-[TravelViewCell .cxx_destruct]
+_OBJC_CLASS_$_TravelViewCell
+_OBJC_IVAR_$_TravelViewCell._person
+_OBJC_IVAR_$_TravelViewCell._jenis
+_OBJC_IVAR_$_TravelViewCell._desc
+_OBJC_IVAR_$_TravelViewCell._dest
+_OBJC_IVAR_$_TravelViewCell._date
+_OBJC_METACLASS_$_TravelViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/TravelViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/TravelViewCell.h
+-[ReservationViewCell awakeFromNib]
+-[ReservationViewCell setSelected:animated:]
+-[ReservationViewCell title]
+-[ReservationViewCell setTitle:]
+-[ReservationViewCell detail]
+-[ReservationViewCell setDetail:]
+-[ReservationViewCell nominal]
+-[ReservationViewCell setNominal:]
+-[ReservationViewCell .cxx_destruct]
+_OBJC_CLASS_$_ReservationViewCell
+_OBJC_IVAR_$_ReservationViewCell._title
+_OBJC_IVAR_$_ReservationViewCell._detail
+_OBJC_IVAR_$_ReservationViewCell._nominal
+_OBJC_METACLASS_$_ReservationViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/ReservationViewCell.h
+-[LeaveViewController viewDidLoad]
+-[LeaveViewController populateData]
+___35-[LeaveViewController populateData]_block_invoke
+___35-[LeaveViewController populateData]_block_invoke.60
+-[LeaveViewController didReceiveMemoryWarning]
+-[LeaveViewController numberOfSectionsInTableView:]
+-[LeaveViewController tableView:numberOfRowsInSection:]
+-[LeaveViewController tableView:cellForRowAtIndexPath:]
+-[LeaveViewController tableView:heightForRowAtIndexPath:]
+-[LeaveViewController handleLongPress:]
+___39-[LeaveViewController handleLongPress:]_block_invoke
+___copy_helper_block_.126
+___destroy_helper_block_.127
+___39-[LeaveViewController handleLongPress:]_block_invoke.134
+___39-[LeaveViewController handleLongPress:]_block_invoke.142
+-[LeaveViewController doApproval]
+___33-[LeaveViewController doApproval]_block_invoke
+___33-[LeaveViewController doApproval]_block_invoke_2
+___copy_helper_block_.167
+___destroy_helper_block_.168
+___33-[LeaveViewController doApproval]_block_invoke.170
+___copy_helper_block_.174
+___destroy_helper_block_.175
+___33-[LeaveViewController doApproval]_block_invoke.177
+-[LeaveViewController doReject]
+___31-[LeaveViewController doReject]_block_invoke
+___31-[LeaveViewController doReject]_block_invoke_2
+___31-[LeaveViewController doReject]_block_invoke.185
+___copy_helper_block_.186
+___destroy_helper_block_.187
+___copy_helper_block_.189
+___destroy_helper_block_.190
+___31-[LeaveViewController doReject]_block_invoke.192
+-[LeaveViewController .cxx_destruct]
+_OBJC_CLASS_$_LeaveViewController
+_OBJC_IVAR_$_LeaveViewController.list
+_OBJC_IVAR_$_LeaveViewController.longPressIndex
+___block_descriptor_tmp.129
+___block_descriptor_tmp.176
+___block_literal_global.179
+___block_descriptor_tmp.191
+___block_literal_global.194
+_OBJC_METACLASS_$_LeaveViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/LeaveViewController.m
+__31-[LeaveViewController doReject]_block_invoke.192
+__31-[LeaveViewController doReject]_block_invoke.185
+__31-[LeaveViewController doReject]_block_invoke_2
+__31-[LeaveViewController doReject]_block_invoke
+__33-[LeaveViewController doApproval]_block_invoke.177
+__33-[LeaveViewController doApproval]_block_invoke.170
+__33-[LeaveViewController doApproval]_block_invoke_2
+__33-[LeaveViewController doApproval]_block_invoke
+__39-[LeaveViewController handleLongPress:]_block_invoke.142
+__39-[LeaveViewController handleLongPress:]_block_invoke.134
+__39-[LeaveViewController handleLongPress:]_block_invoke
+__35-[LeaveViewController populateData]_block_invoke.60
+__35-[LeaveViewController populateData]_block_invoke
+-[HHrisViewController viewDidLoad]
+-[HHrisViewController didReceiveMemoryWarning]
+-[HHrisViewController collectionView:numberOfItemsInSection:]
+-[HHrisViewController collectionView:cellForItemAtIndexPath:]
+-[HHrisViewController collectionView:didSelectItemAtIndexPath:]
+-[HHrisViewController collectionView:layout:sizeForItemAtIndexPath:]
+-[HHrisViewController lb]
+-[HHrisViewController setLb:]
+-[HHrisViewController cv]
+-[HHrisViewController setCv:]
+-[HHrisViewController .cxx_destruct]
+_OBJC_CLASS_$_HHrisViewController
+_OBJC_IVAR_$_HHrisViewController._lb
+_OBJC_IVAR_$_HHrisViewController.menuPriv
+_OBJC_IVAR_$_HHrisViewController.menuImages
+_OBJC_IVAR_$_HHrisViewController.menuTitles
+_OBJC_IVAR_$_HHrisViewController._cv
+_OBJC_METACLASS_$_HHrisViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/HHrisViewController.m
+-[HomeViewController preferredStatusBarStyle]
+-[HomeViewController viewDidLoad]
+-[HomeViewController logout]
+___28-[HomeViewController logout]_block_invoke
+___28-[HomeViewController logout]_block_invoke.114
+-[HomeViewController doLogout]
+-[HomeViewController addHome]
+-[HomeViewController addProcure]
+-[HomeViewController addHris]
+-[HomeViewController scTapped]
+-[HomeViewController showHome]
+-[HomeViewController showProcure]
+-[HomeViewController showHris]
+-[HomeViewController showPR]
+-[HomeViewController showPO]
+-[HomeViewController showTax]
+-[HomeViewController showBOS]
+-[HomeViewController showPMNotif]
+-[HomeViewController showPOContract]
+-[HomeViewController showTravel]
+-[HomeViewController showOvertime]
+-[HomeViewController showSubstitusion]
+-[HomeViewController showLeave]
+-[HomeViewController showLSO]
+-[HomeViewController showReservation]
+-[HomeViewController scrollViewDidScroll:]
+-[HomeViewController scrollViewDidEndScrollingAnimation:]
+-[HomeViewController sc]
+-[HomeViewController setSc:]
+-[HomeViewController sv]
+-[HomeViewController setSv:]
+-[HomeViewController .cxx_destruct]
+_OBJC_CLASS_$_HomeViewController
+_OBJC_IVAR_$_HomeViewController._sc
+_OBJC_IVAR_$_HomeViewController._sv
+___block_descriptor_tmp.115
+_OBJC_METACLASS_$_HomeViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/HomeViewController.m
+UI_USER_INTERFACE_IDIOM
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+__28-[HomeViewController logout]_block_invoke.114
+__28-[HomeViewController logout]_block_invoke
+-[PODetailViewCell awakeFromNib]
+-[PODetailViewCell setSelected:animated:]
+-[PODetailViewCell po]
+-[PODetailViewCell setPo:]
+-[PODetailViewCell material]
+-[PODetailViewCell setMaterial:]
+-[PODetailViewCell qty]
+-[PODetailViewCell setQty:]
+-[PODetailViewCell nominal]
+-[PODetailViewCell setNominal:]
+-[PODetailViewCell date]
+-[PODetailViewCell setDate:]
+-[PODetailViewCell .cxx_destruct]
+_OBJC_CLASS_$_PODetailViewCell
+_OBJC_IVAR_$_PODetailViewCell._po
+_OBJC_IVAR_$_PODetailViewCell._material
+_OBJC_IVAR_$_PODetailViewCell._qty
+_OBJC_IVAR_$_PODetailViewCell._nominal
+_OBJC_IVAR_$_PODetailViewCell._date
+_OBJC_METACLASS_$_PODetailViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/PODetailViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/PODetailViewCell.h
+-[OvertimeViewCell awakeFromNib]
+-[OvertimeViewCell setSelected:animated:]
+-[OvertimeViewCell person]
+-[OvertimeViewCell setPerson:]
+-[OvertimeViewCell detail]
+-[OvertimeViewCell setDetail:]
+-[OvertimeViewCell begin]
+-[OvertimeViewCell setBegin:]
+-[OvertimeViewCell end]
+-[OvertimeViewCell setEnd:]
+-[OvertimeViewCell date]
+-[OvertimeViewCell setDate:]
+-[OvertimeViewCell .cxx_destruct]
+_OBJC_CLASS_$_OvertimeViewCell
+_OBJC_IVAR_$_OvertimeViewCell._person
+_OBJC_IVAR_$_OvertimeViewCell._detail
+_OBJC_IVAR_$_OvertimeViewCell._begin
+_OBJC_IVAR_$_OvertimeViewCell._end
+_OBJC_IVAR_$_OvertimeViewCell._date
+_OBJC_METACLASS_$_OvertimeViewCell
+/Users/sisi/Documents/Herwin/approval-2/Approval/OvertimeViewCell.m
+/Users/sisi/Documents/Herwin/approval-2/Approval/OvertimeViewCell.h
+/Users/sisi/Documents/Herwin/approval-2/Approval/main.m
+main
+-[PMContractViewController viewDidLoad]
+-[PMContractViewController reloadPOContract]
+-[PMContractViewController populateData]
+___40-[PMContractViewController populateData]_block_invoke
+___40-[PMContractViewController populateData]_block_invoke.67
+-[PMContractViewController didReceiveMemoryWarning]
+-[PMContractViewController numberOfSectionsInTableView:]
+-[PMContractViewController tableView:numberOfRowsInSection:]
+-[PMContractViewController tableView:cellForRowAtIndexPath:]
+-[PMContractViewController cellTapped:]
+-[PMContractViewController handleLongPress:]
+___44-[PMContractViewController handleLongPress:]_block_invoke
+___44-[PMContractViewController handleLongPress:]_block_invoke.142
+-[PMContractViewController doApproval]
+___38-[PMContractViewController doApproval]_block_invoke
+___38-[PMContractViewController doApproval]_block_invoke_2
+___38-[PMContractViewController doApproval]_block_invoke.168
+___38-[PMContractViewController doApproval]_block_invoke.176
+-[PMContractViewController tableView:heightForRowAtIndexPath:]
+-[PMContractViewController tableView:didSelectRowAtIndexPath:]
+-[PMContractViewController prepareForSegue:sender:]
+-[PMContractViewController .cxx_destruct]
+_OBJC_CLASS_$_PMContractViewController
+_OBJC_IVAR_$_PMContractViewController.list
+_OBJC_IVAR_$_PMContractViewController.longPressIndex
+_OBJC_METACLASS_$_PMContractViewController
+/Users/sisi/Documents/Herwin/approval-2/Approval/PMContractViewController.m
+__38-[PMContractViewController doApproval]_block_invoke.176
+__38-[PMContractViewController doApproval]_block_invoke.168
+__38-[PMContractViewController doApproval]_block_invoke_2
+__38-[PMContractViewController doApproval]_block_invoke
+__44-[PMContractViewController handleLongPress:]_block_invoke.142
+__44-[PMContractViewController handleLongPress:]_block_invoke
+__40-[PMContractViewController populateData]_block_invoke.67
+__40-[PMContractViewController populateData]_block_invoke
+-[AFNetworkActivityConsoleLogger init]
+-[AFNetworkActivityConsoleLogger URLSessionTaskDidStart:]
+-[AFNetworkActivityConsoleLogger URLSessionTaskDidFinish:withResponseObject:inElapsedTime:withError:]
+-[AFNetworkActivityConsoleLogger filterPredicate]
+-[AFNetworkActivityConsoleLogger setFilterPredicate:]
+-[AFNetworkActivityConsoleLogger level]
+-[AFNetworkActivityConsoleLogger setLevel:]
+-[AFNetworkActivityConsoleLogger .cxx_destruct]
+_OBJC_CLASS_$_AFNetworkActivityConsoleLogger
+_OBJC_IVAR_$_AFNetworkActivityConsoleLogger._filterPredicate
+_OBJC_IVAR_$_AFNetworkActivityConsoleLogger._level
+l_OBJC_PROTOCOL_$_AFNetworkActivityLoggerProtocol
+l_OBJC_LABEL_PROTOCOL_$_AFNetworkActivityLoggerProtocol
+_OBJC_METACLASS_$_AFNetworkActivityConsoleLogger
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworkActivityLogger/AFNetworkActivityLogger/AFNetworkActivityConsoleLogger.m
+/Users/sisi/Documents/Herwin/approval-2/Pods
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworkActivityLogger/AFNetworkActivityLogger/AFNetworkActivityConsoleLogger.h
+_OBJC_METACLASS_$_PodsDummy_AFNetworkActivityLogger
+_OBJC_CLASS_$_PodsDummy_AFNetworkActivityLogger
+/Users/sisi/Documents/Herwin/approval-2/Pods/Target Support Files/AFNetworkActivityLogger/AFNetworkActivityLogger-dummy.m
++[AFNetworkActivityLogger sharedLogger]
+___39+[AFNetworkActivityLogger sharedLogger]_block_invoke
+-[AFNetworkActivityLogger init]
+-[AFNetworkActivityLogger loggers]
+-[AFNetworkActivityLogger dealloc]
+-[AFNetworkActivityLogger addLogger:]
+-[AFNetworkActivityLogger removeLogger:]
+-[AFNetworkActivityLogger startLogging]
+-[AFNetworkActivityLogger stopLogging]
+-[AFNetworkActivityLogger networkRequestDidStart:]
+-[AFNetworkActivityLogger networkRequestDidFinish:]
+-[AFNetworkActivityLogger mutableLoggers]
+-[AFNetworkActivityLogger setMutableLoggers:]
+-[AFNetworkActivityLogger .cxx_destruct]
+_sharedLogger._sharedLogger
+_sharedLogger.onceToken
+_AFNetworkingTaskDidResumeNotification
+_AFNetworkingTaskDidCompleteNotification
+_AFNetworkRequestStartDate
+_AFNetworkingTaskDidCompleteSerializedResponseKey
+_OBJC_IVAR_$_AFNetworkActivityLogger._mutableLoggers
+_OBJC_METACLASS_$_AFNetworkActivityLogger
+_AFNetworkingTaskDidCompleteErrorKey
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworkActivityLogger/AFNetworkActivityLogger/AFNetworkActivityLogger.m
+AFNetworkErrorFromNotification
+__39+[AFNetworkActivityLogger sharedLogger]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/dispatch/once.h
+-[AFCachedImage initWithImage:identifier:]
+-[AFCachedImage accessImage]
+-[AFCachedImage description]
+-[AFCachedImage image]
+-[AFCachedImage setImage:]
+-[AFCachedImage identifier]
+-[AFCachedImage setIdentifier:]
+-[AFCachedImage totalBytes]
+-[AFCachedImage setTotalBytes:]
+-[AFCachedImage lastAccessDate]
+-[AFCachedImage setLastAccessDate:]
+-[AFCachedImage currentMemoryUsage]
+-[AFCachedImage setCurrentMemoryUsage:]
+-[AFCachedImage .cxx_destruct]
+-[AFAutoPurgingImageCache init]
+-[AFAutoPurgingImageCache initWithMemoryCapacity:preferredMemoryCapacity:]
+-[AFAutoPurgingImageCache dealloc]
+-[AFAutoPurgingImageCache memoryUsage]
+___38-[AFAutoPurgingImageCache memoryUsage]_block_invoke
+-[AFAutoPurgingImageCache addImage:withIdentifier:]
+___51-[AFAutoPurgingImageCache addImage:withIdentifier:]_block_invoke
+___copy_helper_block_.102
+___destroy_helper_block_.103
+___51-[AFAutoPurgingImageCache addImage:withIdentifier:]_block_invoke.105
+___copy_helper_block_.129
+___destroy_helper_block_.130
+-[AFAutoPurgingImageCache removeImageWithIdentifier:]
+___53-[AFAutoPurgingImageCache removeImageWithIdentifier:]_block_invoke
+___copy_helper_block_.132
+___destroy_helper_block_.133
+-[AFAutoPurgingImageCache removeAllImages]
+___42-[AFAutoPurgingImageCache removeAllImages]_block_invoke
+-[AFAutoPurgingImageCache imageWithIdentifier:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___47-[AFAutoPurgingImageCache imageWithIdentifier:]_block_invoke
+___copy_helper_block_.143
+___destroy_helper_block_.144
+-[AFAutoPurgingImageCache addImage:forRequest:withAdditionalIdentifier:]
+-[AFAutoPurgingImageCache removeImageforRequest:withAdditionalIdentifier:]
+-[AFAutoPurgingImageCache imageforRequest:withAdditionalIdentifier:]
+-[AFAutoPurgingImageCache imageCacheKeyFromURLRequest:withAdditionalIdentifier:]
+-[AFAutoPurgingImageCache memoryCapacity]
+-[AFAutoPurgingImageCache setMemoryCapacity:]
+-[AFAutoPurgingImageCache preferredMemoryUsageAfterPurge]
+-[AFAutoPurgingImageCache setPreferredMemoryUsageAfterPurge:]
+-[AFAutoPurgingImageCache cachedImages]
+-[AFAutoPurgingImageCache setCachedImages:]
+-[AFAutoPurgingImageCache currentMemoryUsage]
+-[AFAutoPurgingImageCache setCurrentMemoryUsage:]
+-[AFAutoPurgingImageCache synchronizationQueue]
+-[AFAutoPurgingImageCache setSynchronizationQueue:]
+-[AFAutoPurgingImageCache .cxx_destruct]
+_OBJC_IVAR_$_AFCachedImage._image
+_OBJC_IVAR_$_AFCachedImage._identifier
+_OBJC_IVAR_$_AFCachedImage._totalBytes
+_OBJC_IVAR_$_AFCachedImage._lastAccessDate
+_OBJC_IVAR_$_AFCachedImage._currentMemoryUsage
+_OBJC_METACLASS_$_AFCachedImage
+_OBJC_CLASS_$_AFCachedImage
+_OBJC_CLASS_$_AFAutoPurgingImageCache
+___block_descriptor_tmp.104
+___block_descriptor_tmp.131
+_OBJC_IVAR_$_AFAutoPurgingImageCache._memoryCapacity
+_OBJC_IVAR_$_AFAutoPurgingImageCache._preferredMemoryUsageAfterPurge
+_OBJC_IVAR_$_AFAutoPurgingImageCache._cachedImages
+_OBJC_IVAR_$_AFAutoPurgingImageCache._currentMemoryUsage
+_OBJC_IVAR_$_AFAutoPurgingImageCache._synchronizationQueue
+l_OBJC_PROTOCOL_$_AFImageCache
+l_OBJC_LABEL_PROTOCOL_$_AFImageCache
+l_OBJC_PROTOCOL_$_AFImageRequestCache
+l_OBJC_LABEL_PROTOCOL_$_AFImageRequestCache
+_OBJC_METACLASS_$_AFAutoPurgingImageCache
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h
+__47-[AFAutoPurgingImageCache imageWithIdentifier:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__42-[AFAutoPurgingImageCache removeAllImages]_block_invoke
+__53-[AFAutoPurgingImageCache removeImageWithIdentifier:]_block_invoke
+__51-[AFAutoPurgingImageCache addImage:withIdentifier:]_block_invoke.105
+__51-[AFAutoPurgingImageCache addImage:withIdentifier:]_block_invoke
+__38-[AFAutoPurgingImageCache memoryUsage]_block_invoke
++[AFHTTPSessionManager manager]
+-[AFHTTPSessionManager init]
+-[AFHTTPSessionManager initWithBaseURL:]
+-[AFHTTPSessionManager initWithSessionConfiguration:]
+-[AFHTTPSessionManager initWithBaseURL:sessionConfiguration:]
+-[AFHTTPSessionManager setRequestSerializer:]
+-[AFHTTPSessionManager setResponseSerializer:]
+-[AFHTTPSessionManager GET:parameters:success:failure:]
+-[AFHTTPSessionManager GET:parameters:progress:success:failure:]
+-[AFHTTPSessionManager HEAD:parameters:success:failure:]
+___56-[AFHTTPSessionManager HEAD:parameters:success:failure:]_block_invoke
+-[AFHTTPSessionManager POST:parameters:success:failure:]
+-[AFHTTPSessionManager POST:parameters:progress:success:failure:]
+-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:success:failure:]
+-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:progress:success:failure:]
+___91-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:progress:success:failure:]_block_invoke
+___copy_helper_block_.58
+___destroy_helper_block_.59
+___91-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:progress:success:failure:]_block_invoke.62
+___copy_helper_block_.63
+___destroy_helper_block_.64
+-[AFHTTPSessionManager PUT:parameters:success:failure:]
+-[AFHTTPSessionManager PATCH:parameters:success:failure:]
+-[AFHTTPSessionManager DELETE:parameters:success:failure:]
+-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]
+___116-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]_block_invoke
+___copy_helper_block_.77
+___destroy_helper_block_.78
+___116-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]_block_invoke.80
+___copy_helper_block_.81
+___destroy_helper_block_.82
+-[AFHTTPSessionManager description]
++[AFHTTPSessionManager supportsSecureCoding]
+-[AFHTTPSessionManager initWithCoder:]
+-[AFHTTPSessionManager encodeWithCoder:]
+-[AFHTTPSessionManager copyWithZone:]
+-[AFHTTPSessionManager baseURL]
+-[AFHTTPSessionManager setBaseURL:]
+-[AFHTTPSessionManager requestSerializer]
+-[AFHTTPSessionManager .cxx_destruct]
+_OBJC_CLASS_$_AFJSONResponseSerializer
+_OBJC_IVAR_$_AFHTTPSessionManager._requestSerializer
+___block_descriptor_tmp.61
+___block_descriptor_tmp.66
+___block_descriptor_tmp.79
+___block_descriptor_tmp.83
+_OBJC_CLASS_$_AFHTTPResponseSerializer
+_OBJC_CLASS_$_AFSecurityPolicy
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+l_OBJC_PROTOCOL_REFERENCE_$_NSCoding
+_OBJC_IVAR_$_AFHTTPSessionManager._baseURL
+_OBJC_METACLASS_$_AFURLSessionManager
+l_OBJC_PROTOCOL_$_NSSecureCoding
+l_OBJC_LABEL_PROTOCOL_$_NSSecureCoding
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+_OBJC_METACLASS_$_AFHTTPSessionManager
+_OBJC_CLASS_$_AFURLSessionManager
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+__116-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]_block_invoke.80
+__116-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]_block_invoke
+__91-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:progress:success:failure:]_block_invoke.62
+__91-[AFHTTPSessionManager POST:parameters:constructingBodyWithBlock:progress:success:failure:]_block_invoke
+__56-[AFHTTPSessionManager HEAD:parameters:success:failure:]_block_invoke
+-[AFImageDownloaderResponseHandler initWithUUID:success:failure:]
+-[AFImageDownloaderResponseHandler description]
+-[AFImageDownloaderResponseHandler uuid]
+-[AFImageDownloaderResponseHandler setUuid:]
+-[AFImageDownloaderResponseHandler successBlock]
+-[AFImageDownloaderResponseHandler setSuccessBlock:]
+-[AFImageDownloaderResponseHandler failureBlock]
+-[AFImageDownloaderResponseHandler setFailureBlock:]
+-[AFImageDownloaderResponseHandler .cxx_destruct]
+-[AFImageDownloaderMergedTask initWithURLIdentifier:identifier:task:]
+-[AFImageDownloaderMergedTask addResponseHandler:]
+-[AFImageDownloaderMergedTask removeResponseHandler:]
+-[AFImageDownloaderMergedTask URLIdentifier]
+-[AFImageDownloaderMergedTask setURLIdentifier:]
+-[AFImageDownloaderMergedTask identifier]
+-[AFImageDownloaderMergedTask setIdentifier:]
+-[AFImageDownloaderMergedTask task]
+-[AFImageDownloaderMergedTask setTask:]
+-[AFImageDownloaderMergedTask responseHandlers]
+-[AFImageDownloaderMergedTask setResponseHandlers:]
+-[AFImageDownloaderMergedTask .cxx_destruct]
+-[AFImageDownloadReceipt initWithReceiptID:task:]
+-[AFImageDownloadReceipt task]
+-[AFImageDownloadReceipt setTask:]
+-[AFImageDownloadReceipt receiptID]
+-[AFImageDownloadReceipt setReceiptID:]
+-[AFImageDownloadReceipt .cxx_destruct]
++[AFImageDownloader defaultURLCache]
++[AFImageDownloader defaultURLSessionConfiguration]
+-[AFImageDownloader init]
+-[AFImageDownloader initWithSessionManager:downloadPrioritization:maximumActiveDownloads:imageCache:]
++[AFImageDownloader defaultInstance]
+___36+[AFImageDownloader defaultInstance]_block_invoke
+-[AFImageDownloader downloadImageForURLRequest:success:failure:]
+-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_2
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.181
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.187
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_2.190
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_3
+___78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.205
+___copy_helper_block_.216
+___destroy_helper_block_.217
+___copy_helper_block_.232
+___destroy_helper_block_.233
+-[AFImageDownloader cancelTaskForImageDownloadReceipt:]
+___55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke
+___55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke_2
+___55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke.254
+___copy_helper_block_.255
+___destroy_helper_block_.256
+___copy_helper_block_.266
+___destroy_helper_block_.267
+-[AFImageDownloader safelyRemoveMergedTaskWithURLIdentifier:]
+___61-[AFImageDownloader safelyRemoveMergedTaskWithURLIdentifier:]_block_invoke
+___copy_helper_block_.269
+___destroy_helper_block_.270
+-[AFImageDownloader removeMergedTaskWithURLIdentifier:]
+-[AFImageDownloader safelyDecrementActiveTaskCount]
+___51-[AFImageDownloader safelyDecrementActiveTaskCount]_block_invoke
+___copy_helper_block_.276
+___destroy_helper_block_.277
+-[AFImageDownloader safelyStartNextTaskIfNecessary]
+___51-[AFImageDownloader safelyStartNextTaskIfNecessary]_block_invoke
+___copy_helper_block_.283
+___destroy_helper_block_.284
+-[AFImageDownloader startMergedTask:]
+-[AFImageDownloader enqueueMergedTask:]
+-[AFImageDownloader dequeueMergedTask]
+-[AFImageDownloader isActiveRequestCountBelowMaximumLimit]
+-[AFImageDownloader imageCache]
+-[AFImageDownloader setImageCache:]
+-[AFImageDownloader sessionManager]
+-[AFImageDownloader setSessionManager:]
+-[AFImageDownloader downloadPrioritizaton]
+-[AFImageDownloader setDownloadPrioritizaton:]
+-[AFImageDownloader synchronizationQueue]
+-[AFImageDownloader setSynchronizationQueue:]
+-[AFImageDownloader responseQueue]
+-[AFImageDownloader setResponseQueue:]
+-[AFImageDownloader maximumActiveDownloads]
+-[AFImageDownloader setMaximumActiveDownloads:]
+-[AFImageDownloader activeRequestCount]
+-[AFImageDownloader setActiveRequestCount:]
+-[AFImageDownloader queuedMergedTasks]
+-[AFImageDownloader setQueuedMergedTasks:]
+-[AFImageDownloader mergedTasks]
+-[AFImageDownloader setMergedTasks:]
+-[AFImageDownloader .cxx_destruct]
+_OBJC_IVAR_$_AFImageDownloaderResponseHandler._uuid
+_OBJC_IVAR_$_AFImageDownloaderResponseHandler._successBlock
+_OBJC_IVAR_$_AFImageDownloaderResponseHandler._failureBlock
+_OBJC_METACLASS_$_AFImageDownloaderResponseHandler
+_OBJC_CLASS_$_AFImageDownloaderResponseHandler
+_OBJC_IVAR_$_AFImageDownloaderMergedTask._URLIdentifier
+_OBJC_IVAR_$_AFImageDownloaderMergedTask._identifier
+_OBJC_IVAR_$_AFImageDownloaderMergedTask._task
+_OBJC_IVAR_$_AFImageDownloaderMergedTask._responseHandlers
+_OBJC_METACLASS_$_AFImageDownloaderMergedTask
+_OBJC_CLASS_$_AFImageDownloaderMergedTask
+_OBJC_IVAR_$_AFImageDownloadReceipt._task
+_OBJC_IVAR_$_AFImageDownloadReceipt._receiptID
+_OBJC_METACLASS_$_AFImageDownloadReceipt
+_OBJC_CLASS_$_AFImageDownloadReceipt
+_OBJC_CLASS_$_AFImageDownloader
+_OBJC_CLASS_$_AFImageResponseSerializer
+_defaultInstance.sharedInstance
+_defaultInstance.onceToken
+___block_descriptor_tmp.166
+___block_descriptor_tmp.215
+___block_descriptor_tmp.219
+___block_descriptor_tmp.234
+___block_descriptor_tmp.243
+___block_descriptor_tmp.257
+___block_descriptor_tmp.268
+___block_descriptor_tmp.271
+___block_descriptor_tmp.278
+___block_descriptor_tmp.285
+_OBJC_IVAR_$_AFImageDownloader._imageCache
+_OBJC_IVAR_$_AFImageDownloader._sessionManager
+_OBJC_IVAR_$_AFImageDownloader._downloadPrioritizaton
+_OBJC_IVAR_$_AFImageDownloader._synchronizationQueue
+_OBJC_IVAR_$_AFImageDownloader._responseQueue
+_OBJC_IVAR_$_AFImageDownloader._maximumActiveDownloads
+_OBJC_IVAR_$_AFImageDownloader._activeRequestCount
+_OBJC_IVAR_$_AFImageDownloader._queuedMergedTasks
+_OBJC_IVAR_$_AFImageDownloader._mergedTasks
+_OBJC_METACLASS_$_AFImageDownloader
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h
+__51-[AFImageDownloader safelyStartNextTaskIfNecessary]_block_invoke
+__51-[AFImageDownloader safelyDecrementActiveTaskCount]_block_invoke
+__61-[AFImageDownloader safelyRemoveMergedTaskWithURLIdentifier:]_block_invoke
+__55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke.254
+__55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke_2
+__55-[AFImageDownloader cancelTaskForImageDownloadReceipt:]_block_invoke
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.205
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_3
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_2.190
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.187
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke.181
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke_2
+__78-[AFImageDownloader downloadImageForURLRequest:withReceiptID:success:failure:]_block_invoke
+__36+[AFImageDownloader defaultInstance]_block_invoke
++[AFNetworkActivityIndicatorManager sharedManager]
+___50+[AFNetworkActivityIndicatorManager sharedManager]_block_invoke
+-[AFNetworkActivityIndicatorManager init]
+-[AFNetworkActivityIndicatorManager dealloc]
+-[AFNetworkActivityIndicatorManager setEnabled:]
+-[AFNetworkActivityIndicatorManager setNetworkingActivityActionWithBlock:]
+-[AFNetworkActivityIndicatorManager isNetworkActivityOccurring]
+-[AFNetworkActivityIndicatorManager setNetworkActivityIndicatorVisible:]
+-[AFNetworkActivityIndicatorManager setActivityCount:]
+___54-[AFNetworkActivityIndicatorManager setActivityCount:]_block_invoke
+___copy_helper_block_.41
+___destroy_helper_block_.42
+-[AFNetworkActivityIndicatorManager incrementActivityCount]
+___59-[AFNetworkActivityIndicatorManager incrementActivityCount]_block_invoke
+___copy_helper_block_.46
+___destroy_helper_block_.47
+-[AFNetworkActivityIndicatorManager decrementActivityCount]
+___59-[AFNetworkActivityIndicatorManager decrementActivityCount]_block_invoke
+___copy_helper_block_.49
+___destroy_helper_block_.50
+-[AFNetworkActivityIndicatorManager networkRequestDidStart:]
+_AFNetworkRequestFromNotification
+-[AFNetworkActivityIndicatorManager networkRequestDidFinish:]
+-[AFNetworkActivityIndicatorManager setCurrentState:]
+-[AFNetworkActivityIndicatorManager updateCurrentStateForNetworkActivityChange]
+-[AFNetworkActivityIndicatorManager startActivationDelayTimer]
+-[AFNetworkActivityIndicatorManager activationDelayTimerFired]
+-[AFNetworkActivityIndicatorManager startCompletionDelayTimer]
+-[AFNetworkActivityIndicatorManager completionDelayTimerFired]
+-[AFNetworkActivityIndicatorManager cancelActivationDelayTimer]
+-[AFNetworkActivityIndicatorManager cancelCompletionDelayTimer]
+-[AFNetworkActivityIndicatorManager isEnabled]
+-[AFNetworkActivityIndicatorManager isNetworkActivityIndicatorVisible]
+-[AFNetworkActivityIndicatorManager activationDelay]
+-[AFNetworkActivityIndicatorManager setActivationDelay:]
+-[AFNetworkActivityIndicatorManager completionDelay]
+-[AFNetworkActivityIndicatorManager setCompletionDelay:]
+-[AFNetworkActivityIndicatorManager activityCount]
+-[AFNetworkActivityIndicatorManager activationDelayTimer]
+-[AFNetworkActivityIndicatorManager setActivationDelayTimer:]
+-[AFNetworkActivityIndicatorManager completionDelayTimer]
+-[AFNetworkActivityIndicatorManager setCompletionDelayTimer:]
+-[AFNetworkActivityIndicatorManager networkActivityActionBlock]
+-[AFNetworkActivityIndicatorManager setNetworkActivityActionBlock:]
+-[AFNetworkActivityIndicatorManager currentState]
+-[AFNetworkActivityIndicatorManager .cxx_destruct]
+_sharedManager._sharedManager
+_sharedManager.oncePredicate
+_OBJC_CLASS_$_AFNetworkActivityIndicatorManager
+_AFNetworkingTaskDidSuspendNotification
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._activationDelayTimer
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._completionDelayTimer
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._enabled
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._networkActivityIndicatorVisible
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._activityCount
+___block_descriptor_tmp.43
+___block_descriptor_tmp.48
+___block_descriptor_tmp.51
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._currentState
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._activationDelay
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._completionDelay
+_OBJC_IVAR_$_AFNetworkActivityIndicatorManager._networkActivityActionBlock
+_OBJC_METACLASS_$_AFNetworkActivityIndicatorManager
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h
+AFNetworkRequestFromNotification
+__59-[AFNetworkActivityIndicatorManager decrementActivityCount]_block_invoke
+__59-[AFNetworkActivityIndicatorManager incrementActivityCount]_block_invoke
+__54-[AFNetworkActivityIndicatorManager setActivityCount:]_block_invoke
+__50+[AFNetworkActivityIndicatorManager sharedManager]_block_invoke
+_OBJC_METACLASS_$_PodsDummy_AFNetworking
+_OBJC_CLASS_$_PodsDummy_AFNetworking
+/Users/sisi/Documents/Herwin/approval-2/Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m
+_AFStringFromNetworkReachabilityStatus
++[AFNetworkReachabilityManager sharedManager]
+___45+[AFNetworkReachabilityManager sharedManager]_block_invoke
++[AFNetworkReachabilityManager managerForDomain:]
++[AFNetworkReachabilityManager managerForAddress:]
++[AFNetworkReachabilityManager manager]
+-[AFNetworkReachabilityManager initWithReachability:]
+-[AFNetworkReachabilityManager init]
+-[AFNetworkReachabilityManager dealloc]
+-[AFNetworkReachabilityManager isReachable]
+-[AFNetworkReachabilityManager isReachableViaWWAN]
+-[AFNetworkReachabilityManager isReachableViaWiFi]
+-[AFNetworkReachabilityManager startMonitoring]
+___47-[AFNetworkReachabilityManager startMonitoring]_block_invoke
+_AFNetworkReachabilityRetainCallback
+_AFNetworkReachabilityReleaseCallback
+_AFNetworkReachabilityCallback
+___47-[AFNetworkReachabilityManager startMonitoring]_block_invoke.50
+_AFPostReachabilityStatusChange
+___copy_helper_block_.51
+___destroy_helper_block_.52
+-[AFNetworkReachabilityManager stopMonitoring]
+-[AFNetworkReachabilityManager localizedNetworkReachabilityStatusString]
+-[AFNetworkReachabilityManager setReachabilityStatusChangeBlock:]
++[AFNetworkReachabilityManager keyPathsForValuesAffectingValueForKey:]
+-[AFNetworkReachabilityManager networkReachabilityStatus]
+-[AFNetworkReachabilityManager setNetworkReachabilityStatus:]
+-[AFNetworkReachabilityManager networkReachability]
+-[AFNetworkReachabilityManager networkReachabilityStatusBlock]
+-[AFNetworkReachabilityManager setNetworkReachabilityStatusBlock:]
+-[AFNetworkReachabilityManager .cxx_destruct]
+___AFPostReachabilityStatusChange_block_invoke
+___copy_helper_block_.119
+___destroy_helper_block_.120
+_AFNetworkingReachabilityDidChangeNotification
+_AFNetworkingReachabilityNotificationStatusItem
+_sharedManager.onceToken
+_OBJC_CLASS_$_AFNetworkReachabilityManager
+_OBJC_IVAR_$_AFNetworkReachabilityManager._networkReachability
+___block_descriptor_tmp.49
+___block_descriptor_tmp.53
+_OBJC_METACLASS_$_AFNetworkReachabilityManager
+_OBJC_IVAR_$_AFNetworkReachabilityManager._networkReachabilityStatus
+_OBJC_IVAR_$_AFNetworkReachabilityManager._networkReachabilityStatusBlock
+___block_descriptor_tmp.121
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m
+__AFPostReachabilityStatusChange_block_invoke
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+AFPostReachabilityStatusChange
+AFNetworkReachabilityStatusForFlags
+__47-[AFNetworkReachabilityManager startMonitoring]_block_invoke.50
+AFNetworkReachabilityCallback
+AFNetworkReachabilityReleaseCallback
+AFNetworkReachabilityRetainCallback
+__47-[AFNetworkReachabilityManager startMonitoring]_block_invoke
+__45+[AFNetworkReachabilityManager sharedManager]_block_invoke
+AFStringFromNetworkReachabilityStatus
++[AFSecurityPolicy certificatesInBundle:]
++[AFSecurityPolicy defaultPinnedCertificates]
+___45+[AFSecurityPolicy defaultPinnedCertificates]_block_invoke
++[AFSecurityPolicy defaultPolicy]
++[AFSecurityPolicy policyWithPinningMode:]
++[AFSecurityPolicy policyWithPinningMode:withPinnedCertificates:]
+-[AFSecurityPolicy init]
+-[AFSecurityPolicy setPinnedCertificates:]
+-[AFSecurityPolicy evaluateServerTrust:forDomain:]
+_AFServerTrustIsValid
++[AFSecurityPolicy keyPathsForValuesAffectingPinnedPublicKeys]
++[AFSecurityPolicy supportsSecureCoding]
+-[AFSecurityPolicy initWithCoder:]
+-[AFSecurityPolicy encodeWithCoder:]
+-[AFSecurityPolicy copyWithZone:]
+-[AFSecurityPolicy SSLPinningMode]
+-[AFSecurityPolicy setSSLPinningMode:]
+-[AFSecurityPolicy pinnedCertificates]
+-[AFSecurityPolicy allowInvalidCertificates]
+-[AFSecurityPolicy setAllowInvalidCertificates:]
+-[AFSecurityPolicy validatesDomainName]
+-[AFSecurityPolicy setValidatesDomainName:]
+-[AFSecurityPolicy pinnedPublicKeys]
+-[AFSecurityPolicy setPinnedPublicKeys:]
+-[AFSecurityPolicy .cxx_destruct]
+_defaultPinnedCertificates._defaultPinnedCertificates
+_defaultPinnedCertificates.onceToken
+_OBJC_IVAR_$_AFSecurityPolicy._pinnedCertificates
+_OBJC_IVAR_$_AFSecurityPolicy._SSLPinningMode
+_OBJC_IVAR_$_AFSecurityPolicy._allowInvalidCertificates
+_OBJC_IVAR_$_AFSecurityPolicy._validatesDomainName
+_OBJC_IVAR_$_AFSecurityPolicy._pinnedPublicKeys
+_OBJC_METACLASS_$_AFSecurityPolicy
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+AFServerTrustIsValid
+AFSecKeyIsEqualToKey
+AFPublicKeyTrustChainForServerTrust
+AFCertificateTrustChainForServerTrust
+AFPublicKeyForCertificate
+__45+[AFSecurityPolicy defaultPinnedCertificates]_block_invoke
+_AFPercentEscapedStringFromString
+-[AFQueryStringPair initWithField:value:]
+-[AFQueryStringPair URLEncodedStringValue]
+-[AFQueryStringPair field]
+-[AFQueryStringPair setField:]
+-[AFQueryStringPair value]
+-[AFQueryStringPair setValue:]
+-[AFQueryStringPair .cxx_destruct]
+_AFQueryStringFromParameters
+_AFQueryStringPairsFromDictionary
+_AFQueryStringPairsFromKeyAndValue
++[AFHTTPRequestSerializer serializer]
+-[AFHTTPRequestSerializer init]
+___31-[AFHTTPRequestSerializer init]_block_invoke
+-[AFHTTPRequestSerializer dealloc]
+-[AFHTTPRequestSerializer setAllowsCellularAccess:]
+-[AFHTTPRequestSerializer setCachePolicy:]
+-[AFHTTPRequestSerializer setHTTPShouldHandleCookies:]
+-[AFHTTPRequestSerializer setHTTPShouldUsePipelining:]
+-[AFHTTPRequestSerializer setNetworkServiceType:]
+-[AFHTTPRequestSerializer setTimeoutInterval:]
+-[AFHTTPRequestSerializer HTTPRequestHeaders]
+-[AFHTTPRequestSerializer setValue:forHTTPHeaderField:]
+-[AFHTTPRequestSerializer valueForHTTPHeaderField:]
+-[AFHTTPRequestSerializer setAuthorizationHeaderFieldWithUsername:password:]
+-[AFHTTPRequestSerializer clearAuthorizationHeader]
+-[AFHTTPRequestSerializer setQueryStringSerializationWithStyle:]
+-[AFHTTPRequestSerializer setQueryStringSerializationWithBlock:]
+-[AFHTTPRequestSerializer requestWithMethod:URLString:parameters:error:]
+-[AFHTTPRequestSerializer multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:error:]
+-[AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]
+___105-[AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke
+___105-[AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke_2
+___copy_helper_block_.270
+___destroy_helper_block_.271
+___copy_helper_block_.274
+___destroy_helper_block_.275
+-[AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]
+___76-[AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
++[AFHTTPRequestSerializer automaticallyNotifiesObserversForKey:]
+-[AFHTTPRequestSerializer observeValueForKeyPath:ofObject:change:context:]
++[AFHTTPRequestSerializer supportsSecureCoding]
+-[AFHTTPRequestSerializer initWithCoder:]
+-[AFHTTPRequestSerializer encodeWithCoder:]
+-[AFHTTPRequestSerializer copyWithZone:]
+-[AFHTTPRequestSerializer stringEncoding]
+-[AFHTTPRequestSerializer setStringEncoding:]
+-[AFHTTPRequestSerializer allowsCellularAccess]
+-[AFHTTPRequestSerializer cachePolicy]
+-[AFHTTPRequestSerializer HTTPShouldHandleCookies]
+-[AFHTTPRequestSerializer HTTPShouldUsePipelining]
+-[AFHTTPRequestSerializer networkServiceType]
+-[AFHTTPRequestSerializer timeoutInterval]
+-[AFHTTPRequestSerializer HTTPMethodsEncodingParametersInURI]
+-[AFHTTPRequestSerializer setHTTPMethodsEncodingParametersInURI:]
+-[AFHTTPRequestSerializer mutableObservedChangedKeyPaths]
+-[AFHTTPRequestSerializer setMutableObservedChangedKeyPaths:]
+-[AFHTTPRequestSerializer mutableHTTPRequestHeaders]
+-[AFHTTPRequestSerializer setMutableHTTPRequestHeaders:]
+-[AFHTTPRequestSerializer queryStringSerializationStyle]
+-[AFHTTPRequestSerializer setQueryStringSerializationStyle:]
+-[AFHTTPRequestSerializer queryStringSerialization]
+-[AFHTTPRequestSerializer setQueryStringSerialization:]
+-[AFHTTPRequestSerializer .cxx_destruct]
+-[AFStreamingMultipartFormData initWithURLRequest:stringEncoding:]
+-[AFStreamingMultipartFormData appendPartWithFileURL:name:error:]
+-[AFStreamingMultipartFormData appendPartWithFileURL:name:fileName:mimeType:error:]
+-[AFStreamingMultipartFormData appendPartWithInputStream:name:fileName:length:mimeType:]
+-[AFStreamingMultipartFormData appendPartWithFileData:name:fileName:mimeType:]
+-[AFStreamingMultipartFormData appendPartWithFormData:name:]
+-[AFStreamingMultipartFormData appendPartWithHeaders:body:]
+-[AFStreamingMultipartFormData throttleBandwidthWithPacketSize:delay:]
+-[AFStreamingMultipartFormData requestByFinalizingMultipartFormData]
+-[AFStreamingMultipartFormData request]
+-[AFStreamingMultipartFormData setRequest:]
+-[AFStreamingMultipartFormData stringEncoding]
+-[AFStreamingMultipartFormData setStringEncoding:]
+-[AFStreamingMultipartFormData boundary]
+-[AFStreamingMultipartFormData setBoundary:]
+-[AFStreamingMultipartFormData bodyStream]
+-[AFStreamingMultipartFormData setBodyStream:]
+-[AFStreamingMultipartFormData .cxx_destruct]
+-[AFMultipartBodyStream initWithStringEncoding:]
+-[AFMultipartBodyStream setInitialAndFinalBoundaries]
+-[AFMultipartBodyStream appendHTTPBodyPart:]
+-[AFMultipartBodyStream isEmpty]
+-[AFMultipartBodyStream read:maxLength:]
+-[AFMultipartBodyStream getBuffer:length:]
+-[AFMultipartBodyStream hasBytesAvailable]
+-[AFMultipartBodyStream open]
+-[AFMultipartBodyStream close]
+-[AFMultipartBodyStream propertyForKey:]
+-[AFMultipartBodyStream setProperty:forKey:]
+-[AFMultipartBodyStream scheduleInRunLoop:forMode:]
+-[AFMultipartBodyStream removeFromRunLoop:forMode:]
+-[AFMultipartBodyStream contentLength]
+-[AFMultipartBodyStream _scheduleInCFRunLoop:forMode:]
+-[AFMultipartBodyStream _unscheduleFromCFRunLoop:forMode:]
+-[AFMultipartBodyStream _setCFClientFlags:callback:context:]
+-[AFMultipartBodyStream copyWithZone:]
+-[AFMultipartBodyStream delegate]
+-[AFMultipartBodyStream setDelegate:]
+-[AFMultipartBodyStream streamStatus]
+-[AFMultipartBodyStream setStreamStatus:]
+-[AFMultipartBodyStream streamError]
+-[AFMultipartBodyStream setStreamError:]
+-[AFMultipartBodyStream numberOfBytesInPacket]
+-[AFMultipartBodyStream setNumberOfBytesInPacket:]
+-[AFMultipartBodyStream delay]
+-[AFMultipartBodyStream setDelay:]
+-[AFMultipartBodyStream inputStream]
+-[AFMultipartBodyStream setInputStream:]
+-[AFMultipartBodyStream stringEncoding]
+-[AFMultipartBodyStream setStringEncoding:]
+-[AFMultipartBodyStream HTTPBodyParts]
+-[AFMultipartBodyStream setHTTPBodyParts:]
+-[AFMultipartBodyStream HTTPBodyPartEnumerator]
+-[AFMultipartBodyStream setHTTPBodyPartEnumerator:]
+-[AFMultipartBodyStream currentHTTPBodyPart]
+-[AFMultipartBodyStream setCurrentHTTPBodyPart:]
+-[AFMultipartBodyStream outputStream]
+-[AFMultipartBodyStream setOutputStream:]
+-[AFMultipartBodyStream buffer]
+-[AFMultipartBodyStream setBuffer:]
+-[AFMultipartBodyStream .cxx_destruct]
+-[AFHTTPBodyPart init]
+-[AFHTTPBodyPart dealloc]
+-[AFHTTPBodyPart inputStream]
+-[AFHTTPBodyPart stringForHeaders]
+-[AFHTTPBodyPart contentLength]
+-[AFHTTPBodyPart hasBytesAvailable]
+-[AFHTTPBodyPart read:maxLength:]
+-[AFHTTPBodyPart readData:intoBuffer:maxLength:]
+-[AFHTTPBodyPart transitionToNextPhase]
+___39-[AFHTTPBodyPart transitionToNextPhase]_block_invoke
+___copy_helper_block_.713
+___destroy_helper_block_.714
+-[AFHTTPBodyPart copyWithZone:]
+-[AFHTTPBodyPart stringEncoding]
+-[AFHTTPBodyPart setStringEncoding:]
+-[AFHTTPBodyPart headers]
+-[AFHTTPBodyPart setHeaders:]
+-[AFHTTPBodyPart boundary]
+-[AFHTTPBodyPart setBoundary:]
+-[AFHTTPBodyPart body]
+-[AFHTTPBodyPart setBody:]
+-[AFHTTPBodyPart bodyContentLength]
+-[AFHTTPBodyPart setBodyContentLength:]
+-[AFHTTPBodyPart setInputStream:]
+-[AFHTTPBodyPart hasInitialBoundary]
+-[AFHTTPBodyPart setHasInitialBoundary:]
+-[AFHTTPBodyPart hasFinalBoundary]
+-[AFHTTPBodyPart setHasFinalBoundary:]
+-[AFHTTPBodyPart .cxx_destruct]
++[AFJSONRequestSerializer serializer]
++[AFJSONRequestSerializer serializerWithWritingOptions:]
+-[AFJSONRequestSerializer requestBySerializingRequest:withParameters:error:]
+___76-[AFJSONRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
+___copy_helper_block_.749
+___destroy_helper_block_.750
+-[AFJSONRequestSerializer initWithCoder:]
+-[AFJSONRequestSerializer encodeWithCoder:]
+-[AFJSONRequestSerializer copyWithZone:]
+-[AFJSONRequestSerializer writingOptions]
+-[AFJSONRequestSerializer setWritingOptions:]
++[AFPropertyListRequestSerializer serializer]
++[AFPropertyListRequestSerializer serializerWithFormat:writeOptions:]
+-[AFPropertyListRequestSerializer requestBySerializingRequest:withParameters:error:]
+___84-[AFPropertyListRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
+___copy_helper_block_.773
+___destroy_helper_block_.774
+-[AFPropertyListRequestSerializer initWithCoder:]
+-[AFPropertyListRequestSerializer encodeWithCoder:]
+-[AFPropertyListRequestSerializer copyWithZone:]
+-[AFPropertyListRequestSerializer format]
+-[AFPropertyListRequestSerializer setFormat:]
+-[AFPropertyListRequestSerializer writeOptions]
+-[AFPropertyListRequestSerializer setWriteOptions:]
+_AFHTTPRequestSerializerObservedKeyPaths
+___AFHTTPRequestSerializerObservedKeyPaths_block_invoke
+_AFURLRequestSerializationErrorDomain
+_AFNetworkingOperationFailingURLRequestErrorKey
+_OBJC_CLASS_$_AFQueryStringPair
+_OBJC_IVAR_$_AFQueryStringPair._field
+_OBJC_IVAR_$_AFQueryStringPair._value
+_OBJC_METACLASS_$_AFQueryStringPair
+_AFHTTPRequestSerializerObserverContext
+_OBJC_IVAR_$_AFHTTPRequestSerializer._allowsCellularAccess
+_OBJC_IVAR_$_AFHTTPRequestSerializer._cachePolicy
+_OBJC_IVAR_$_AFHTTPRequestSerializer._HTTPShouldHandleCookies
+_OBJC_IVAR_$_AFHTTPRequestSerializer._HTTPShouldUsePipelining
+_OBJC_IVAR_$_AFHTTPRequestSerializer._networkServiceType
+_OBJC_IVAR_$_AFHTTPRequestSerializer._timeoutInterval
+_OBJC_CLASS_$_AFStreamingMultipartFormData
+___block_descriptor_tmp.273
+___block_descriptor_tmp.276
+___block_descriptor_tmp.286
+_OBJC_METACLASS_$_AFHTTPRequestSerializer
+_OBJC_IVAR_$_AFHTTPRequestSerializer._stringEncoding
+_OBJC_IVAR_$_AFHTTPRequestSerializer._HTTPMethodsEncodingParametersInURI
+_OBJC_IVAR_$_AFHTTPRequestSerializer._mutableObservedChangedKeyPaths
+_OBJC_IVAR_$_AFHTTPRequestSerializer._mutableHTTPRequestHeaders
+_OBJC_IVAR_$_AFHTTPRequestSerializer._queryStringSerializationStyle
+_OBJC_IVAR_$_AFHTTPRequestSerializer._queryStringSerialization
+l_OBJC_PROTOCOL_$_AFURLRequestSerialization
+l_OBJC_LABEL_PROTOCOL_$_AFURLRequestSerialization
+_kAFUploadStream3GSuggestedPacketSize
+_kAFUploadStream3GSuggestedDelay
+_OBJC_CLASS_$_AFMultipartBodyStream
+_OBJC_CLASS_$_AFHTTPBodyPart
+_OBJC_IVAR_$_AFStreamingMultipartFormData._request
+_OBJC_IVAR_$_AFStreamingMultipartFormData._stringEncoding
+_OBJC_IVAR_$_AFStreamingMultipartFormData._boundary
+_OBJC_IVAR_$_AFStreamingMultipartFormData._bodyStream
+l_OBJC_PROTOCOL_$_AFMultipartFormData
+l_OBJC_LABEL_PROTOCOL_$_AFMultipartFormData
+_OBJC_METACLASS_$_AFStreamingMultipartFormData
+_OBJC_IVAR_$_AFMultipartBodyStream.delegate
+_OBJC_IVAR_$_AFMultipartBodyStream.streamStatus
+_OBJC_IVAR_$_AFMultipartBodyStream.streamError
+_OBJC_IVAR_$_AFMultipartBodyStream._numberOfBytesInPacket
+_OBJC_IVAR_$_AFMultipartBodyStream._delay
+_OBJC_IVAR_$_AFMultipartBodyStream._inputStream
+_OBJC_IVAR_$_AFMultipartBodyStream._stringEncoding
+_OBJC_IVAR_$_AFMultipartBodyStream._HTTPBodyParts
+_OBJC_IVAR_$_AFMultipartBodyStream._HTTPBodyPartEnumerator
+_OBJC_IVAR_$_AFMultipartBodyStream._currentHTTPBodyPart
+_OBJC_IVAR_$_AFMultipartBodyStream._outputStream
+_OBJC_IVAR_$_AFMultipartBodyStream._buffer
+l_OBJC_PROTOCOL_$_NSStreamDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSStreamDelegate
+_OBJC_METACLASS_$_AFMultipartBodyStream
+_OBJC_IVAR_$_AFHTTPBodyPart._inputStream
+_OBJC_IVAR_$_AFHTTPBodyPart._bodyContentLength
+_OBJC_IVAR_$_AFHTTPBodyPart._phase
+_OBJC_IVAR_$_AFHTTPBodyPart._phaseReadOffset
+___block_descriptor_tmp.715
+_OBJC_IVAR_$_AFHTTPBodyPart._stringEncoding
+_OBJC_IVAR_$_AFHTTPBodyPart._headers
+_OBJC_IVAR_$_AFHTTPBodyPart._boundary
+_OBJC_IVAR_$_AFHTTPBodyPart._body
+_OBJC_IVAR_$_AFHTTPBodyPart._hasInitialBoundary
+_OBJC_IVAR_$_AFHTTPBodyPart._hasFinalBoundary
+_OBJC_METACLASS_$_AFHTTPBodyPart
+_OBJC_CLASS_$_AFJSONRequestSerializer
+___block_descriptor_tmp.751
+_OBJC_IVAR_$_AFJSONRequestSerializer._writingOptions
+_OBJC_METACLASS_$_AFJSONRequestSerializer
+_OBJC_CLASS_$_AFPropertyListRequestSerializer
+___block_descriptor_tmp.775
+_OBJC_IVAR_$_AFPropertyListRequestSerializer._format
+_OBJC_IVAR_$_AFPropertyListRequestSerializer._writeOptions
+_OBJC_METACLASS_$_AFPropertyListRequestSerializer
+_AFHTTPRequestSerializerObservedKeyPaths._AFHTTPRequestSerializerObservedKeyPaths
+_AFHTTPRequestSerializerObservedKeyPaths.onceToken
+___block_descriptor_tmp.795
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m
+__AFHTTPRequestSerializerObservedKeyPaths_block_invoke
+AFHTTPRequestSerializerObservedKeyPaths
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+__84-[AFPropertyListRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
+__76-[AFJSONRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
+__39-[AFHTTPBodyPart transitionToNextPhase]_block_invoke
+AFMultipartFormFinalBoundary
+AFMultipartFormEncapsulationBoundary
+AFMultipartFormInitialBoundary
+-[NSStream setStreamError:]
+-[NSStream streamError]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSStream.h
+-[NSStream setStreamStatus:]
+-[NSStream streamStatus]
+-[NSStream setDelegate:]
+-[NSStream delegate]
+AFContentTypeForPathExtension
+AFCreateMultipartFormBoundary
+__76-[AFHTTPRequestSerializer requestBySerializingRequest:withParameters:error:]_block_invoke
+__105-[AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke_2
+__105-[AFHTTPRequestSerializer requestWithMultipartFormRequest:writingStreamContentsToFile:completionHandler:]_block_invoke
+AFQueryStringPairsFromDictionary
+__31-[AFHTTPRequestSerializer init]_block_invoke
+AFQueryStringPairsFromKeyAndValue
+AFQueryStringFromParameters
+AFPercentEscapedStringFromString
++[AFHTTPResponseSerializer serializer]
+-[AFHTTPResponseSerializer init]
+-[AFHTTPResponseSerializer validateResponse:data:error:]
+_AFErrorWithUnderlyingError
+-[AFHTTPResponseSerializer responseObjectForResponse:data:error:]
++[AFHTTPResponseSerializer supportsSecureCoding]
+-[AFHTTPResponseSerializer initWithCoder:]
+-[AFHTTPResponseSerializer encodeWithCoder:]
+-[AFHTTPResponseSerializer copyWithZone:]
+-[AFHTTPResponseSerializer stringEncoding]
+-[AFHTTPResponseSerializer setStringEncoding:]
+-[AFHTTPResponseSerializer acceptableStatusCodes]
+-[AFHTTPResponseSerializer setAcceptableStatusCodes:]
+-[AFHTTPResponseSerializer acceptableContentTypes]
+-[AFHTTPResponseSerializer setAcceptableContentTypes:]
+-[AFHTTPResponseSerializer .cxx_destruct]
++[AFJSONResponseSerializer serializer]
++[AFJSONResponseSerializer serializerWithReadingOptions:]
+-[AFJSONResponseSerializer init]
+-[AFJSONResponseSerializer responseObjectForResponse:data:error:]
+_AFErrorOrUnderlyingErrorHasCodeInDomain
+_AFJSONObjectByRemovingKeysWithNullValues
+-[AFJSONResponseSerializer initWithCoder:]
+-[AFJSONResponseSerializer encodeWithCoder:]
+-[AFJSONResponseSerializer copyWithZone:]
+-[AFJSONResponseSerializer readingOptions]
+-[AFJSONResponseSerializer setReadingOptions:]
+-[AFJSONResponseSerializer removesKeysWithNullValues]
+-[AFJSONResponseSerializer setRemovesKeysWithNullValues:]
++[AFXMLParserResponseSerializer serializer]
+-[AFXMLParserResponseSerializer init]
+-[AFXMLParserResponseSerializer responseObjectForResponse:data:error:]
++[AFPropertyListResponseSerializer serializer]
++[AFPropertyListResponseSerializer serializerWithFormat:readOptions:]
+-[AFPropertyListResponseSerializer init]
+-[AFPropertyListResponseSerializer responseObjectForResponse:data:error:]
+-[AFPropertyListResponseSerializer initWithCoder:]
+-[AFPropertyListResponseSerializer encodeWithCoder:]
+-[AFPropertyListResponseSerializer copyWithZone:]
+-[AFPropertyListResponseSerializer format]
+-[AFPropertyListResponseSerializer setFormat:]
+-[AFPropertyListResponseSerializer readOptions]
+-[AFPropertyListResponseSerializer setReadOptions:]
++[UIImage(AFNetworkingSafeImageLoading) af_safeImageWithData:]
+___62+[UIImage(AFNetworkingSafeImageLoading) af_safeImageWithData:]_block_invoke
+-[AFImageResponseSerializer init]
+-[AFImageResponseSerializer responseObjectForResponse:data:error:]
+_AFImageWithDataAtScale
+-[AFImageResponseSerializer initWithCoder:]
+-[AFImageResponseSerializer encodeWithCoder:]
+-[AFImageResponseSerializer copyWithZone:]
+-[AFImageResponseSerializer imageScale]
+-[AFImageResponseSerializer setImageScale:]
+-[AFImageResponseSerializer automaticallyInflatesResponseImage]
+-[AFImageResponseSerializer setAutomaticallyInflatesResponseImage:]
++[AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:]
+-[AFCompoundResponseSerializer responseObjectForResponse:data:error:]
+-[AFCompoundResponseSerializer initWithCoder:]
+-[AFCompoundResponseSerializer encodeWithCoder:]
+-[AFCompoundResponseSerializer copyWithZone:]
+-[AFCompoundResponseSerializer responseSerializers]
+-[AFCompoundResponseSerializer setResponseSerializers:]
+-[AFCompoundResponseSerializer .cxx_destruct]
+_AFURLResponseSerializationErrorDomain
+_AFNetworkingOperationFailingURLResponseErrorKey
+_AFNetworkingOperationFailingURLResponseDataErrorKey
+_OBJC_IVAR_$_AFHTTPResponseSerializer._stringEncoding
+_OBJC_IVAR_$_AFHTTPResponseSerializer._acceptableStatusCodes
+_OBJC_IVAR_$_AFHTTPResponseSerializer._acceptableContentTypes
+l_OBJC_PROTOCOL_$_AFURLResponseSerialization
+l_OBJC_LABEL_PROTOCOL_$_AFURLResponseSerialization
+_OBJC_METACLASS_$_AFHTTPResponseSerializer
+_OBJC_IVAR_$_AFJSONResponseSerializer._readingOptions
+_OBJC_IVAR_$_AFJSONResponseSerializer._removesKeysWithNullValues
+_OBJC_METACLASS_$_AFJSONResponseSerializer
+_OBJC_CLASS_$_AFXMLParserResponseSerializer
+_OBJC_METACLASS_$_AFXMLParserResponseSerializer
+_OBJC_CLASS_$_AFPropertyListResponseSerializer
+_OBJC_IVAR_$_AFPropertyListResponseSerializer._format
+_OBJC_IVAR_$_AFPropertyListResponseSerializer._readOptions
+_OBJC_METACLASS_$_AFPropertyListResponseSerializer
+_imageLock
+_af_safeImageWithData:.onceToken
+_OBJC_IVAR_$_AFImageResponseSerializer._imageScale
+_OBJC_IVAR_$_AFImageResponseSerializer._automaticallyInflatesResponseImage
+_OBJC_METACLASS_$_AFImageResponseSerializer
+_OBJC_CLASS_$_AFCompoundResponseSerializer
+_OBJC_IVAR_$_AFCompoundResponseSerializer._responseSerializers
+_OBJC_METACLASS_$_AFCompoundResponseSerializer
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+AFImageWithDataAtScale
+AFInflatedImageFromResponseWithDataAtScale
+CGRectMake
+__62+[UIImage(AFNetworkingSafeImageLoading) af_safeImageWithData:]_block_invoke
+AFJSONObjectByRemovingKeysWithNullValues
+AFErrorOrUnderlyingErrorHasCodeInDomain
+AFErrorWithUnderlyingError
+-[AFURLSessionManagerTaskDelegate init]
+-[AFURLSessionManagerTaskDelegate setupProgressForTask:]
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.53
+___copy_helper_block_.56
+___destroy_helper_block_.57
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.65
+___copy_helper_block_.68
+___destroy_helper_block_.69
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.71
+___copy_helper_block_.72
+___destroy_helper_block_.73
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.75
+___copy_helper_block_.76
+___destroy_helper_block_.77
+___56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.79
+___copy_helper_block_.80
+___destroy_helper_block_.81
+-[AFURLSessionManagerTaskDelegate cleanUpProgressForTask:]
+-[AFURLSessionManagerTaskDelegate observeValueForKeyPath:ofObject:change:context:]
+-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]
+___72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke
+___72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2
+___copy_helper_block_.141
+___destroy_helper_block_.142
+___72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke.147
+___72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2.150
+___72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_3
+-[AFURLSessionManagerTaskDelegate URLSession:dataTask:didReceiveData:]
+-[AFURLSessionManagerTaskDelegate URLSession:downloadTask:didFinishDownloadingToURL:]
+-[AFURLSessionManagerTaskDelegate manager]
+-[AFURLSessionManagerTaskDelegate setManager:]
+-[AFURLSessionManagerTaskDelegate mutableData]
+-[AFURLSessionManagerTaskDelegate setMutableData:]
+-[AFURLSessionManagerTaskDelegate uploadProgress]
+-[AFURLSessionManagerTaskDelegate setUploadProgress:]
+-[AFURLSessionManagerTaskDelegate downloadProgress]
+-[AFURLSessionManagerTaskDelegate setDownloadProgress:]
+-[AFURLSessionManagerTaskDelegate downloadFileURL]
+-[AFURLSessionManagerTaskDelegate setDownloadFileURL:]
+-[AFURLSessionManagerTaskDelegate downloadTaskDidFinishDownloading]
+-[AFURLSessionManagerTaskDelegate setDownloadTaskDidFinishDownloading:]
+-[AFURLSessionManagerTaskDelegate uploadProgressBlock]
+-[AFURLSessionManagerTaskDelegate setUploadProgressBlock:]
+-[AFURLSessionManagerTaskDelegate downloadProgressBlock]
+-[AFURLSessionManagerTaskDelegate setDownloadProgressBlock:]
+-[AFURLSessionManagerTaskDelegate completionHandler]
+-[AFURLSessionManagerTaskDelegate setCompletionHandler:]
+-[AFURLSessionManagerTaskDelegate .cxx_destruct]
++[_AFURLSessionTaskSwizzling load]
++[_AFURLSessionTaskSwizzling swizzleResumeAndSuspendMethodForClass:]
+-[_AFURLSessionTaskSwizzling state]
+-[_AFURLSessionTaskSwizzling af_resume]
+-[_AFURLSessionTaskSwizzling af_suspend]
+-[AFURLSessionManager init]
+-[AFURLSessionManager initWithSessionConfiguration:]
+___52-[AFURLSessionManager initWithSessionConfiguration:]_block_invoke
+___copy_helper_block_.387
+___destroy_helper_block_.388
+-[AFURLSessionManager dealloc]
+-[AFURLSessionManager taskDescriptionForSessionTasks]
+-[AFURLSessionManager taskDidResume:]
+___37-[AFURLSessionManager taskDidResume:]_block_invoke
+___copy_helper_block_.408
+___destroy_helper_block_.409
+-[AFURLSessionManager taskDidSuspend:]
+___38-[AFURLSessionManager taskDidSuspend:]_block_invoke
+___copy_helper_block_.411
+___destroy_helper_block_.412
+-[AFURLSessionManager delegateForTask:]
+-[AFURLSessionManager setDelegate:forTask:]
+-[AFURLSessionManager addDelegateForDataTask:uploadProgress:downloadProgress:completionHandler:]
+-[AFURLSessionManager addDelegateForUploadTask:progress:completionHandler:]
+-[AFURLSessionManager addDelegateForDownloadTask:progress:destination:completionHandler:]
+___89-[AFURLSessionManager addDelegateForDownloadTask:progress:destination:completionHandler:]_block_invoke
+___copy_helper_block_.435
+___destroy_helper_block_.436
+-[AFURLSessionManager removeDelegateForTask:]
+-[AFURLSessionManager tasksForKeyPath:]
+___39-[AFURLSessionManager tasksForKeyPath:]_block_invoke
+___copy_helper_block_.462
+___destroy_helper_block_.463
+-[AFURLSessionManager tasks]
+-[AFURLSessionManager dataTasks]
+-[AFURLSessionManager uploadTasks]
+-[AFURLSessionManager downloadTasks]
+-[AFURLSessionManager invalidateSessionCancelingTasks:]
+___55-[AFURLSessionManager invalidateSessionCancelingTasks:]_block_invoke
+___copy_helper_block_.469
+___destroy_helper_block_.470
+-[AFURLSessionManager setResponseSerializer:]
+-[AFURLSessionManager addNotificationObserverForTask:]
+-[AFURLSessionManager removeNotificationObserverForTask:]
+-[AFURLSessionManager dataTaskWithRequest:completionHandler:]
+-[AFURLSessionManager dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:]
+_url_session_manager_create_task_safely
+___93-[AFURLSessionManager dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:]_block_invoke
+___copy_helper_block_.484
+___destroy_helper_block_.485
+-[AFURLSessionManager uploadTaskWithRequest:fromFile:progress:completionHandler:]
+___81-[AFURLSessionManager uploadTaskWithRequest:fromFile:progress:completionHandler:]_block_invoke
+___copy_helper_block_.489
+___destroy_helper_block_.490
+-[AFURLSessionManager uploadTaskWithRequest:fromData:progress:completionHandler:]
+___81-[AFURLSessionManager uploadTaskWithRequest:fromData:progress:completionHandler:]_block_invoke
+___copy_helper_block_.500
+___destroy_helper_block_.501
+-[AFURLSessionManager uploadTaskWithStreamedRequest:progress:completionHandler:]
+___80-[AFURLSessionManager uploadTaskWithStreamedRequest:progress:completionHandler:]_block_invoke
+___copy_helper_block_.505
+___destroy_helper_block_.506
+-[AFURLSessionManager downloadTaskWithRequest:progress:destination:completionHandler:]
+___86-[AFURLSessionManager downloadTaskWithRequest:progress:destination:completionHandler:]_block_invoke
+___copy_helper_block_.510
+___destroy_helper_block_.511
+-[AFURLSessionManager downloadTaskWithResumeData:progress:destination:completionHandler:]
+___89-[AFURLSessionManager downloadTaskWithResumeData:progress:destination:completionHandler:]_block_invoke
+___copy_helper_block_.515
+___destroy_helper_block_.516
+-[AFURLSessionManager uploadProgressForTask:]
+-[AFURLSessionManager downloadProgressForTask:]
+-[AFURLSessionManager setSessionDidBecomeInvalidBlock:]
+-[AFURLSessionManager setSessionDidReceiveAuthenticationChallengeBlock:]
+-[AFURLSessionManager setDidFinishEventsForBackgroundURLSessionBlock:]
+-[AFURLSessionManager setTaskNeedNewBodyStreamBlock:]
+-[AFURLSessionManager setTaskWillPerformHTTPRedirectionBlock:]
+-[AFURLSessionManager setTaskDidReceiveAuthenticationChallengeBlock:]
+-[AFURLSessionManager setTaskDidSendBodyDataBlock:]
+-[AFURLSessionManager setTaskDidCompleteBlock:]
+-[AFURLSessionManager setDataTaskDidReceiveResponseBlock:]
+-[AFURLSessionManager setDataTaskDidBecomeDownloadTaskBlock:]
+-[AFURLSessionManager setDataTaskDidReceiveDataBlock:]
+-[AFURLSessionManager setDataTaskWillCacheResponseBlock:]
+-[AFURLSessionManager setDownloadTaskDidFinishDownloadingBlock:]
+-[AFURLSessionManager setDownloadTaskDidWriteDataBlock:]
+-[AFURLSessionManager setDownloadTaskDidResumeBlock:]
+-[AFURLSessionManager description]
+-[AFURLSessionManager respondsToSelector:]
+-[AFURLSessionManager URLSession:didBecomeInvalidWithError:]
+-[AFURLSessionManager URLSession:didReceiveChallenge:completionHandler:]
+-[AFURLSessionManager URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
+-[AFURLSessionManager URLSession:task:didReceiveChallenge:completionHandler:]
+-[AFURLSessionManager URLSession:task:needNewBodyStream:]
+-[AFURLSessionManager URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
+-[AFURLSessionManager URLSession:task:didCompleteWithError:]
+-[AFURLSessionManager URLSession:dataTask:didReceiveResponse:completionHandler:]
+-[AFURLSessionManager URLSession:dataTask:didBecomeDownloadTask:]
+-[AFURLSessionManager URLSession:dataTask:didReceiveData:]
+-[AFURLSessionManager URLSession:dataTask:willCacheResponse:completionHandler:]
+-[AFURLSessionManager URLSessionDidFinishEventsForBackgroundURLSession:]
+___72-[AFURLSessionManager URLSessionDidFinishEventsForBackgroundURLSession:]_block_invoke
+___copy_helper_block_.609
+___destroy_helper_block_.610
+-[AFURLSessionManager URLSession:downloadTask:didFinishDownloadingToURL:]
+-[AFURLSessionManager URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:]
+-[AFURLSessionManager URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:]
++[AFURLSessionManager supportsSecureCoding]
+-[AFURLSessionManager initWithCoder:]
+-[AFURLSessionManager encodeWithCoder:]
+-[AFURLSessionManager copyWithZone:]
+-[AFURLSessionManager session]
+-[AFURLSessionManager setSession:]
+-[AFURLSessionManager operationQueue]
+-[AFURLSessionManager setOperationQueue:]
+-[AFURLSessionManager responseSerializer]
+-[AFURLSessionManager securityPolicy]
+-[AFURLSessionManager setSecurityPolicy:]
+-[AFURLSessionManager reachabilityManager]
+-[AFURLSessionManager setReachabilityManager:]
+-[AFURLSessionManager completionQueue]
+-[AFURLSessionManager setCompletionQueue:]
+-[AFURLSessionManager completionGroup]
+-[AFURLSessionManager setCompletionGroup:]
+-[AFURLSessionManager attemptsToRecreateUploadTasksForBackgroundSessions]
+-[AFURLSessionManager setAttemptsToRecreateUploadTasksForBackgroundSessions:]
+-[AFURLSessionManager sessionConfiguration]
+-[AFURLSessionManager setSessionConfiguration:]
+-[AFURLSessionManager mutableTaskDelegatesKeyedByTaskIdentifier]
+-[AFURLSessionManager setMutableTaskDelegatesKeyedByTaskIdentifier:]
+-[AFURLSessionManager lock]
+-[AFURLSessionManager setLock:]
+-[AFURLSessionManager sessionDidBecomeInvalid]
+-[AFURLSessionManager setSessionDidBecomeInvalid:]
+-[AFURLSessionManager sessionDidReceiveAuthenticationChallenge]
+-[AFURLSessionManager setSessionDidReceiveAuthenticationChallenge:]
+-[AFURLSessionManager didFinishEventsForBackgroundURLSession]
+-[AFURLSessionManager setDidFinishEventsForBackgroundURLSession:]
+-[AFURLSessionManager taskWillPerformHTTPRedirection]
+-[AFURLSessionManager setTaskWillPerformHTTPRedirection:]
+-[AFURLSessionManager taskDidReceiveAuthenticationChallenge]
+-[AFURLSessionManager setTaskDidReceiveAuthenticationChallenge:]
+-[AFURLSessionManager taskNeedNewBodyStream]
+-[AFURLSessionManager setTaskNeedNewBodyStream:]
+-[AFURLSessionManager taskDidSendBodyData]
+-[AFURLSessionManager setTaskDidSendBodyData:]
+-[AFURLSessionManager taskDidComplete]
+-[AFURLSessionManager setTaskDidComplete:]
+-[AFURLSessionManager dataTaskDidReceiveResponse]
+-[AFURLSessionManager setDataTaskDidReceiveResponse:]
+-[AFURLSessionManager dataTaskDidBecomeDownloadTask]
+-[AFURLSessionManager setDataTaskDidBecomeDownloadTask:]
+-[AFURLSessionManager dataTaskDidReceiveData]
+-[AFURLSessionManager setDataTaskDidReceiveData:]
+-[AFURLSessionManager dataTaskWillCacheResponse]
+-[AFURLSessionManager setDataTaskWillCacheResponse:]
+-[AFURLSessionManager downloadTaskDidFinishDownloading]
+-[AFURLSessionManager setDownloadTaskDidFinishDownloading:]
+-[AFURLSessionManager downloadTaskDidWriteData]
+-[AFURLSessionManager setDownloadTaskDidWriteData:]
+-[AFURLSessionManager downloadTaskDidResume]
+-[AFURLSessionManager setDownloadTaskDidResume:]
+-[AFURLSessionManager .cxx_destruct]
+_url_session_manager_completion_group
+___url_session_manager_completion_group_block_invoke
+___url_session_manager_processing_queue_block_invoke
+___url_session_manager_creation_queue_block_invoke
+_AFURLSessionDidInvalidateNotification
+_AFURLSessionDownloadTaskDidFailToMoveFileNotification
+_AFNetworkingTaskDidCompleteResponseSerializerKey
+_AFNetworkingTaskDidCompleteResponseDataKey
+_AFNetworkingTaskDidCompleteAssetPathKey
+_OBJC_CLASS_$_AFURLSessionManagerTaskDelegate
+___block_descriptor_tmp.58
+___block_descriptor_tmp.70
+___block_descriptor_tmp.74
+___block_descriptor_tmp.78
+___block_descriptor_tmp.82
+___block_descriptor_tmp.159
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._manager
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._mutableData
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._uploadProgress
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._downloadProgress
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._downloadFileURL
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._downloadTaskDidFinishDownloading
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._uploadProgressBlock
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._downloadProgressBlock
+_OBJC_IVAR_$_AFURLSessionManagerTaskDelegate._completionHandler
+l_OBJC_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionTaskDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionDataDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDataDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionDownloadDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDownloadDelegate
+_OBJC_METACLASS_$_AFURLSessionManagerTaskDelegate
+_OBJC_METACLASS_$__AFURLSessionTaskSwizzling
+_OBJC_CLASS_$__AFURLSessionTaskSwizzling
+___block_descriptor_tmp.390
+___block_descriptor_tmp.410
+___block_descriptor_tmp.413
+___block_descriptor_tmp.438
+___block_descriptor_tmp.464
+___block_descriptor_tmp.471
+_OBJC_IVAR_$_AFURLSessionManager._responseSerializer
+___block_descriptor_tmp.486
+___block_descriptor_tmp.491
+___block_descriptor_tmp.502
+___block_descriptor_tmp.507
+___block_descriptor_tmp.512
+___block_descriptor_tmp.517
+l_OBJC_PROTOCOL_REFERENCE_$_NSCopying
+___block_descriptor_tmp.611
+_OBJC_IVAR_$_AFURLSessionManager._session
+_OBJC_IVAR_$_AFURLSessionManager._operationQueue
+_OBJC_IVAR_$_AFURLSessionManager._securityPolicy
+_OBJC_IVAR_$_AFURLSessionManager._reachabilityManager
+_OBJC_IVAR_$_AFURLSessionManager._completionQueue
+_OBJC_IVAR_$_AFURLSessionManager._completionGroup
+_OBJC_IVAR_$_AFURLSessionManager._attemptsToRecreateUploadTasksForBackgroundSessions
+_OBJC_IVAR_$_AFURLSessionManager._sessionConfiguration
+_OBJC_IVAR_$_AFURLSessionManager._mutableTaskDelegatesKeyedByTaskIdentifier
+_OBJC_IVAR_$_AFURLSessionManager._lock
+_OBJC_IVAR_$_AFURLSessionManager._sessionDidBecomeInvalid
+_OBJC_IVAR_$_AFURLSessionManager._sessionDidReceiveAuthenticationChallenge
+_OBJC_IVAR_$_AFURLSessionManager._didFinishEventsForBackgroundURLSession
+_OBJC_IVAR_$_AFURLSessionManager._taskWillPerformHTTPRedirection
+_OBJC_IVAR_$_AFURLSessionManager._taskDidReceiveAuthenticationChallenge
+_OBJC_IVAR_$_AFURLSessionManager._taskNeedNewBodyStream
+_OBJC_IVAR_$_AFURLSessionManager._taskDidSendBodyData
+_OBJC_IVAR_$_AFURLSessionManager._taskDidComplete
+_OBJC_IVAR_$_AFURLSessionManager._dataTaskDidReceiveResponse
+_OBJC_IVAR_$_AFURLSessionManager._dataTaskDidBecomeDownloadTask
+_OBJC_IVAR_$_AFURLSessionManager._dataTaskDidReceiveData
+_OBJC_IVAR_$_AFURLSessionManager._dataTaskWillCacheResponse
+_OBJC_IVAR_$_AFURLSessionManager._downloadTaskDidFinishDownloading
+_OBJC_IVAR_$_AFURLSessionManager._downloadTaskDidWriteData
+_OBJC_IVAR_$_AFURLSessionManager._downloadTaskDidResume
+_url_session_manager_completion_group.af_url_session_manager_completion_group
+_url_session_manager_completion_group.onceToken
+___block_descriptor_tmp.763
+_url_session_manager_processing_queue.af_url_session_manager_processing_queue
+_url_session_manager_processing_queue.onceToken
+___block_descriptor_tmp.765
+___block_literal_global.766
+_url_session_manager_creation_queue.af_url_session_manager_creation_queue
+_url_session_manager_creation_queue.onceToken
+___block_descriptor_tmp.768
+___block_literal_global.769
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m
+__url_session_manager_creation_queue_block_invoke
+__url_session_manager_processing_queue_block_invoke
+__url_session_manager_completion_group_block_invoke
+url_session_manager_completion_group
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+__72-[AFURLSessionManager URLSessionDidFinishEventsForBackgroundURLSession:]_block_invoke
+__89-[AFURLSessionManager downloadTaskWithResumeData:progress:destination:completionHandler:]_block_invoke
+__86-[AFURLSessionManager downloadTaskWithRequest:progress:destination:completionHandler:]_block_invoke
+__80-[AFURLSessionManager uploadTaskWithStreamedRequest:progress:completionHandler:]_block_invoke
+__81-[AFURLSessionManager uploadTaskWithRequest:fromData:progress:completionHandler:]_block_invoke
+__81-[AFURLSessionManager uploadTaskWithRequest:fromFile:progress:completionHandler:]_block_invoke
+__93-[AFURLSessionManager dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:]_block_invoke
+url_session_manager_create_task_safely
+url_session_manager_creation_queue
+__55-[AFURLSessionManager invalidateSessionCancelingTasks:]_block_invoke
+__39-[AFURLSessionManager tasksForKeyPath:]_block_invoke
+__89-[AFURLSessionManager addDelegateForDownloadTask:progress:destination:completionHandler:]_block_invoke
+__38-[AFURLSessionManager taskDidSuspend:]_block_invoke
+__37-[AFURLSessionManager taskDidResume:]_block_invoke
+__52-[AFURLSessionManager initWithSessionConfiguration:]_block_invoke
+af_swizzleSelector
+af_addMethod
+__72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_3
+__72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2.150
+__72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke.147
+__72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke_2
+__72-[AFURLSessionManagerTaskDelegate URLSession:task:didCompleteWithError:]_block_invoke
+url_session_manager_processing_queue
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.79
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.75
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.71
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.65
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke.53
+__56-[AFURLSessionManagerTaskDelegate setupProgressForTask:]_block_invoke
+-[UIActivityIndicatorView(AFNetworking) af_notificationObserver]
+-[UIActivityIndicatorView(AFNetworking) setAnimatingWithStateOfTask:]
+-[AFActivityIndicatorViewNotificationObserver initWithActivityIndicatorView:]
+-[AFActivityIndicatorViewNotificationObserver setAnimatingWithStateOfTask:]
+-[AFActivityIndicatorViewNotificationObserver af_startAnimating]
+___64-[AFActivityIndicatorViewNotificationObserver af_startAnimating]_block_invoke
+-[AFActivityIndicatorViewNotificationObserver af_stopAnimating]
+___63-[AFActivityIndicatorViewNotificationObserver af_stopAnimating]_block_invoke
+-[AFActivityIndicatorViewNotificationObserver dealloc]
+-[AFActivityIndicatorViewNotificationObserver activityIndicatorView]
+-[AFActivityIndicatorViewNotificationObserver .cxx_destruct]
+_OBJC_CLASS_$_AFActivityIndicatorViewNotificationObserver
+_OBJC_IVAR_$_AFActivityIndicatorViewNotificationObserver._activityIndicatorView
+___block_descriptor_tmp.31
+_OBJC_METACLASS_$_AFActivityIndicatorViewNotificationObserver
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m
+__63-[AFActivityIndicatorViewNotificationObserver af_stopAnimating]_block_invoke
+__64-[AFActivityIndicatorViewNotificationObserver af_startAnimating]_block_invoke
+-[UIButton(_AFNetworking) af_imageDownloadReceiptForState:]
+-[UIButton(_AFNetworking) af_setImageDownloadReceipt:forState:]
+-[UIButton(_AFNetworking) af_backgroundImageDownloadReceiptForState:]
+-[UIButton(_AFNetworking) af_setBackgroundImageDownloadReceipt:forState:]
++[UIButton(AFNetworking) sharedImageDownloader]
++[UIButton(AFNetworking) setSharedImageDownloader:]
+-[UIButton(AFNetworking) setImageForState:withURL:]
+-[UIButton(AFNetworking) setImageForState:withURL:placeholderImage:]
+-[UIButton(AFNetworking) setImageForState:withURLRequest:placeholderImage:success:failure:]
+___91-[UIButton(AFNetworking) setImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke
+___91-[UIButton(AFNetworking) setImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke.41
+___copy_helper_block_.42
+___destroy_helper_block_.43
+-[UIButton(AFNetworking) setBackgroundImageForState:withURL:]
+-[UIButton(AFNetworking) setBackgroundImageForState:withURL:placeholderImage:]
+-[UIButton(AFNetworking) setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:]
+___101-[UIButton(AFNetworking) setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke
+___copy_helper_block_.60
+___destroy_helper_block_.61
+___101-[UIButton(AFNetworking) setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke.63
+___copy_helper_block_.64
+___destroy_helper_block_.65
+-[UIButton(AFNetworking) cancelImageDownloadTaskForState:]
+-[UIButton(AFNetworking) cancelBackgroundImageDownloadTaskForState:]
+-[UIButton(AFNetworking) isActiveTaskURLEqualToURLRequest:forState:]
+-[UIButton(AFNetworking) isActiveBackgroundTaskURLEqualToURLRequest:forState:]
+___block_descriptor_tmp.45
+___block_descriptor_tmp.62
+_AFImageDownloadReceiptHighlighted
+_AFImageDownloadReceiptSelected
+_AFImageDownloadReceiptDisabled
+_AFImageDownloadReceiptNormal
+_AFBackgroundImageDownloadReceiptHighlighted
+_AFBackgroundImageDownloadReceiptSelected
+_AFBackgroundImageDownloadReceiptDisabled
+_AFBackgroundImageDownloadReceiptNormal
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m
+__101-[UIButton(AFNetworking) setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke.63
+__101-[UIButton(AFNetworking) setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke
+__91-[UIButton(AFNetworking) setImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke.41
+__91-[UIButton(AFNetworking) setImageForState:withURLRequest:placeholderImage:success:failure:]_block_invoke
+af_backgroundImageDownloadReceiptKeyForState
+af_imageDownloadReceiptKeyForState
+-[UIImageView(_AFNetworking) af_activeImageDownloadReceipt]
+-[UIImageView(_AFNetworking) af_setActiveImageDownloadReceipt:]
++[UIImageView(AFNetworking) sharedImageDownloader]
++[UIImageView(AFNetworking) setSharedImageDownloader:]
+-[UIImageView(AFNetworking) setImageWithURL:]
+-[UIImageView(AFNetworking) setImageWithURL:placeholderImage:]
+-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]
+___85-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]_block_invoke
+___85-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]_block_invoke.43
+___copy_helper_block_.44
+___destroy_helper_block_.45
+-[UIImageView(AFNetworking) cancelImageDownloadTask]
+-[UIImageView(AFNetworking) clearActiveDownloadInformation]
+-[UIImageView(AFNetworking) isActiveTaskURLEqualToURLRequest:]
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m
+__85-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]_block_invoke.43
+__85-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]_block_invoke
+-[UIProgressView(AFNetworking) af_uploadProgressAnimated]
+-[UIProgressView(AFNetworking) af_setUploadProgressAnimated:]
+-[UIProgressView(AFNetworking) af_downloadProgressAnimated]
+-[UIProgressView(AFNetworking) af_setDownloadProgressAnimated:]
+-[UIProgressView(AFNetworking) setProgressWithUploadProgressOfTask:animated:]
+-[UIProgressView(AFNetworking) setProgressWithDownloadProgressOfTask:animated:]
+-[UIProgressView(AFNetworking) observeValueForKeyPath:ofObject:change:context:]
+___79-[UIProgressView(AFNetworking) observeValueForKeyPath:ofObject:change:context:]_block_invoke
+___79-[UIProgressView(AFNetworking) observeValueForKeyPath:ofObject:change:context:]_block_invoke.30
+___copy_helper_block_.31
+___destroy_helper_block_.32
+_AFTaskCountOfBytesSentContext
+_AFTaskCountOfBytesReceivedContext
+___block_descriptor_tmp.33
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.m
+__79-[UIProgressView(AFNetworking) observeValueForKeyPath:ofObject:change:context:]_block_invoke.30
+__79-[UIProgressView(AFNetworking) observeValueForKeyPath:ofObject:change:context:]_block_invoke
+-[UIRefreshControl(AFNetworking) af_notificationObserver]
+-[UIRefreshControl(AFNetworking) setRefreshingWithStateOfTask:]
+-[AFRefreshControlNotificationObserver initWithActivityRefreshControl:]
+-[AFRefreshControlNotificationObserver setRefreshingWithStateOfTask:]
+-[AFRefreshControlNotificationObserver af_beginRefreshing]
+___58-[AFRefreshControlNotificationObserver af_beginRefreshing]_block_invoke
+-[AFRefreshControlNotificationObserver af_endRefreshing]
+___56-[AFRefreshControlNotificationObserver af_endRefreshing]_block_invoke
+-[AFRefreshControlNotificationObserver dealloc]
+-[AFRefreshControlNotificationObserver refreshControl]
+-[AFRefreshControlNotificationObserver .cxx_destruct]
+_OBJC_CLASS_$_AFRefreshControlNotificationObserver
+_OBJC_IVAR_$_AFRefreshControlNotificationObserver._refreshControl
+_OBJC_METACLASS_$_AFRefreshControlNotificationObserver
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m
+__56-[AFRefreshControlNotificationObserver af_endRefreshing]_block_invoke
+__58-[AFRefreshControlNotificationObserver af_beginRefreshing]_block_invoke
+-[UIWebView(_AFNetworking) af_URLSessionTask]
+-[UIWebView(_AFNetworking) af_setURLSessionTask:]
+-[UIWebView(AFNetworking) sessionManager]
+___41-[UIWebView(AFNetworking) sessionManager]_block_invoke
+-[UIWebView(AFNetworking) setSessionManager:]
+-[UIWebView(AFNetworking) responseSerializer]
+___45-[UIWebView(AFNetworking) responseSerializer]_block_invoke
+-[UIWebView(AFNetworking) setResponseSerializer:]
+-[UIWebView(AFNetworking) loadRequest:progress:success:failure:]
+___64-[UIWebView(AFNetworking) loadRequest:progress:success:failure:]_block_invoke
+-[UIWebView(AFNetworking) loadRequest:MIMEType:textEncodingName:progress:success:failure:]
+___90-[UIWebView(AFNetworking) loadRequest:MIMEType:textEncodingName:progress:success:failure:]_block_invoke
+___copy_helper_block_.59
+___destroy_helper_block_.60
+___90-[UIWebView(AFNetworking) loadRequest:MIMEType:textEncodingName:progress:success:failure:]_block_invoke.63
+_sessionManager._af_defaultHTTPSessionManager
+_sessionManager.onceToken
+_responseSerializer._af_defaultResponseSerializer
+_responseSerializer.onceToken
+___block_descriptor_tmp.21
+___block_literal_global.22
+___block_descriptor_tmp.67
+/Users/sisi/Documents/Herwin/approval-2/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m
+__90-[UIWebView(AFNetworking) loadRequest:MIMEType:textEncodingName:progress:success:failure:]_block_invoke.63
+__90-[UIWebView(AFNetworking) loadRequest:MIMEType:textEncodingName:progress:success:failure:]_block_invoke
+__64-[UIWebView(AFNetworking) loadRequest:progress:success:failure:]_block_invoke
+__45-[UIWebView(AFNetworking) responseSerializer]_block_invoke
+__41-[UIWebView(AFNetworking) sessionManager]_block_invoke
++[IQBarButtonItem initialize]
+_OBJC_METACLASS_$_IQBarButtonItem
+_OBJC_CLASS_$_IQBarButtonItem
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQBarButtonItem.m
+_OBJC_METACLASS_$_PodsDummy_IQKeyboardManager
+_OBJC_CLASS_$_PodsDummy_IQKeyboardManager
+/Users/sisi/Documents/Herwin/approval-2/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-dummy.m
++[IQKeyboardManager load]
+-[IQKeyboardManager init]
+___25-[IQKeyboardManager init]_block_invoke
+___25-[IQKeyboardManager init]_block_invoke_2
++[IQKeyboardManager sharedManager]
+___34+[IQKeyboardManager sharedManager]_block_invoke
+-[IQKeyboardManager dealloc]
+-[IQKeyboardManager setEnable:]
+-[IQKeyboardManager privateIsEnabled]
+-[IQKeyboardManager setKeyboardDistanceFromTextField:]
+-[IQKeyboardManager setShouldResignOnTouchOutside:]
+-[IQKeyboardManager privateShouldResignOnTouchOutside]
+-[IQKeyboardManager setEnableAutoToolbar:]
+-[IQKeyboardManager privateIsEnableAutoToolbar]
+-[IQKeyboardManager keyWindow]
+-[IQKeyboardManager setRootViewFrame:]
+___38-[IQKeyboardManager setRootViewFrame:]_block_invoke
+___copy_helper_block_.201
+___destroy_helper_block_.202
+-[IQKeyboardManager adjustFrame]
+___32-[IQKeyboardManager adjustFrame]_block_invoke
+___copy_helper_block_.246
+___destroy_helper_block_.247
+___32-[IQKeyboardManager adjustFrame]_block_invoke.253
+___copy_helper_block_.254
+___destroy_helper_block_.255
+___32-[IQKeyboardManager adjustFrame]_block_invoke.271
+___copy_helper_block_.278
+___destroy_helper_block_.279
+___32-[IQKeyboardManager adjustFrame]_block_invoke.283
+___copy_helper_block_.284
+___destroy_helper_block_.285
+___32-[IQKeyboardManager adjustFrame]_block_invoke.291
+___copy_helper_block_.298
+___destroy_helper_block_.299
+___32-[IQKeyboardManager adjustFrame]_block_invoke.301
+___copy_helper_block_.302
+___destroy_helper_block_.303
+___32-[IQKeyboardManager adjustFrame]_block_invoke.305
+___copy_helper_block_.314
+___destroy_helper_block_.315
+-[IQKeyboardManager reloadLayoutIfNeeded]
+-[IQKeyboardManager keyboardWillShow:]
+-[IQKeyboardManager keyboardDidShow:]
+___37-[IQKeyboardManager keyboardDidShow:]_block_invoke
+___copy_helper_block_.358
+___destroy_helper_block_.359
+-[IQKeyboardManager keyboardWillHide:]
+___38-[IQKeyboardManager keyboardWillHide:]_block_invoke
+___copy_helper_block_.369
+___destroy_helper_block_.370
+___38-[IQKeyboardManager keyboardWillHide:]_block_invoke.372
+___copy_helper_block_.379
+___destroy_helper_block_.380
+___38-[IQKeyboardManager keyboardWillHide:]_block_invoke.382
+___copy_helper_block_.383
+___destroy_helper_block_.384
+-[IQKeyboardManager keyboardDidHide:]
+-[IQKeyboardManager textFieldViewDidBeginEditing:]
+___50-[IQKeyboardManager textFieldViewDidBeginEditing:]_block_invoke
+___copy_helper_block_.396
+___destroy_helper_block_.397
+___50-[IQKeyboardManager textFieldViewDidBeginEditing:]_block_invoke.399
+___copy_helper_block_.400
+___destroy_helper_block_.401
+-[IQKeyboardManager textFieldViewDidEndEditing:]
+___48-[IQKeyboardManager textFieldViewDidEndEditing:]_block_invoke
+___copy_helper_block_.414
+___destroy_helper_block_.415
+-[IQKeyboardManager willChangeStatusBarOrientation:]
+___52-[IQKeyboardManager willChangeStatusBarOrientation:]_block_invoke
+___copy_helper_block_.417
+___destroy_helper_block_.418
+-[IQKeyboardManager didChangeStatusBarFrame:]
+-[IQKeyboardManager tapRecognized:]
+-[IQKeyboardManager gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+-[IQKeyboardManager gestureRecognizer:shouldReceiveTouch:]
+-[IQKeyboardManager resignFirstResponder]
+-[IQKeyboardManager canGoPrevious]
+-[IQKeyboardManager canGoNext]
+-[IQKeyboardManager goPrevious]
+-[IQKeyboardManager goNext]
+-[IQKeyboardManager responderViews]
+-[IQKeyboardManager addToolbarIfRequired]
+-[IQKeyboardManager removeToolbarIfRequired]
+-[IQKeyboardManager reloadInputViews]
+-[IQKeyboardManager previousAction:]
+-[IQKeyboardManager nextAction:]
+-[IQKeyboardManager doneAction:]
+-[IQKeyboardManager registerTextFieldViewClass:didBeginEditingNotificationName:didEndEditingNotificationName:]
+-[IQKeyboardManager showLog:]
+-[IQKeyboardManager isEnabled]
+-[IQKeyboardManager keyboardDistanceFromTextField]
+-[IQKeyboardManager preventShowingBottomBlankSpace]
+-[IQKeyboardManager setPreventShowingBottomBlankSpace:]
+-[IQKeyboardManager overrideKeyboardAppearance]
+-[IQKeyboardManager setOverrideKeyboardAppearance:]
+-[IQKeyboardManager keyboardAppearance]
+-[IQKeyboardManager setKeyboardAppearance:]
+-[IQKeyboardManager isEnableAutoToolbar]
+-[IQKeyboardManager toolbarManageBehaviour]
+-[IQKeyboardManager setToolbarManageBehaviour:]
+-[IQKeyboardManager shouldToolbarUsesTextFieldTintColor]
+-[IQKeyboardManager setShouldToolbarUsesTextFieldTintColor:]
+-[IQKeyboardManager toolbarTintColor]
+-[IQKeyboardManager setToolbarTintColor:]
+-[IQKeyboardManager shouldShowTextFieldPlaceholder]
+-[IQKeyboardManager setShouldShowTextFieldPlaceholder:]
+-[IQKeyboardManager placeholderFont]
+-[IQKeyboardManager setPlaceholderFont:]
+-[IQKeyboardManager shouldResignOnTouchOutside]
+-[IQKeyboardManager shouldPlayInputClicks]
+-[IQKeyboardManager setShouldPlayInputClicks:]
+-[IQKeyboardManager layoutIfNeededOnUpdate]
+-[IQKeyboardManager setLayoutIfNeededOnUpdate:]
+-[IQKeyboardManager isKeyboardShowing]
+-[IQKeyboardManager movedDistance]
+-[IQKeyboardManager previousNextDisplayMode]
+-[IQKeyboardManager setPreviousNextDisplayMode:]
+-[IQKeyboardManager toolbarDoneBarButtonItemImage]
+-[IQKeyboardManager setToolbarDoneBarButtonItemImage:]
+-[IQKeyboardManager toolbarDoneBarButtonItemText]
+-[IQKeyboardManager setToolbarDoneBarButtonItemText:]
+-[IQKeyboardManager shouldFixInteractivePopGestureRecognizer]
+-[IQKeyboardManager setShouldFixInteractivePopGestureRecognizer:]
+-[IQKeyboardManager disabledDistanceHandlingClasses]
+-[IQKeyboardManager setDisabledDistanceHandlingClasses:]
+-[IQKeyboardManager enabledDistanceHandlingClasses]
+-[IQKeyboardManager setEnabledDistanceHandlingClasses:]
+-[IQKeyboardManager disabledToolbarClasses]
+-[IQKeyboardManager setDisabledToolbarClasses:]
+-[IQKeyboardManager enabledToolbarClasses]
+-[IQKeyboardManager setEnabledToolbarClasses:]
+-[IQKeyboardManager toolbarPreviousNextAllowedClasses]
+-[IQKeyboardManager setToolbarPreviousNextAllowedClasses:]
+-[IQKeyboardManager disabledTouchResignedClasses]
+-[IQKeyboardManager setDisabledTouchResignedClasses:]
+-[IQKeyboardManager enabledTouchResignedClasses]
+-[IQKeyboardManager setEnabledTouchResignedClasses:]
+-[IQKeyboardManager enableDebugging]
+-[IQKeyboardManager setEnableDebugging:]
+-[IQKeyboardManager startingTextViewContentInsets]
+-[IQKeyboardManager setStartingTextViewContentInsets:]
+-[IQKeyboardManager startingTextViewScrollIndicatorInsets]
+-[IQKeyboardManager setStartingTextViewScrollIndicatorInsets:]
+-[IQKeyboardManager isTextViewContentInsetChanged]
+-[IQKeyboardManager setIsTextViewContentInsetChanged:]
+-[IQKeyboardManager textFieldView]
+-[IQKeyboardManager setTextFieldView:]
+-[IQKeyboardManager topViewBeginRect]
+-[IQKeyboardManager setTopViewBeginRect:]
+-[IQKeyboardManager rootViewController]
+-[IQKeyboardManager setRootViewController:]
+-[IQKeyboardManager layoutGuideConstraintInitialConstant]
+-[IQKeyboardManager setLayoutGuideConstraintInitialConstant:]
+-[IQKeyboardManager layoutGuideConstraint]
+-[IQKeyboardManager setLayoutGuideConstraint:]
+-[IQKeyboardManager tapGesture]
+-[IQKeyboardManager setTapGesture:]
+-[IQKeyboardManager lastScrollView]
+-[IQKeyboardManager setLastScrollView:]
+-[IQKeyboardManager startingContentInsets]
+-[IQKeyboardManager setStartingContentInsets:]
+-[IQKeyboardManager startingScrollIndicatorInsets]
+-[IQKeyboardManager setStartingScrollIndicatorInsets:]
+-[IQKeyboardManager startingContentOffset]
+-[IQKeyboardManager setStartingContentOffset:]
+-[IQKeyboardManager animationDuration]
+-[IQKeyboardManager setAnimationDuration:]
+-[IQKeyboardManager animationCurve]
+-[IQKeyboardManager setAnimationCurve:]
+-[IQKeyboardManager registeredClasses]
+-[IQKeyboardManager setRegisteredClasses:]
+-[IQKeyboardManager .cxx_destruct]
+-[IQKeyboardManager(IQKeyboardManagerDeprecated) setShouldHidePreviousNext:]
+-[IQKeyboardManager(IQKeyboardManagerDeprecated) shouldHidePreviousNext]
+_kIQDoneButtonToolbarTag
+_kIQPreviousNextButtonToolbarTag
+_OBJC_CLASS_$_IQKeyboardManager
+_init.onceToken
+_kIQPreviousNextButtonToolbarTag_block_invoke.UIAlertControllerTextFieldViewController
+_kIQPreviousNextButtonToolbarTag_block_invoke.onceToken
+_OBJC_CLASS_$_IQPreviousNextView
+_sharedManager.kbManager
+___block_descriptor_tmp.119
+_OBJC_IVAR_$_IQKeyboardManager._enable
+_OBJC_IVAR_$_IQKeyboardManager._kbShowNotification
+_OBJC_IVAR_$_IQKeyboardManager._textFieldView
+_OBJC_IVAR_$_IQKeyboardManager._enabledDistanceHandlingClasses
+_OBJC_IVAR_$_IQKeyboardManager._disabledDistanceHandlingClasses
+_OBJC_IVAR_$_IQKeyboardManager._keyboardDistanceFromTextField
+_OBJC_IVAR_$_IQKeyboardManager._shouldResignOnTouchOutside
+_OBJC_IVAR_$_IQKeyboardManager._tapGesture
+_OBJC_IVAR_$_IQKeyboardManager._enabledTouchResignedClasses
+_OBJC_IVAR_$_IQKeyboardManager._disabledTouchResignedClasses
+_OBJC_IVAR_$_IQKeyboardManager._enableAutoToolbar
+_OBJC_IVAR_$_IQKeyboardManager._enabledToolbarClasses
+_OBJC_IVAR_$_IQKeyboardManager._disabledToolbarClasses
+_keyWindow._keyWindow
+_OBJC_IVAR_$_IQKeyboardManager._animationDuration
+_OBJC_IVAR_$_IQKeyboardManager._animationCurve
+_kIQUseDefaultKeyboardDistance
+_OBJC_IVAR_$_IQKeyboardManager._kbSize
+_OBJC_IVAR_$_IQKeyboardManager._layoutGuideConstraint
+_OBJC_IVAR_$_IQKeyboardManager._lastScrollView
+_OBJC_IVAR_$_IQKeyboardManager._startingContentInsets
+_OBJC_IVAR_$_IQKeyboardManager._startingContentOffset
+___block_descriptor_tmp.248
+_OBJC_IVAR_$_IQKeyboardManager._startingScrollIndicatorInsets
+___block_descriptor_tmp.256
+___block_descriptor_tmp.280
+_OBJC_IVAR_$_IQKeyboardManager._layoutGuideConstraintInitialConstant
+___block_descriptor_tmp.300
+___block_descriptor_tmp.304
+_OBJC_IVAR_$_IQKeyboardManager._isTextViewContentInsetChanged
+_OBJC_IVAR_$_IQKeyboardManager._startingTextViewContentInsets
+_OBJC_IVAR_$_IQKeyboardManager._startingTextViewScrollIndicatorInsets
+___block_descriptor_tmp.316
+_OBJC_IVAR_$_IQKeyboardManager._preventShowingBottomBlankSpace
+_OBJC_IVAR_$_IQKeyboardManager._topViewBeginRect
+_OBJC_IVAR_$_IQKeyboardManager._movedDistance
+_OBJC_IVAR_$_IQKeyboardManager._keyboardShowing
+_OBJC_IVAR_$_IQKeyboardManager._rootViewController
+_OBJC_IVAR_$_IQKeyboardManager._shouldFixInteractivePopGestureRecognizer
+___block_descriptor_tmp.360
+___block_descriptor_tmp.371
+___block_descriptor_tmp.381
+___block_descriptor_tmp.385
+_OBJC_IVAR_$_IQKeyboardManager._overrideKeyboardAppearance
+_OBJC_IVAR_$_IQKeyboardManager._keyboardAppearance
+___block_descriptor_tmp.398
+___block_descriptor_tmp.403
+___block_descriptor_tmp.416
+___block_descriptor_tmp.419
+_OBJC_IVAR_$_IQKeyboardManager._statusBarFrame
+_OBJC_IVAR_$_IQKeyboardManager._toolbarPreviousNextAllowedClasses
+_OBJC_IVAR_$_IQKeyboardManager._toolbarManageBehaviour
+_OBJC_IVAR_$_IQKeyboardManager._toolbarDoneBarButtonItemImage
+_OBJC_IVAR_$_IQKeyboardManager._shouldShowTextFieldPlaceholder
+_OBJC_IVAR_$_IQKeyboardManager._toolbarDoneBarButtonItemText
+_OBJC_CLASS_$_IQToolbar
+_OBJC_IVAR_$_IQKeyboardManager._shouldToolbarUsesTextFieldTintColor
+_OBJC_IVAR_$_IQKeyboardManager._toolbarTintColor
+_OBJC_IVAR_$_IQKeyboardManager._placeholderFont
+_OBJC_IVAR_$_IQKeyboardManager._shouldPlayInputClicks
+_OBJC_IVAR_$_IQKeyboardManager._registeredClasses
+_OBJC_IVAR_$_IQKeyboardManager._enableDebugging
+_OBJC_IVAR_$_IQKeyboardManager._layoutIfNeededOnUpdate
+_OBJC_IVAR_$_IQKeyboardManager._previousNextDisplayMode
+l_OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
+_OBJC_METACLASS_$_IQKeyboardManager
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardManager.h
+__CGSizeEqualToSize
+__52-[IQKeyboardManager willChangeStatusBarOrientation:]_block_invoke
+__48-[IQKeyboardManager textFieldViewDidEndEditing:]_block_invoke
+__50-[IQKeyboardManager textFieldViewDidBeginEditing:]_block_invoke.399
+__50-[IQKeyboardManager textFieldViewDidBeginEditing:]_block_invoke
+__38-[IQKeyboardManager keyboardWillHide:]_block_invoke.382
+__38-[IQKeyboardManager keyboardWillHide:]_block_invoke.372
+__38-[IQKeyboardManager keyboardWillHide:]_block_invoke
+CGPointMake
+__37-[IQKeyboardManager keyboardDidShow:]_block_invoke
+__32-[IQKeyboardManager adjustFrame]_block_invoke.305
+__32-[IQKeyboardManager adjustFrame]_block_invoke.301
+__32-[IQKeyboardManager adjustFrame]_block_invoke.291
+__32-[IQKeyboardManager adjustFrame]_block_invoke.283
+__32-[IQKeyboardManager adjustFrame]_block_invoke.271
+__32-[IQKeyboardManager adjustFrame]_block_invoke.253
+__32-[IQKeyboardManager adjustFrame]_block_invoke
+__38-[IQKeyboardManager setRootViewFrame:]_block_invoke
+__34+[IQKeyboardManager sharedManager]_block_invoke
+__25-[IQKeyboardManager init]_block_invoke_2
+__25-[IQKeyboardManager init]_block_invoke
+-[IQKeyboardReturnKeyHandler init]
+-[IQKeyboardReturnKeyHandler initWithViewController:]
+-[IQKeyboardReturnKeyHandler textFieldViewCachedInfo:]
+-[IQKeyboardReturnKeyHandler addResponderFromView:]
+-[IQKeyboardReturnKeyHandler removeResponderFromView:]
+-[IQKeyboardReturnKeyHandler removeTextFieldView:]
+-[IQKeyboardReturnKeyHandler addTextFieldView:]
+-[IQKeyboardReturnKeyHandler updateReturnKeyTypeOnTextField:]
+-[IQKeyboardReturnKeyHandler goToNextResponderOrResign:]
+-[IQKeyboardReturnKeyHandler textFieldShouldBeginEditing:]
+-[IQKeyboardReturnKeyHandler textFieldDidBeginEditing:]
+-[IQKeyboardReturnKeyHandler textFieldShouldEndEditing:]
+-[IQKeyboardReturnKeyHandler textFieldDidEndEditing:]
+-[IQKeyboardReturnKeyHandler textFieldDidEndEditing:reason:]
+-[IQKeyboardReturnKeyHandler textField:shouldChangeCharactersInRange:replacementString:]
+-[IQKeyboardReturnKeyHandler textFieldShouldClear:]
+-[IQKeyboardReturnKeyHandler textFieldShouldReturn:]
+-[IQKeyboardReturnKeyHandler textViewShouldBeginEditing:]
+-[IQKeyboardReturnKeyHandler textViewShouldEndEditing:]
+-[IQKeyboardReturnKeyHandler textViewDidBeginEditing:]
+-[IQKeyboardReturnKeyHandler textViewDidEndEditing:]
+-[IQKeyboardReturnKeyHandler textView:shouldChangeTextInRange:replacementText:]
+-[IQKeyboardReturnKeyHandler textViewDidChange:]
+-[IQKeyboardReturnKeyHandler textViewDidChangeSelection:]
+-[IQKeyboardReturnKeyHandler textView:shouldInteractWithURL:inRange:interaction:]
+-[IQKeyboardReturnKeyHandler textView:shouldInteractWithTextAttachment:inRange:interaction:]
+-[IQKeyboardReturnKeyHandler textView:shouldInteractWithURL:inRange:]
+-[IQKeyboardReturnKeyHandler textView:shouldInteractWithTextAttachment:inRange:]
+-[IQKeyboardReturnKeyHandler dealloc]
+-[IQKeyboardReturnKeyHandler lastTextFieldReturnKeyType]
+-[IQKeyboardReturnKeyHandler setLastTextFieldReturnKeyType:]
+-[IQKeyboardReturnKeyHandler delegate]
+-[IQKeyboardReturnKeyHandler setDelegate:]
+-[IQKeyboardReturnKeyHandler .cxx_destruct]
+_kIQTextField
+_kIQTextFieldDelegate
+_kIQTextFieldReturnKeyType
+_OBJC_CLASS_$_IQKeyboardReturnKeyHandler
+_OBJC_IVAR_$_IQKeyboardReturnKeyHandler.textFieldInfoCache
+_OBJC_IVAR_$_IQKeyboardReturnKeyHandler._lastTextFieldReturnKeyType
+_OBJC_IVAR_$_IQKeyboardReturnKeyHandler._delegate
+l_OBJC_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_PROTOCOL_$_UITextViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
+_OBJC_METACLASS_$_IQKeyboardReturnKeyHandler
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQKeyboardReturnKeyHandler.h
+-[NSArray(IQ_NSArray_Sort) sortedArrayByTag]
+___44-[NSArray(IQ_NSArray_Sort) sortedArrayByTag]_block_invoke
+-[NSArray(IQ_NSArray_Sort) sortedArrayByPosition]
+___49-[NSArray(IQ_NSArray_Sort) sortedArrayByPosition]_block_invoke
+___block_descriptor_tmp.7
+___block_literal_global.8
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.m
+__49-[NSArray(IQ_NSArray_Sort) sortedArrayByPosition]_block_invoke
+__44-[NSArray(IQ_NSArray_Sort) sortedArrayByTag]_block_invoke
+_OBJC_METACLASS_$_IQPreviousNextView
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQPreviousNextView.m
+-[IQTextView initialize]
+-[IQTextView dealloc]
+-[IQTextView init]
+-[IQTextView awakeFromNib]
+-[IQTextView refreshPlaceholder]
+-[IQTextView setText:]
+-[IQTextView setFont:]
+-[IQTextView layoutSubviews]
+-[IQTextView setPlaceholder:]
+-[IQTextView delegate]
+-[IQTextView placeholder]
+-[IQTextView .cxx_destruct]
+_OBJC_CLASS_$_IQTextView
+_OBJC_IVAR_$_IQTextView.placeHolderLabel
+_OBJC_IVAR_$_IQTextView._placeholder
+_OBJC_METACLASS_$_IQTextView
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQTextView/IQTextView.h
+-[IQTitleBarButtonItem initWithTitle:]
+-[IQTitleBarButtonItem setFont:]
+-[IQTitleBarButtonItem setTitle:]
+-[IQTitleBarButtonItem setSelectableTextColor:]
+-[IQTitleBarButtonItem setTitleTarget:action:]
+-[IQTitleBarButtonItem setTitleInvocation:]
+-[IQTitleBarButtonItem font]
+-[IQTitleBarButtonItem selectableTextColor]
+-[IQTitleBarButtonItem titleInvocation]
+-[IQTitleBarButtonItem .cxx_destruct]
+_OBJC_CLASS_$_IQTitleBarButtonItem
+_OBJC_IVAR_$_IQTitleBarButtonItem._titleView
+_OBJC_IVAR_$_IQTitleBarButtonItem._titleButton
+_OBJC_IVAR_$_IQTitleBarButtonItem._font
+_OBJC_IVAR_$_IQTitleBarButtonItem._selectableTextColor
+_OBJC_IVAR_$_IQTitleBarButtonItem._titleInvocation
+_OBJC_METACLASS_$_IQTitleBarButtonItem
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h
++[IQToolbar initialize]
+-[IQToolbar initialize]
+-[IQToolbar initWithFrame:]
+-[IQToolbar initWithCoder:]
+-[IQToolbar sizeThatFits:]
+-[IQToolbar setBarStyle:]
+-[IQToolbar setTintColor:]
+-[IQToolbar setTitleFont:]
+-[IQToolbar setTitle:]
+-[IQToolbar setTitleTarget:action:]
+-[IQToolbar setTitleInvocation:]
+-[IQToolbar layoutSubviews]
+___27-[IQToolbar layoutSubviews]_block_invoke
+___27-[IQToolbar layoutSubviews]_block_invoke_2
+-[IQToolbar enableInputClicksWhenVisible]
+-[IQToolbar titleFont]
+-[IQToolbar title]
+-[IQToolbar doneTitle]
+-[IQToolbar setDoneTitle:]
+-[IQToolbar doneImage]
+-[IQToolbar setDoneImage:]
+-[IQToolbar titleInvocation]
+-[IQToolbar .cxx_destruct]
+_OBJC_METACLASS_$_IQToolbar
+_OBJC_IVAR_$_IQToolbar._titleFont
+_OBJC_IVAR_$_IQToolbar._title
+_OBJC_IVAR_$_IQToolbar._titleInvocation
+_layoutSubviews.IQUIToolbarTextButtonClass
+_layoutSubviews.IQUIToolbarButtonClass
+_layoutSubviews.onceToken
+___block_descriptor_tmp.72
+___block_literal_global.73
+_OBJC_IVAR_$_IQToolbar._doneTitle
+_OBJC_IVAR_$_IQToolbar._doneImage
+l_OBJC_PROTOCOL_$_UIInputViewAudioFeedback
+l_OBJC_LABEL_PROTOCOL_$_UIInputViewAudioFeedback
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQToolbar.h
+__27-[IQToolbar layoutSubviews]_block_invoke_2
+__27-[IQToolbar layoutSubviews]_block_invoke
+-[UIScrollView(Additions) setShouldRestoreScrollViewContentOffset:]
+-[UIScrollView(Additions) shouldRestoreScrollViewContentOffset]
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIScrollView+Additions.m
+-[UIView(Additions) setKeyboardDistanceFromTextField:]
+-[UIView(Additions) keyboardDistanceFromTextField]
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.m
+-[UIView(IQ_UIView_Hierarchy) _setIsAskingCanBecomeFirstResponder:]
+-[UIView(IQ_UIView_Hierarchy) isAskingCanBecomeFirstResponder]
+-[UIView(IQ_UIView_Hierarchy) viewController]
+-[UIView(IQ_UIView_Hierarchy) topMostController]
+-[UIView(IQ_UIView_Hierarchy) superviewOfClassType:]
+___52-[UIView(IQ_UIView_Hierarchy) superviewOfClassType:]_block_invoke
+-[UIView(IQ_UIView_Hierarchy) _IQcanBecomeFirstResponder]
+-[UIView(IQ_UIView_Hierarchy) responderSiblings]
+-[UIView(IQ_UIView_Hierarchy) deepResponderViews]
+___49-[UIView(IQ_UIView_Hierarchy) deepResponderViews]_block_invoke
+-[UIView(IQ_UIView_Hierarchy) convertTransformToView:]
+-[UIView(IQ_UIView_Hierarchy) depth]
+-[UIView(IQ_UIView_Hierarchy) subHierarchy]
+-[UIView(IQ_UIView_Hierarchy) superHierarchy]
+-[UIView(IQ_UIView_Hierarchy) debugHierarchy]
+-[UIView(IQ_UIView_Hierarchy) isSearchBarTextField]
+___51-[UIView(IQ_UIView_Hierarchy) isSearchBarTextField]_block_invoke
+-[UIView(IQ_UIView_Hierarchy) isAlertViewTextField]
+___51-[UIView(IQ_UIView_Hierarchy) isAlertViewTextField]_block_invoke
+-[NSObject(IQ_Logging) _IQDescription]
+_superviewOfClassType:.UITableViewCellScrollViewClass
+_superviewOfClassType:.UITableViewWrapperViewClass
+_superviewOfClassType:.UIQueuingScrollViewClass
+_superviewOfClassType:.onceToken
+_isSearchBarTextField.UISearchBarTextFieldClass
+_isSearchBarTextField.onceToken
+___block_descriptor_tmp.112
+___block_literal_global.113
+_isAlertViewTextField.UIAlertSheetTextFieldClass
+_isAlertViewTextField.UIAlertSheetTextFieldClass_iOS8
+_isAlertViewTextField.onceToken
+___block_literal_global.120
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.m
+__51-[UIView(IQ_UIView_Hierarchy) isAlertViewTextField]_block_invoke
+__51-[UIView(IQ_UIView_Hierarchy) isSearchBarTextField]_block_invoke
+__49-[UIView(IQ_UIView_Hierarchy) deepResponderViews]_block_invoke
+__52-[UIView(IQ_UIView_Hierarchy) superviewOfClassType:]_block_invoke
+-[UIView(IQToolbarAddition) setShouldHidePlaceholderText:]
+-[UIView(IQToolbarAddition) shouldHidePlaceholderText]
+-[UIView(IQToolbarAddition) setPlaceholderText:]
+-[UIView(IQToolbarAddition) placeholderText]
+-[UIView(IQToolbarAddition) drawingPlaceholderText]
+-[UIView(IQToolbarAddition) setTitleTarget:action:]
+-[UIView(IQToolbarAddition) setTitleInvocation:]
+-[UIView(IQToolbarAddition) titleInvocation]
+-[UIView(IQToolbarAddition) setCustomPreviousTarget:action:]
+-[UIView(IQToolbarAddition) setCustomNextTarget:action:]
+-[UIView(IQToolbarAddition) setCustomDoneTarget:action:]
+-[UIView(IQToolbarAddition) setPreviousInvocation:]
+-[UIView(IQToolbarAddition) setNextInvocation:]
+-[UIView(IQToolbarAddition) setDoneInvocation:]
+-[UIView(IQToolbarAddition) previousInvocation]
+-[UIView(IQToolbarAddition) nextInvocation]
+-[UIView(IQToolbarAddition) doneInvocation]
++[UIView(IQToolbarAddition) flexibleBarButtonItem]
+-[UIView(IQToolbarAddition) addRightButtonOnKeyboardWithImage:target:action:titleText:]
+-[UIView(IQToolbarAddition) addRightButtonOnKeyboardWithImage:target:action:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addRightButtonOnKeyboardWithText:target:action:titleText:]
+-[UIView(IQToolbarAddition) addRightButtonOnKeyboardWithText:target:action:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addRightButtonOnKeyboardWithText:target:action:]
+-[UIView(IQToolbarAddition) addDoneOnKeyboardWithTarget:action:titleText:]
+-[UIView(IQToolbarAddition) addDoneOnKeyboardWithTarget:action:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addDoneOnKeyboardWithTarget:action:]
+-[UIView(IQToolbarAddition) addLeftRightOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:leftButtonAction:rightButtonAction:titleText:]
+-[UIView(IQToolbarAddition) addLeftRightOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:leftButtonAction:rightButtonAction:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addLeftRightOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:leftButtonAction:rightButtonAction:]
+-[UIView(IQToolbarAddition) addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:titleText:]
+-[UIView(IQToolbarAddition) addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:]
+-[UIView(IQToolbarAddition) addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:titleText:]
+-[UIView(IQToolbarAddition) addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:]
+-[UIView(IQToolbarAddition) addPreviousNextRightOnKeyboardWithTarget:rightButtonImage:previousAction:nextAction:rightButtonAction:titleText:]
+-[UIView(IQToolbarAddition) addPreviousNextRightOnKeyboardWithTarget:rightButtonImage:previousAction:nextAction:rightButtonAction:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addPreviousNextRightOnKeyboardWithTarget:rightButtonTitle:previousAction:nextAction:rightButtonAction:titleText:]
+-[UIView(IQToolbarAddition) addPreviousNextRightOnKeyboardWithTarget:rightButtonTitle:previousAction:nextAction:rightButtonAction:shouldShowPlaceholder:]
+-[UIView(IQToolbarAddition) addPreviousNextRightOnKeyboardWithTarget:rightButtonTitle:previousAction:nextAction:rightButtonAction:]
+-[UIView(IQToolbarAddition) setEnablePrevious:next:]
+_flexibleBarButtonItem.nilButton
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m
+-[UIViewController(Additions) setIQLayoutGuideConstraint:]
+-[UIViewController(Additions) IQLayoutGuideConstraint]
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIViewController+Additions.m
+-[UIWindow(IQ_UIWindow_Hierarchy) topMostController]
+-[UIWindow(IQ_UIWindow_Hierarchy) currentViewController]
+/Users/sisi/Documents/Herwin/approval-2/Pods/IQKeyboardManager/IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m
+-[SVIndefiniteAnimatedView willMoveToSuperview:]
+-[SVIndefiniteAnimatedView layoutAnimatedLayer]
+-[SVIndefiniteAnimatedView indefiniteAnimatedLayer]
+-[SVIndefiniteAnimatedView setFrame:]
+-[SVIndefiniteAnimatedView setRadius:]
+-[SVIndefiniteAnimatedView setStrokeColor:]
+-[SVIndefiniteAnimatedView setStrokeThickness:]
+-[SVIndefiniteAnimatedView sizeThatFits:]
+-[SVIndefiniteAnimatedView strokeThickness]
+-[SVIndefiniteAnimatedView radius]
+-[SVIndefiniteAnimatedView strokeColor]
+-[SVIndefiniteAnimatedView setIndefiniteAnimatedLayer:]
+-[SVIndefiniteAnimatedView .cxx_destruct]
+_OBJC_IVAR_$_SVIndefiniteAnimatedView._indefiniteAnimatedLayer
+_OBJC_CLASS_$_SVIndefiniteAnimatedView
+_OBJC_IVAR_$_SVIndefiniteAnimatedView._radius
+_OBJC_IVAR_$_SVIndefiniteAnimatedView._strokeColor
+_OBJC_IVAR_$_SVIndefiniteAnimatedView._strokeThickness
+_OBJC_METACLASS_$_SVIndefiniteAnimatedView
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h
+-[SVProgressAnimatedView willMoveToSuperview:]
+-[SVProgressAnimatedView layoutAnimatedLayer]
+-[SVProgressAnimatedView ringAnimatedLayer]
+-[SVProgressAnimatedView setFrame:]
+-[SVProgressAnimatedView setRadius:]
+-[SVProgressAnimatedView setStrokeColor:]
+-[SVProgressAnimatedView setStrokeThickness:]
+-[SVProgressAnimatedView setStrokeEnd:]
+-[SVProgressAnimatedView sizeThatFits:]
+-[SVProgressAnimatedView radius]
+-[SVProgressAnimatedView strokeThickness]
+-[SVProgressAnimatedView strokeColor]
+-[SVProgressAnimatedView strokeEnd]
+-[SVProgressAnimatedView setRingAnimatedLayer:]
+-[SVProgressAnimatedView .cxx_destruct]
+_OBJC_IVAR_$_SVProgressAnimatedView._ringAnimatedLayer
+_OBJC_CLASS_$_SVProgressAnimatedView
+_OBJC_IVAR_$_SVProgressAnimatedView._radius
+_OBJC_IVAR_$_SVProgressAnimatedView._strokeColor
+_OBJC_IVAR_$_SVProgressAnimatedView._strokeThickness
+_OBJC_IVAR_$_SVProgressAnimatedView._strokeEnd
+_OBJC_METACLASS_$_SVProgressAnimatedView
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h
+_OBJC_METACLASS_$_PodsDummy_SVProgressHUD
+_OBJC_CLASS_$_PodsDummy_SVProgressHUD
+/Users/sisi/Documents/Herwin/approval-2/Pods/Target Support Files/SVProgressHUD/SVProgressHUD-dummy.m
++[SVProgressHUD sharedView]
+___27+[SVProgressHUD sharedView]_block_invoke
++[SVProgressHUD setStatus:]
++[SVProgressHUD setDefaultStyle:]
++[SVProgressHUD setDefaultMaskType:]
++[SVProgressHUD setDefaultAnimationType:]
++[SVProgressHUD setContainerView:]
++[SVProgressHUD setMinimumSize:]
++[SVProgressHUD setRingThickness:]
++[SVProgressHUD setRingRadius:]
++[SVProgressHUD setRingNoTextRadius:]
++[SVProgressHUD setCornerRadius:]
++[SVProgressHUD setFont:]
++[SVProgressHUD setForegroundColor:]
++[SVProgressHUD setBackgroundColor:]
++[SVProgressHUD setBackgroundLayerColor:]
++[SVProgressHUD setInfoImage:]
++[SVProgressHUD setSuccessImage:]
++[SVProgressHUD setErrorImage:]
++[SVProgressHUD setViewForExtension:]
++[SVProgressHUD setMinimumDismissTimeInterval:]
++[SVProgressHUD setMaximumDismissTimeInterval:]
++[SVProgressHUD setFadeInAnimationDuration:]
++[SVProgressHUD setFadeOutAnimationDuration:]
++[SVProgressHUD setMaxSupportedWindowLevel:]
++[SVProgressHUD show]
++[SVProgressHUD showWithMaskType:]
++[SVProgressHUD showWithStatus:]
++[SVProgressHUD showWithStatus:maskType:]
++[SVProgressHUD showProgress:]
++[SVProgressHUD showProgress:maskType:]
++[SVProgressHUD showProgress:status:]
++[SVProgressHUD showProgress:status:maskType:]
++[SVProgressHUD showInfoWithStatus:]
++[SVProgressHUD showInfoWithStatus:maskType:]
++[SVProgressHUD showSuccessWithStatus:]
++[SVProgressHUD showSuccessWithStatus:maskType:]
++[SVProgressHUD showErrorWithStatus:]
++[SVProgressHUD showErrorWithStatus:maskType:]
++[SVProgressHUD showImage:status:]
++[SVProgressHUD showImage:status:maskType:]
++[SVProgressHUD popActivity]
++[SVProgressHUD dismiss]
++[SVProgressHUD dismissWithCompletion:]
++[SVProgressHUD dismissWithDelay:]
++[SVProgressHUD dismissWithDelay:completion:]
++[SVProgressHUD setOffsetFromCenter:]
++[SVProgressHUD resetOffsetFromCenter]
+-[SVProgressHUD initWithFrame:]
+-[SVProgressHUD updateHUDFrame]
+-[SVProgressHUD updateMotionEffectForOrientation:]
+-[SVProgressHUD updateMotionEffectForXMotionEffectType:yMotionEffectType:]
+-[SVProgressHUD updateViewHierarchy]
+-[SVProgressHUD setStatus:]
+-[SVProgressHUD setFadeOutTimer:]
+-[SVProgressHUD registerNotifications]
+-[SVProgressHUD notificationUserInfo]
+-[SVProgressHUD positionHUD:]
+___29-[SVProgressHUD positionHUD:]_block_invoke
+___copy_helper_block_.292
+___destroy_helper_block_.293
+-[SVProgressHUD moveToPoint:rotateAngle:]
+-[SVProgressHUD controlViewDidReceiveTouchEvent:forEvent:]
+-[SVProgressHUD showProgress:status:]
+___37-[SVProgressHUD showProgress:status:]_block_invoke
+___copy_helper_block_.336
+___destroy_helper_block_.337
+-[SVProgressHUD showImage:status:duration:]
+___43-[SVProgressHUD showImage:status:duration:]_block_invoke
+___copy_helper_block_.355
+___destroy_helper_block_.356
+-[SVProgressHUD showStatus:]
+___28-[SVProgressHUD showStatus:]_block_invoke
+___copy_helper_block_.373
+___destroy_helper_block_.374
+___28-[SVProgressHUD showStatus:]_block_invoke.376
+___28-[SVProgressHUD showStatus:]_block_invoke.384
+___copy_helper_block_.385
+___destroy_helper_block_.386
+___28-[SVProgressHUD showStatus:]_block_invoke.388
+___copy_helper_block_.389
+___destroy_helper_block_.390
+-[SVProgressHUD dismiss]
+-[SVProgressHUD dismissWithDelay:completion:]
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke_2
+___copy_helper_block_.393
+___destroy_helper_block_.394
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.396
+___copy_helper_block_.407
+___destroy_helper_block_.408
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.410
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke_2.413
+___45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.417
+___copy_helper_block_.418
+___destroy_helper_block_.419
+___copy_helper_block_.421
+___destroy_helper_block_.422
+___copy_helper_block_.424
+___destroy_helper_block_.425
+-[SVProgressHUD indefiniteAnimatedView]
+-[SVProgressHUD ringView]
+-[SVProgressHUD backgroundRingView]
+-[SVProgressHUD cancelRingLayerAnimation]
+-[SVProgressHUD cancelIndefiniteAnimatedViewAnimation]
++[SVProgressHUD isVisible]
++[SVProgressHUD displayDurationForString:]
+-[SVProgressHUD foregroundColorForStyle]
+-[SVProgressHUD backgroundColorForStyle]
+-[SVProgressHUD controlView]
+-[SVProgressHUD backgroundView]
+-[SVProgressHUD hudView]
+-[SVProgressHUD hudVibrancyView]
+-[SVProgressHUD statusLabel]
+-[SVProgressHUD imageView]
+-[SVProgressHUD visibleKeyboardHeight]
+-[SVProgressHUD frontWindow]
+-[SVProgressHUD setDefaultStyle:]
+-[SVProgressHUD setDefaultMaskType:]
+-[SVProgressHUD setDefaultAnimationType:]
+-[SVProgressHUD setContainerView:]
+-[SVProgressHUD setMinimumSize:]
+-[SVProgressHUD setRingThickness:]
+-[SVProgressHUD setRingRadius:]
+-[SVProgressHUD setRingNoTextRadius:]
+-[SVProgressHUD setCornerRadius:]
+-[SVProgressHUD setFont:]
+-[SVProgressHUD setForegroundColor:]
+-[SVProgressHUD setBackgroundColor:]
+-[SVProgressHUD setBackgroundLayerColor:]
+-[SVProgressHUD setInfoImage:]
+-[SVProgressHUD setSuccessImage:]
+-[SVProgressHUD setErrorImage:]
+-[SVProgressHUD setViewForExtension:]
+-[SVProgressHUD setOffsetFromCenter:]
+-[SVProgressHUD setMinimumDismissTimeInterval:]
+-[SVProgressHUD setFadeInAnimationDuration:]
+-[SVProgressHUD setFadeOutAnimationDuration:]
+-[SVProgressHUD setMaxSupportedWindowLevel:]
+-[SVProgressHUD defaultStyle]
+-[SVProgressHUD defaultMaskType]
+-[SVProgressHUD defaultAnimationType]
+-[SVProgressHUD containerView]
+-[SVProgressHUD minimumSize]
+-[SVProgressHUD ringThickness]
+-[SVProgressHUD ringRadius]
+-[SVProgressHUD ringNoTextRadius]
+-[SVProgressHUD cornerRadius]
+-[SVProgressHUD font]
+-[SVProgressHUD backgroundColor]
+-[SVProgressHUD foregroundColor]
+-[SVProgressHUD backgroundLayerColor]
+-[SVProgressHUD infoImage]
+-[SVProgressHUD successImage]
+-[SVProgressHUD errorImage]
+-[SVProgressHUD viewForExtension]
+-[SVProgressHUD minimumDismissTimeInterval]
+-[SVProgressHUD maximumDismissTimeInterval]
+-[SVProgressHUD setMaximumDismissTimeInterval:]
+-[SVProgressHUD offsetFromCenter]
+-[SVProgressHUD fadeInAnimationDuration]
+-[SVProgressHUD fadeOutAnimationDuration]
+-[SVProgressHUD maxSupportedWindowLevel]
+-[SVProgressHUD fadeOutTimer]
+-[SVProgressHUD setControlView:]
+-[SVProgressHUD setBackgroundView:]
+-[SVProgressHUD backgroundRadialGradientLayer]
+-[SVProgressHUD setBackgroundRadialGradientLayer:]
+-[SVProgressHUD setHudView:]
+-[SVProgressHUD setHudVibrancyView:]
+-[SVProgressHUD setStatusLabel:]
+-[SVProgressHUD setImageView:]
+-[SVProgressHUD setIndefiniteAnimatedView:]
+-[SVProgressHUD setRingView:]
+-[SVProgressHUD setBackgroundRingView:]
+-[SVProgressHUD progress]
+-[SVProgressHUD setProgress:]
+-[SVProgressHUD activityCount]
+-[SVProgressHUD setActivityCount:]
+-[SVProgressHUD .cxx_destruct]
+_SVProgressHUDDidReceiveTouchEventNotification
+_SVProgressHUDDidTouchDownInsideNotification
+_SVProgressHUDWillDisappearNotification
+_SVProgressHUDDidDisappearNotification
+_SVProgressHUDWillAppearNotification
+_SVProgressHUDDidAppearNotification
+_SVProgressHUDStatusUserInfoKey
+_sharedView.once
+_sharedView.sharedView
+_OBJC_IVAR_$_SVProgressHUD._isInitializing
+_OBJC_IVAR_$_SVProgressHUD._backgroundColor
+_OBJC_IVAR_$_SVProgressHUD._foregroundColor
+_OBJC_IVAR_$_SVProgressHUD._backgroundLayerColor
+_OBJC_IVAR_$_SVProgressHUD._defaultMaskType
+_OBJC_IVAR_$_SVProgressHUD._defaultStyle
+_OBJC_IVAR_$_SVProgressHUD._defaultAnimationType
+_OBJC_IVAR_$_SVProgressHUD._minimumSize
+_OBJC_IVAR_$_SVProgressHUD._font
+_OBJC_IVAR_$_SVProgressHUD._infoImage
+_OBJC_IVAR_$_SVProgressHUD._successImage
+_OBJC_IVAR_$_SVProgressHUD._errorImage
+_OBJC_IVAR_$_SVProgressHUD._ringThickness
+_OBJC_IVAR_$_SVProgressHUD._ringRadius
+_OBJC_IVAR_$_SVProgressHUD._ringNoTextRadius
+_OBJC_IVAR_$_SVProgressHUD._cornerRadius
+_OBJC_IVAR_$_SVProgressHUD._minimumDismissTimeInterval
+_OBJC_IVAR_$_SVProgressHUD._maximumDismissTimeInterval
+_OBJC_IVAR_$_SVProgressHUD._fadeInAnimationDuration
+_OBJC_IVAR_$_SVProgressHUD._fadeOutAnimationDuration
+_OBJC_IVAR_$_SVProgressHUD._maxSupportedWindowLevel
+_OBJC_IVAR_$_SVProgressHUD._fadeOutTimer
+___block_descriptor_tmp.294
+___block_descriptor_tmp.338
+___block_descriptor_tmp.358
+___block_descriptor_tmp.375
+___block_descriptor_tmp.387
+___block_descriptor_tmp.392
+___block_descriptor_tmp.395
+___block_descriptor_tmp.409
+___block_descriptor_tmp.420
+___block_descriptor_tmp.423
+___block_descriptor_tmp.427
+_OBJC_IVAR_$_SVProgressHUD._indefiniteAnimatedView
+_OBJC_IVAR_$_SVProgressHUD._ringView
+_OBJC_IVAR_$_SVProgressHUD._backgroundRingView
+_OBJC_IVAR_$_SVProgressHUD._controlView
+_OBJC_IVAR_$_SVProgressHUD._backgroundView
+_OBJC_IVAR_$_SVProgressHUD._backgroundRadialGradientLayer
+_OBJC_CLASS_$_SVRadialGradientLayer
+_OBJC_IVAR_$_SVProgressHUD._hudView
+_OBJC_IVAR_$_SVProgressHUD._hudVibrancyView
+_OBJC_IVAR_$_SVProgressHUD._statusLabel
+_OBJC_IVAR_$_SVProgressHUD._imageView
+_OBJC_IVAR_$_SVProgressHUD._containerView
+_OBJC_IVAR_$_SVProgressHUD._viewForExtension
+_OBJC_IVAR_$_SVProgressHUD._offsetFromCenter
+_OBJC_IVAR_$_SVProgressHUD._progress
+_OBJC_IVAR_$_SVProgressHUD._activityCount
+_OBJC_METACLASS_$_SVProgressHUD
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.417
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke_2.413
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.410
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke.396
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke_2
+__45-[SVProgressHUD dismissWithDelay:completion:]_block_invoke
+__28-[SVProgressHUD showStatus:]_block_invoke.388
+__28-[SVProgressHUD showStatus:]_block_invoke.384
+__28-[SVProgressHUD showStatus:]_block_invoke.376
+__28-[SVProgressHUD showStatus:]_block_invoke
+__43-[SVProgressHUD showImage:status:duration:]_block_invoke
+__37-[SVProgressHUD showProgress:status:]_block_invoke
+__29-[SVProgressHUD positionHUD:]_block_invoke
+UIInterfaceOrientationIsLandscape
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+UIInterfaceOrientationIsPortrait
+__27+[SVProgressHUD sharedView]_block_invoke
+-[SVRadialGradientLayer drawInContext:]
+-[SVRadialGradientLayer gradientCenter]
+-[SVRadialGradientLayer setGradientCenter:]
+_OBJC_IVAR_$_SVRadialGradientLayer._gradientCenter
+_OBJC_METACLASS_$_SVRadialGradientLayer
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.m
+/Users/sisi/Documents/Herwin/approval-2/Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h
+_OBJC_METACLASS_$_PodsDummy_Pods_Approval
+_OBJC_CLASS_$_PodsDummy_Pods_Approval
+/Users/sisi/Documents/Herwin/approval-2/Pods/Target Support Files/Pods-Approval/Pods-Approval-dummy.m

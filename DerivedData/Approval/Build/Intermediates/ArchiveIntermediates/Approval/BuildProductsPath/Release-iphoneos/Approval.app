@@ -1,0 +1,1 @@
+/Users/sisi/Documents/Herwin/approval-2/DerivedData/Approval/Build/Intermediates/ArchiveIntermediates/Approval/InstallationBuildProductsLocation/Applications/Approval.app
